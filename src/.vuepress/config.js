@@ -69,7 +69,11 @@ module.exports = {
                 ]
             }
         ],
-        lastUpdated: 'Last Updated'
+        lastUpdated: 'Last Updated',
+        algolia: {
+            apiKey: '22e14c07fbfff1a7938d8f9fbd548bdd',
+            indexName: 'komga'
+        }
     },
     plugins: [
         ["@vuepress/back-to-top"],
