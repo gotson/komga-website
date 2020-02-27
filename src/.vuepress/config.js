@@ -70,5 +70,14 @@ module.exports = {
             }
         ],
         lastUpdated: 'Last Updated'
-    }
+    },
+    plugins: [
+        ["@vuepress/back-to-top"],
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-159243734-1'
+            }
+        ]
+    ]
 }
