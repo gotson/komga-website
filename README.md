@@ -9,3 +9,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Repositories
 
 * [Komga](https://github.com/gotson/komga/)
+* [Komga.org website](https://github.com/gotson/komga-website)
