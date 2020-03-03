@@ -37,7 +37,16 @@ module.exports = {
         ],
         sidebar: [
             '',
-            '/features/',
+            {
+                title: 'Features',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    ['/features/', 'Introduction'],
+                    '/features/screenshots',
+                    '/features/concepts'
+                ]
+            },
             {
                 title: 'Installation',
                 collapsable: false,

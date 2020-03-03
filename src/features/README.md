@@ -1,35 +1,14 @@
-# Features
+# Introduction
 
-## Introduction
+Komga is a media server for comics/mangas/BDs with API and OPDS support.
 
-- Browse libraries, series and books
-- Search bar
-- Download book files
-- Manage multiple users, with per-library accesss control
-- Webreader
-
-## Screenshots
-
-#### Dashboard
-
-![dashboard](/assets/media/webui-dashboard_small.png)
-
-#### Browse Series
-
-![browse-series](/assets/media/webui-browse-series_small.png)
-
-#### Webreader
-
-![webreader](/assets/media/webreader_small.png)
-
-![webreader-menu](/assets/media/webreader-menu_small.png)
-
-#### Account management
-
-![account-management](/assets/media/webui-account-settings_small.png)
-
-#### Users management
-
-![users-management](/assets/media/webui-settings-users_small.png)
-
-![users-management-libraries](/assets/media/webui-settings-users-libraries.png)
+Features include:
+- modern web interface
+  - Material Design look
+  - Responsive design that works both on desktop and mobile
+  - Browse libraries, series and books
+  - Search bar
+  - Webreader
+  - Manage multiple users, with per-library accesss control
+  - Download book files
+- scan and analyze your files: `cbz/zip`, `cbr/rar`, `pdf`
