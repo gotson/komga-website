@@ -2,6 +2,7 @@ module.exports = {
     title: 'Komga',
     description: 'Free and open source comics/mangas server',
     dest: './public',
+    port: 8082,
     themeConfig: {
         repo: 'gotson/komga',
         docsRepo: 'gotson/komga-website',
