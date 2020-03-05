@@ -32,6 +32,12 @@ Or via environment variables:
 SPRING_PROFILES_ACTIVE=prod,claim
 ```
 
+If using Docker:
+
+```
+SPRING_PROFILES_ACTIVE=docker,prod,claim
+```
+
 ### Create the initial user
 
 1. Once the application is running, open `http://<your-server>:<port>/swagger-ui.html` and click on **claim-controller**:
