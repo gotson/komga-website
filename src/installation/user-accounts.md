@@ -16,7 +16,7 @@ At startup, if no user account exists in database, Komga will generate an initia
 It is strongly advised to create your own account, and delete the generated account.
 :::
 
-## Claim server mode
+## Claim server mode <Badge text="0.18.0+" />
 
 ### Configure
 
@@ -24,18 +24,17 @@ This mode needs to be enable via a `claim` [application profile](/configuration/
 
 Either in your `application.yml`:
 ```yaml
-spring.profiles.active: prod,claim
+spring.profiles.active: claim
 ```
 
 Or via environment variables:
 ```
-SPRING_PROFILES_ACTIVE=prod,claim
+SPRING_PROFILES_ACTIVE=claim
 ```
 
-If using Docker:
-
-```
-SPRING_PROFILES_ACTIVE=docker,prod,claim
+Or via command line argument:
+```shell script
+java -jar komga.jar --spring.profiles.active=claim
 ```
 
 ### Create the initial user

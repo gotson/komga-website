@@ -25,7 +25,6 @@ docker create \
   --name=komga \
   --user 1000:1000 \
   -p 8080:8080 \
-  -e KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS=#recycle,@eaDir
   --mount type=bind,source=/path/to/config,target=/config \
   --mount type=bind,source=/path/to/books,target=/books \
   --restart unless-stopped \
@@ -56,7 +55,7 @@ services:
       - 8080:8080
     user: "1000:1000"
     environment:
-      - KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS=#recycle,@eaDir
+      - <ENV_VAR>=<extra configuration>
     restart: unless-stopped
 ```
 
@@ -80,11 +79,11 @@ When using volumes (`-v` flags) permissions issues can arise between the host OS
 
 Ensure any volume directories on the host are owned by the same user you specify and any permissions issues will vanish like magic.
 
-In this instance `UID=1000` and `GID=1000`, to find yours use id user as below:
+In this instance `UID=1000` and `GID=1000`, to find yours use `id <your_user>` as below:
 
 ```
-$ id username
-  uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
+$ id <your_user>
+  uid=1000(jdoe) gid=1000(jdgroup) groups=1000(jdgroup)
 ```
 
 ## Support info
