@@ -44,6 +44,7 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     ['/features/', 'Introduction'],
+                    '/features/demo',
                     '/features/screenshots',
                     '/features/concepts'
                 ]
