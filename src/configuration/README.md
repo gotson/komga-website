@@ -90,12 +90,22 @@ komga:
     - "#recycle" #synology NAS recycle bin
     - "@eaDir"   #synology NAS index/metadata folders
   filesystem-scanner-force-directory-modified-time: false #set to true only if newly added books in existing series are not scanned (ie Google Drive)
+  threads:
+    analyzer: 2
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month
 server:
-  port: 8080 #server port, default is 8080
-#  servlet.context-path: /komga #server base url, uncomment if needed
+  port: 8080
+  servlet.context-path: /komga
+spring:
+  datasource:
+    url: jdbc:h2:/path/to/your/database.h2 #absolute path for Unix
+    url: jdbc:h2:D:\\komga\database.h2 #absolute path for Windows
+    url: jdbc:h2:~/.komga/database.h2 #relative path to user home directory
+    url: jdbc:h2:./komga/database.h2 #relative path to current directory
+  profiles:
+    active: claim
 ```
 
 ## HTTPS
