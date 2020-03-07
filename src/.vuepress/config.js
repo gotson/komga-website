@@ -46,7 +46,8 @@ module.exports = {
                     ['/features/', 'Introduction'],
                     '/features/demo',
                     '/features/screenshots',
-                    '/features/concepts'
+                    '/features/concepts',
+                    '/features/webreader'
                 ]
             },
             {
