@@ -11,3 +11,7 @@ In order to run Komga, use the following command:
 ```shell script
 java -jar komga-x.y.z.jar
 ```
+
+## Updating
+
+To update just stop Komga, then start it with the latest `jar.
