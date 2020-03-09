@@ -12,7 +12,7 @@ In order to run Komga, use the following command:
 java -jar komga-x.y.z.jar
 ```
 
-## Increase memory limits
+## Increase memory limit
 
 By default the `java` process will be limited in the maximum amount of memory (RAM) it can use, usually 1gb. If you encounter some `OutOfMemoryException` in the logs you probably need to increase the maximum memory Komga can use.
 
@@ -24,4 +24,4 @@ java -jar -Xmx4g komga-x.y.z.jar
 
 ## Updating
 
-To update just stop Komga, then start it with the latest `jar.
+To update just stop Komga, then start it with the latest `jar`.
