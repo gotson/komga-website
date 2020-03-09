@@ -58,7 +58,8 @@ module.exports = {
                     ['/installation/', 'Getting started'],
                     '/installation/jar',
                     '/installation/docker',
-                    '/installation/user-accounts'
+                    '/installation/user-accounts',
+                    '/installation/webui'
                 ]
             },
             '/configuration/',
