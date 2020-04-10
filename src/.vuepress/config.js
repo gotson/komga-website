@@ -32,6 +32,10 @@ module.exports = {
                 link: '/api/rest',
             },
             {
+                text: 'FAQ',
+                link: '/faq/',
+            },
+            {
                 text: 'Discord',
                 link: 'https://discord.gg/TdRpkDu',
             },
