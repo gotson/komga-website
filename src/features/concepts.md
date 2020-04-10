@@ -28,10 +28,36 @@ After each scan, every new or modified Book file is analyzed:
 
 ## Metadata
 
-Komga let you edit metadata for Series (and soon Books). Metadata is stored inside Komga's database, and is used to enrich information about the Series/Book.
+Komga let you edit metadata for Series and Books. Metadata is stored inside Komga's database, and is used to enrich information about the Series/Book.
 
 ### Series metadata
 
 - **Title**: you can override the displayed title instead of renaming the folders
 - **Sort Title**: used for sorting
 - **Series Status**: if a Series is ongoing, ended, abandonned or in hiatus
+
+### Book metadata
+
+- **Title**: you can override the displayed title instead of renaming the file
+- **Number**: the book number in the series
+- **Sort Number**: a decimal number to order the books inside the series
+- **Summary**: a short description of the book's content
+- **Publisher**: the publisher of the book
+- **Age Rating**: the minimum recommended age for the reader
+- **Release Date**: when the book was published
+- **Reading Direction**: how the book is supposed to be read (Left to right, Right to left, Vertical, Webtoon)
+- **Authors**: a name and a role (i.e. writer, penciller…)
+
+### Metadata import
+
+Komga can import metadata from differents sources. All metadata fields can be locked from the UI to prevent modifications by automatic imports.
+
+#### ComicInfo.xml
+
+A popular format originaly from the application ComicRack, the `ComicInfo.xml` file is stored inside a `cbz`/`cbr` archive, and contains metadata about the book and series.
+
+Komga will analyze your files and import metadata from `ComicInfo.xml` automatically.
+
+#### Epub
+
+`Epub` files contain metadata about the book, and will be imported automatically by Komga.

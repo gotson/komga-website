@@ -12,6 +12,11 @@
 
 [![edit-series-metadata](/assets/media/webui-series-metadata_small.png)](/assets/media/webui-series-metadata.png)
 
+## Edit Book Metadata
+
+[![edit-book-metadata1](/assets/media/webui-book-metadata1_small.png)](/assets/media/webui-book-metadata1.png)
+[![edit-book-metadata2](/assets/media/webui-book-metadata2_small.png)](/assets/media/webui-book-metadata2.png)
+
 ## Webreader
 
 [![webreader](/assets/media/webreader_small.png)](/assets/media/webreader.png)
