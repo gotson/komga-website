@@ -13,28 +13,28 @@ module.exports = {
         nav: [
             {
                 text: 'Features',
-                link: '/features/'
+                link: '/features/',
             },
             {
                 text: 'Installation',
-                link: '/installation/'
+                link: '/installation/',
             },
             {
                 text: 'Configuration',
-                link: '/configuration/'
+                link: '/configuration/',
             },
             {
                 text: 'Client Applications',
-                link: '/clients/tachiyomi'
+                link: '/clients/tachiyomi',
             },
             {
                 text: 'API',
-                link: '/api/rest'
+                link: '/api/rest',
             },
             {
                 text: 'Discord',
-                link: 'https://discord.gg/TdRpkDu'
-            }
+                link: 'https://discord.gg/TdRpkDu',
+            },
         ],
         sidebar: [
             '',
@@ -47,8 +47,8 @@ module.exports = {
                     '/features/demo',
                     '/features/screenshots',
                     '/features/concepts',
-                    '/features/webreader'
-                ]
+                    '/features/webreader',
+                ],
             },
             {
                 title: 'Installation',
@@ -59,8 +59,8 @@ module.exports = {
                     '/installation/jar',
                     '/installation/docker',
                     '/installation/user-accounts',
-                    '/installation/webui'
-                ]
+                    '/installation/webui',
+                ],
             },
             '/configuration/',
             {
@@ -69,8 +69,8 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     '/clients/tachiyomi',
-                    '/clients/opds'
-                ]
+                    '/clients/opds',
+                ],
             },
             {
                 title: 'API',
@@ -78,23 +78,24 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     '/api/rest',
-                    '/api/opds'
-                ]
-            }
+                    '/api/opds',
+                ],
+            },
+            '/faq/',
         ],
         lastUpdated: 'Last Updated',
         algolia: {
             apiKey: '22e14c07fbfff1a7938d8f9fbd548bdd',
-            indexName: 'komga'
-        }
+            indexName: 'komga',
+        },
     },
     plugins: [
-        ["@vuepress/back-to-top"],
+        ['@vuepress/back-to-top'],
         [
             '@vuepress/google-analytics',
             {
-                'ga': 'UA-159243734-1'
-            }
-        ]
-    ]
+                'ga': 'UA-159243734-1',
+            },
+        ],
+    ],
 }
