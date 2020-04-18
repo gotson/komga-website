@@ -31,6 +31,12 @@ docker create \
   gotson/komga
 ```
 
+Then start the container:
+
+```
+docker start komga
+```
+
 ### docker-compose
 
 ```
