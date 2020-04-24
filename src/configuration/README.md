@@ -33,7 +33,13 @@ For example `0 0 * * * ?` will rescan every hour. `0 */15 * * * ?` will rescan e
 
 Defaults to `0 */15 * * * ?`.
 
-#### KOMGA_THREADS_ANALYZER / komga.threads.analyzer: `<threads>`
+#### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>` <Badge text="0.28.0+" />
+
+a boolean indicating if Komga should scan your libraries at startup.
+
+Defaults to `false`.
+
+#### KOMGA_THREADS_ANALYZER / komga.threads.analyzer: `<threads>` <Badge text="removed from 0.28.0" type="warning" />
 
 the number of worker threads used for analyzing books.
 
@@ -86,12 +92,13 @@ Here is a sample `application.yml` file in case you need to customize it.
 ```yaml
 komga:
   libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
+  libraries-scan-startup: false #scan libraries at startup
   libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
     - "#recycle" #synology NAS recycle bin
     - "@eaDir"   #synology NAS index/metadata folders
   filesystem-scanner-force-directory-modified-time: false #set to true only if newly added books in existing series are not scanned (ie Google Drive)
   threads:
-    analyzer: 2
+    analyzer: 2 #deprecated since 0.28.0
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month
