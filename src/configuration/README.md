@@ -4,6 +4,10 @@
 Since `v0.20.0` Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.
 :::
 
+::: warning Note
+The `application.yml` file does not exist by default, you need to create one if you want to customize the configuration.
+:::
+
 Komga relies heavily on [Spring Boot's configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html), leveraging `profiles` and configuration `properties`.
 
 The easiest way to configure is either via environment variables (a good fit for `docker` and `docker-compose`) or by using an `application.yml` file located in the current directory when you start Komga. The easiest way is to place it in the same directory as the `jar` file, and to `cd` to this directory before starting Komga.
