@@ -73,6 +73,30 @@ The validity, in seconds, of the generated remember-me cookie.
 
 Defaults to 2 weeks.
 
+#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" />
+
+a boolean indicating if Komga should automatically backup your database.
+
+Defaults to `true`.
+
+#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" />
+
+a boolean indicating if Komga should perform a database backup on startup (if backup is enabled).
+
+Defaults to `true`.
+
+#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" />
+
+a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) to execute database backups.
+
+Defaults to `0 0 */6 * * ?` (every 6 hours).
+
+#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" />
+
+The path of the generated database backup. The backup generated is a `ZIP` file.
+
+Defaults to `~/.komga/database-backup.zip`.
+
 #### SPRING_PROFILES_ACTIVE / spring.profiles.active: `<comma,separated,list,of,profiles>`
 
 Spring profiles to activate. Used to activate the `claim` profile for example.
@@ -91,7 +115,7 @@ Default to `komga.log`, in the current directory.
 
 ## Sample Configuration File
 
-Here is a sample `application.yml` file in case you need to customize it.
+Here is a sample `application.yml` file in case you need to customize it. Keep only the lines you need.
 
 ```yaml
 komga:
@@ -101,11 +125,14 @@ komga:
     - "#recycle" #synology NAS recycle bin
     - "@eaDir"   #synology NAS index/metadata folders
   filesystem-scanner-force-directory-modified-time: false #set to true only if newly added books in existing series are not scanned (ie Google Drive)
-  threads:
-    analyzer: 2 #deprecated since 0.28.0
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month
+  database-backup:
+    path: ~/.komga/database-backup.zip
+    schedule: "0 0 */6 * * ?" #every 6 hours
+    enabled: true
+    startup: true
 server:
   port: 8080
   servlet.context-path: /komga
