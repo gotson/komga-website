@@ -113,6 +113,8 @@ Name of the log file.
 
 Default to `komga.log`, in the current directory.
 
+Note that `~` is not expanded to your home directory/User profile.
+
 ## Sample Configuration File
 
 Here is a sample `application.yml` file in case you need to customize it. Keep only the lines you need.
