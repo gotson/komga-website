@@ -1,5 +1,22 @@
 # Frequently Asked Questions
 
+## Komga doesn't start, logs show error message about the database
+
+If Komga does not start, and you have this kind of error messages in the logs:
+
+```log
+org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Chunk 20221 not found [1.4.200/9]" [50000-200]
+```
+
+It means the database is corrupt, and you need to restore from a backup.
+
+Since `0.37.0` Komga has automatic database backups enabled by default. You will find a `database-backup.zip` file in `~/.komga/` (for `jar`) or `/config/` (for `docker`).
+
+1. Make sure Komga is stopped
+2. Delete the corrupt database (`database.h2.mv.db`)
+3. Unzip `database-backup.zip`, it should contain a `database.h2.mv.db` file
+4. Restart Komga
+
 ## Media type application/x-7z-compressed is not supported
 
 Your files are compressed using 7zip, which is not supported. Extract your archives and compress them again using the `zip` format.

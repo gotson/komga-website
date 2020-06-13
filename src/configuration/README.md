@@ -95,7 +95,10 @@ Defaults to `0 0 */6 * * ?` (every 6 hours).
 
 The path of the generated database backup. The backup generated is a `ZIP` file.
 
-Defaults to `~/.komga/database-backup.zip`.
+Defaults to:
+
+- `~/.komga/database-backup.zip` for `jar`
+- `/config/database-backup.zip` for `docker`
 
 #### SPRING_PROFILES_ACTIVE / spring.profiles.active: `<comma,separated,list,of,profiles>`
 
