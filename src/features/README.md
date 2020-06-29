@@ -14,3 +14,9 @@ Features include:
   - Download book files
 - scan and analyze your files: `cbz/zip`, `cbr/rar`, `pdf`, `epub`
 - import metadata from `ComicInfo.xml` and `Epub` files
+
+# Sponsors
+
+| JetBrains | Portable Guide |
+|:---:|:---:|
+| [![Jetbrains_logo](/assets/media/sponsors-jetbrains.png)](https://www.jetbrains.com/?from=Komga) | [![PortableGuide_logo](/assets/media/sponsors-portableguide.png)](https://portable.guide) |
