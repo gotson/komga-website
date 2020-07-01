@@ -96,27 +96,30 @@ Defaults to `0 0 */6 * * ?` (every 6 hours).
 The path of the generated database backup. The backup generated is a `ZIP` file.
 
 Defaults to:
-
-- `~/.komga/database-backup.zip` for `jar`
-- `/config/database-backup.zip` for `docker`
+- `~/.komga/database-backup.zip` for _Jar_.
+- `/config/database-backup.zip` for _Docker_.
 
 #### SPRING_PROFILES_ACTIVE / spring.profiles.active: `<comma,separated,list,of,profiles>`
 
 Spring profiles to activate. Used to activate the `claim` profile for example.
 
-#### SPRING_DATASOURCE_URL / spring.datasource.url: `<path of the database file>`
+#### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>`
 
 The path of the database file on disk.
 
-Default to `~/.komga/database.h2`. `~` is your home directory on Unix, and your User profile on Windows.
+Defaults to:
+- `jdbc:h2:~/.komga/database.h2` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
+- `jdbc:h2:/config/database.h2` for _Docker_.
 
 #### LOGGING_FILE_NAME / logging.file.name: `<logfile name>`
 
 Name of the log file.
 
-Default to `komga.log`, in the current directory.
+Defaults to:
+- `~/.komga/komga.log` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
+- `/config/logs/komga.log` for _Docker_.
 
-Note that `~` is not expanded to your home directory/User profile.
+_When overriding this configuration, you need to use `\${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
 ## Sample Configuration File
 
