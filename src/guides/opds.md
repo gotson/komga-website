@@ -1,8 +1,8 @@
-# OPDS readers
+# Read with any OPDS reader
 
 Komga should work with any OPDS reader, unfortunately most readers badly implement the OPDS protocol :disappointed:.
 
-The URL should be configured as `http(s)://your-server(:8080)/opds/v1.2/catalog`.
+The URL should be configured as `http(s)://your-server(:8080)(/baseUrl)/opds/v1.2/catalog`.
 
 Here is a list of reader applications that have been tested:
 
@@ -14,3 +14,8 @@ Here is a list of reader applications that have been tested:
 | Android | [PocketBook](https://play.google.com/store/apps/details?id=com.obreey.reader)                                        | :x: Doesn't show CBR/CBZ                                                                                 | No                 | No                     |
 | iOS     | [KyBook 3](http://kybook-reader.com/)                                                                                | :heavy_check_mark:                                                                                       | **Yes**            | No                     |
 | iOS     | [Chunky Comic Reader](http://chunkyreader.com/)                                                                      | :heavy_check_mark:                                                                                       | No                 | **Yes**                |
+
+The OPDS feed also supports:
+
+- OpenSearch functionality, to search by `Series`
+- [OPDS Page Streaming Extension 1.0](https://vaemendis.net/opds-pse/)

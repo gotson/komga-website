@@ -1,4 +1,4 @@
-# User accounts
+# Create user accounts
 
 ## Automatic mode (default)
 

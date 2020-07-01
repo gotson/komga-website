@@ -1,6 +1,10 @@
+const pluginsConfig = require('./config/plugins')
+const navBarConfig = require('./config/navBar')
+const sideBarConfig = require('./config/sideBar')
+
 module.exports = {
     title: 'Komga',
-    description: 'Free and open source comics/mangas server',
+    description: 'Free and open source comics/mangas media server.',
     dest: './public',
     port: 8082,
     themeConfig: {
@@ -10,97 +14,23 @@ module.exports = {
         logo: '/assets/media/logo.svg',
         editLinks: true,
         editLinkText: 'Help us improve this page',
-        nav: [
-            {
-                text: 'Features',
-                link: '/features/',
-            },
-            {
-                text: 'Installation',
-                link: '/installation/',
-            },
-            {
-                text: 'Configuration',
-                link: '/configuration/',
-            },
-            {
-                text: 'Client Applications',
-                link: '/clients/tachiyomi',
-            },
-            {
-                text: 'API',
-                link: '/api/rest',
-            },
-            {
-                text: 'FAQ',
-                link: '/faq/',
-            },
-            {
-                text: 'Discord',
-                link: 'https://discord.gg/TdRpkDu',
-            },
-        ],
-        sidebar: [
-            '',
-            {
-                title: 'Features',
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    ['/features/', 'Introduction'],
-                    '/features/demo',
-                    '/features/screenshots',
-                    '/features/concepts',
-                    '/features/webreader',
-                ],
-            },
-            {
-                title: 'Installation',
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    ['/installation/', 'Getting started'],
-                    '/installation/jar',
-                    '/installation/docker',
-                    '/installation/thirdparty',
-                    '/installation/user-accounts',
-                    '/installation/webui',
-                ],
-            },
-            '/configuration/',
-            {
-                title: 'Client Applications',
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    '/clients/tachiyomi',
-                    '/clients/opds',
-                ],
-            },
-            {
-                title: 'API',
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    '/api/rest',
-                    '/api/opds',
-                ],
-            },
-            '/faq/',
-        ],
         lastUpdated: 'Last Updated',
         algolia: {
             apiKey: '22e14c07fbfff1a7938d8f9fbd548bdd',
             indexName: 'komga',
         },
+        nav: navBarConfig,
+        sidebar: {
+            '/faq/': sideBarConfig.faq,
+            '/installation/': sideBarConfig.installation,
+            '/guides/': sideBarConfig.guides,
+            '/contribution/': sideBarConfig.contribution,
+        },
     },
-    plugins: [
-        ['@vuepress/back-to-top'],
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'UA-159243734-1',
-            },
-        ],
+    plugins: pluginsConfig,
+    extraWatchFiles: [
+        '.vuepress/config/plugins.js',
+        '.vuepress/config/navBar.js',
+        '.vuepress/config/sideBar.js',
     ],
 }

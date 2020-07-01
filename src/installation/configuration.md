@@ -1,4 +1,4 @@
-# Configuration
+# Configuration options
 
 :::tip Tip
 Since `v0.20.0` Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.

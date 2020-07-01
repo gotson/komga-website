@@ -1,4 +1,4 @@
-# Jar
+# Install with the Jar file
 
 :::tip Tip
 Since `v0.20.0` it's not required anymore to have an `application.yml` for Komga to run properly.

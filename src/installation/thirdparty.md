@@ -1,4 +1,4 @@
-# Third-party integrations
+# Install via third-party integrations
 
 :::warning Warning
 Those methodes are not officially supported, if you encounter installation issues please contact the respective authors.
@@ -8,11 +8,11 @@ Those methodes are not officially supported, if you encounter installation issue
 
 Komga is available as an [AUR](https://aur.archlinux.org/packages/komga/) package.
 
-#### Installation
+### Installation
 
 It can be installed using `yay -S komga` (or any other AUR package manager).
 
-#### Run
+### Run
 
 Just run `komga`.
 

@@ -1,11 +1,11 @@
-# Installation
+# Getting Started
 
 You can install Komga using various methods.
 
 ### Official methods
 
-- Using `java` with the [jar](jar) file
 - Using the official [Docker](docker) image
+- Using `java` with the [jar](jar) file
 
 ### Third-party integrations
 

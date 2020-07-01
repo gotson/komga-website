@@ -1,6 +1,6 @@
 # Accessing the web interface
 
-Once Komga is started, you can access the web interface at: `http://<your-server>:<port>`.
+Once Komga is started, you can access the web interface at: `http://<your-server>:<port>(/baseUrl)`.
 
 ::: tip Tip
 If you are running Komga locally, _`<your-server>`_ will be `localhost`.
