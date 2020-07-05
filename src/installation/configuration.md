@@ -1,11 +1,10 @@
 # Configuration options
 
-:::tip Tip
+:::tip
 Since `v0.20.0` Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.
-:::
 
-::: warning Note
 The `application.yml` file does not exist by default, you need to create one if you want to customize the configuration.
+
 :::
 
 Komga relies heavily on [Spring Boot's configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html), leveraging `profiles` and configuration `properties`.
@@ -42,12 +41,6 @@ Defaults to `0 */15 * * * ?`.
 a boolean indicating if Komga should scan your libraries at startup.
 
 Defaults to `false`.
-
-#### KOMGA_THREADS_ANALYZER / komga.threads.analyzer: `<threads>` <Badge text="removed from 0.28.0" type="warning" />
-
-the number of worker threads used for analyzing books.
-
-Defaults to `2`.
 
 #### KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`
 
@@ -99,10 +92,6 @@ Defaults to:
 - `~/.komga/database-backup.zip` for _Jar_.
 - `/config/database-backup.zip` for _Docker_.
 
-#### SPRING_PROFILES_ACTIVE / spring.profiles.active: `<comma,separated,list,of,profiles>`
-
-Spring profiles to activate. Used to activate the `claim` profile for example.
-
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>`
 
 The path of the database file on disk.
@@ -150,8 +139,6 @@ spring:
     url: jdbc:h2:D:\\komga\database.h2 #absolute path for Windows
     url: jdbc:h2:~/.komga/database.h2 #relative path to user home directory
     url: jdbc:h2:./komga/database.h2 #relative path to current directory
-  profiles:
-    active: claim
 ```
 
 ## HTTPS

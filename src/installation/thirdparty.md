@@ -1,7 +1,7 @@
 # Install via third-party integrations
 
-:::warning Warning
-Those methodes are not officially supported, if you encounter installation issues please contact the respective authors.
+:::warning
+Those methods are not officially supported, if you encounter installation issues please contact the respective authors.
 :::
 
 ## AUR - Arch User Repository

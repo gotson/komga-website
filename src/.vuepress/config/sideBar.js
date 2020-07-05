@@ -39,7 +39,6 @@ module.exports = {
                 '/installation/docker',
                 '/installation/jar',
                 '/installation/thirdparty',
-                '/installation/user-accounts',
                 '/installation/webui',
                 '/installation/configuration',
             ],

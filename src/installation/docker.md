@@ -4,10 +4,6 @@
 
 This image provides various versions that are available via tags.
 
-::: warning Warning
-
-The `beta` tag has been removed, use `latest` instead.
-:::
 
 |**Tag** |**Description**         |
 |:------:|------------------------|

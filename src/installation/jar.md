@@ -1,10 +1,6 @@
 # Install with the Jar file
 
-:::tip Tip
-Since `v0.20.0` it's not required anymore to have an `application.yml` for Komga to run properly.
-:::
-
-:::warning Note
+:::tip
 You need Java version 8+ (or 1.8+) to run Komga. Check your version with `java -version`.
 :::
 
