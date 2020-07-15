@@ -66,25 +66,35 @@ The validity, in seconds, of the generated remember-me cookie.
 
 Defaults to 2 weeks.
 
-#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" />
+#### KOMGA_DATABASE_FILE / komga.database.file: `<file path>` <Badge text="0.48.0+" />
+
+File path for the SQLite database.
+
+Defaults to:
+- `~/.komga/database.sqlite` for _Jar_.
+- `/config/database.sqlite` for _Docker_.
+
+_When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
+
+#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
 
 a boolean indicating if Komga should automatically backup your database.
 
 Defaults to `true`.
 
-#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" />
+#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
 
 a boolean indicating if Komga should perform a database backup on startup (if backup is enabled).
 
 Defaults to `true`.
 
-#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" />
+#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
 
 a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) to execute database backups.
 
 Defaults to `0 0 */6 * * ?` (every 6 hours).
 
-#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" />
+#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
 
 The path of the generated database backup. The backup generated is a `ZIP` file.
 
@@ -94,7 +104,7 @@ Defaults to:
 
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>`
 
-The path of the database file on disk.
+The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.
 
 Defaults to:
 - `jdbc:h2:~/.komga/database.h2` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
@@ -108,7 +118,7 @@ Defaults to:
 - `~/.komga/komga.log` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
 - `/config/logs/komga.log` for _Docker_.
 
-_When overriding this configuration, you need to use `\${user.home}` instead of `~` (this is a specific Spring Boot variable)._
+_When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
 ## Sample Configuration File
 
@@ -125,6 +135,8 @@ komga:
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month
+  database:
+    file: ${user.home}/.komga/database.sqlite
   database-backup:
     path: ~/.komga/database-backup.zip
     schedule: "0 0 */6 * * ?" #every 6 hours

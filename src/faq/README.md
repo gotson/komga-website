@@ -1,6 +1,30 @@
 # Frequently Asked Questions
 
+## Migration from H2 to SQLite
+
+The version `0.48.0` is changing the internal database from H2 to SQLite. The change is done transparently.
+
+A migration will be triggered automatically at startup:
+- if the H2 database has not been migrated yet
+- if the SQLite database is newly created
+
+The regular functions of Komga will not be available during the data transfer (API, webserver, library scan…).
+
+After a successful migration, a file with the `.imported` extension will be created next to your existing H2 database (for example for the default configuration it would be `~/.komga/database.h2.mv.db.imported`).
+
+By default, the SQLite database will be located in the same location as the H2 database:
+- if using the _Jar_: `~/.komga/database.sqlite`
+- if using _Docker_: `/config/database.sqlite`
+
+You can customize the location of the SQLite database using the configuration `komga.database.file` or environment variable `KOMGA_DATABASE_FILE`.
+
+The database backup feature introduced in `0.37.0` has been removed. It might be re-added later on using a different logic.
+
 ## Komga doesn't start, logs show error message about the database
+
+:::tip
+Migrate to `0.48.0` to avoid those issues!
+:::
 
 If Komga does not start, and you have this kind of error messages in the logs:
 
