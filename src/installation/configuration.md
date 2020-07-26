@@ -31,8 +31,10 @@ Defaults to `/`.
 
 #### KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`
 
-a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) for libraries periodic rescans.
+a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) for libraries periodic scans.
 For example `0 0 * * * ?` will rescan every hour. `0 */15 * * * ?` will rescan every 15 minutes.
+
+To disable the periodic scan, set the value to `-`.
 
 Defaults to `0 */15 * * * ?`.
 
@@ -127,6 +129,7 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 ```yaml
 komga:
   libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
+  libraries-scan-cron: "-" #disable periodic scan
   libraries-scan-startup: false #scan libraries at startup
   libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
     - "#recycle" #synology NAS recycle bin

@@ -62,3 +62,7 @@ You can solve the issue by deleting the database. By default it is located in `~
 ## Tachiyomi does not show thumbnails
 
 Make sure the URL of your Komga server starts with `http` or `https` **in lowercase**.
+
+## How can I disable the periodic scans?
+
+Configure `KOMGA_LIBRARIES_SCAN_CRON` / `komga.libraries-scan-cron` to `-`.
