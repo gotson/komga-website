@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+## Webreader double pages are not showing as single page
+
+The double pages feature of the webreader requires image sizes to be available. This feature was added in v`0.51.0`. If your books have been analyzed before that version, you will need to re-analyze them in order for the double pages feature to work properly.
+
 ## Migration from H2 to SQLite
 
 The version `0.48.0` is changing the internal database from H2 to SQLite. The change is done transparently.
