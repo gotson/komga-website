@@ -79,6 +79,7 @@ module.exports = {
                 '/guides/tachiyomi',
                 '/guides/opds',
                 '/guides/rest',
+                '/guides/theme',
             ],
         },
         {
