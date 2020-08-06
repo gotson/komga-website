@@ -53,6 +53,17 @@ Look for the action menu icon <img src="/assets/media/guides/action-menu-icon.pn
 Depending on the size of your Library, analysis may take a while.
 :::
 
+### Media Analysis screen
+
+You can check all the media for which the analysis did not succeed from the Media Analysis screen. You can access it from _Server Settings > Media Analysis_.
+
+It will show you all books with a status of:
+- Error: Komga could not analyze the book. If possible, there will be a comment to describe the error.
+- Unsupported: Komga does not support those files. The comment will give you more information.
+
+<img src="/assets/media/guides/scan-analysis-refresh/media-analysis.png" style="vertical-align: middle" height="400" alt="Add Library Dialog"/>
+
+
 ## Refresh metadata
 
 Refreshing Metadata for a library, series, or individual book causes the metadata for the item to be refreshed, even if it already has metadata. You can think of refreshing as “update metadata for the requested item even if it already has some”.
