@@ -18,6 +18,12 @@ From the web interface:
 
 <img src="/assets/media/guides/libraries/library-add-dialog.png" style="vertical-align: middle" height="300" alt="Add Library Dialog"/>
 
+You can also specify extra options regarding the import of metadata.
+
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle" height="400" alt="Add Library Dialog"/>
+
+Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
+
 ## Edit a library
 
 To edit a library, look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style="vertical-align: middle" height="32" /> and click on _Edit_.
