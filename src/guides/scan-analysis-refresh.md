@@ -61,7 +61,7 @@ It will show you all books with a status of:
 - Error: Komga could not analyze the book. If possible, there will be a comment to describe the error.
 - Unsupported: Komga does not support those files. The comment will give you more information.
 
-<img src="/assets/media/guides/scan-analysis-refresh/media-analysis.png" style="vertical-align: middle" height="400" alt="Add Library Dialog"/>
+<img src="/assets/media/guides/scan-analysis-refresh/media-analysis.png" style="vertical-align: middle" height="400" alt="Media Analysis"/>
 
 
 ## Refresh metadata

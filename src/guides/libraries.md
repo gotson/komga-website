@@ -20,7 +20,7 @@ From the web interface:
 
 You can also specify extra options regarding the import of metadata.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle" height="400" alt="Add Library Dialog"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle" height="400" alt="Add Library Dialog Options"/>
 
 Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
 
