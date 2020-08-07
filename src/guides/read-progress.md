@@ -13,15 +13,15 @@ At the moment, only the webreader can track the progress as you read:
 The book card will display read progress indicators:
 - Unread books will display an orange tick in the top right corner:
 
-<img src="/assets/media/guides/read-progress/book-card-unread.png" style="vertical-align: middle" height="300"  alt="Book card showing unread indicator"/>
+<img src="/assets/media/guides/read-progress/book-card-unread.png" style="vertical-align: middle;max-height:300px"  alt="Book card showing unread indicator"/>
 
 - In progress books will display a progress bar at the bottom of the thumbnail:
 
-<img src="/assets/media/guides/read-progress/book-card-inprogress.png" style="vertical-align: middle" height="300" alt="Book card showing reading progress"/>
+<img src="/assets/media/guides/read-progress/book-card-inprogress.png" style="vertical-align: middle;max-height:300px" alt="Book card showing reading progress"/>
 
 In addition, the series card will display the number of unread books in the top right corner:
 
-<img src="/assets/media/guides/read-progress/series-card-unread-count.png" style="vertical-align: middle" height="300" alt="Series card showing unread count of books"/>
+<img src="/assets/media/guides/read-progress/series-card-unread-count.png" style="vertical-align: middle;max-height:300px" alt="Series card showing unread count of books"/>
 
 ## Marking progress manually
 

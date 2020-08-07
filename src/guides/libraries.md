@@ -16,11 +16,11 @@ From the web interface:
 - click the _Browse_ button and select a root folder containing your books
 - click _Add_
 
-<img src="/assets/media/guides/libraries/library-add-dialog.png" style="vertical-align: middle" height="300" alt="Add Library Dialog"/>
+<img src="/assets/media/guides/libraries/library-add-dialog.png" style="vertical-align: middle;max-height: 300px" alt="Add Library Dialog"/>
 
 You can also specify extra options regarding the import of metadata.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle" height="400" alt="Add Library Dialog Options"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 400px" alt="Add Library Dialog Options"/>
 
 Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
 

@@ -4,19 +4,21 @@ Komga has an integrated Webreader packed with features.
 
 To start reading a book, you can click on the read button either on the book card, or on the book details screen.
 
-<img src="/assets/media/guides/webreader/book-card.png" style="vertical-align: middle" height="300" alt="Book Card Read Button"/>
+<img src="/assets/media/guides/webreader/book-card.png" style="vertical-align: middle;max-height:300px" alt="Book Card Read Button"/>
 
-<img src="/assets/media/guides/webreader/read-button.png" style="vertical-align: middle" height="300" alt="Book Details read button"/>
+<img src="/assets/media/guides/webreader/read-button.png" style="vertical-align: middle;max-height:300px" alt="Book Details read button"/>
 
 Here is an overview of the Webreader's interface.
 
-<img src="/assets/media/guides/webreader/reader.png" style="vertical-align: middle" height="auto" alt="Webreader overview"/>
+<a href="/assets/media/guides/webreader/reader.png">
+<img src="/assets/media/guides/webreader/reader.png" style="vertical-align: middle" alt="Webreader overview"/>
+</a>
 
 ## Settings
 
 The Webreader can be configured in various ways from the settings dialog.
 
-<img src="/assets/media/guides/webreader/reader-settings.png" style="vertical-align: middle" height="400" alt="Webreader settings"/>
+<img src="/assets/media/guides/webreader/reader-settings.png" style="vertical-align: middle;max-height:400px" alt="Webreader settings"/>
 
 ### General
 
@@ -64,7 +66,7 @@ When enabled, the Webreader will display two pages on the same screen, like an o
 
 You can use the Thumbnails explorer to have an overview of all the pages in the book, and to quickly navigate to a particular page.
 
-<img src="/assets/media/guides/webreader/thumbnails-explorer.png" style="vertical-align: middle" height="auto" alt="Thumbnails explorer"/>
+<img src="/assets/media/guides/webreader/thumbnails-explorer.png" style="vertical-align: middle" alt="Thumbnails explorer"/>
 
 ## Help dialog
 

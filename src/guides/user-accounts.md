@@ -4,17 +4,17 @@ The administrator of a Komga server has the ability to create other User Account
 
 You can manage Users in _Server Settings > Users_.
 
-<img src="/assets/media/guides/user-accounts/users-management.png" style="vertical-align: middle" height="300" alt="Users management"/>
+<img src="/assets/media/guides/user-accounts/users-management.png" style="vertical-align: middle;max-height:300px" alt="Users management"/>
 
 ## Creating Users
 
 You can add a user by clicking on the _+_ button.
 
-<img src="/assets/media/guides/user-accounts/add-user.png" style="vertical-align: middle" height="200" alt="Add User"/>
+<img src="/assets/media/guides/user-accounts/add-user.png" style="vertical-align: middle;max-height:200px" alt="Add User"/>
 
 A dialog will show up. Fill in all the required information, and press _Add_.
 
-<img src="/assets/media/guides/user-accounts/add-user-dialog.png" style="vertical-align: middle" height="400" alt="Add User Dialog"/>
+<img src="/assets/media/guides/user-accounts/add-user-dialog.png" style="vertical-align: middle;max-height:400px" alt="Add User Dialog"/>
 
 ## User Roles
 
@@ -41,11 +41,11 @@ A user with this role will be able to download the file of a book.
 
 An administrator can limit a particular user to see certain libraries. This is done via the _Edit Shared Libraries_ button.
 
-<img src="/assets/media/guides/user-accounts/edit-libraries.png" style="vertical-align: middle" height="50" alt="Edit Shared Libraries"/>
+<img src="/assets/media/guides/user-accounts/edit-libraries.png" style="vertical-align: middle;max-height:50px" alt="Edit Shared Libraries"/>
 
 Choose the libraries the user will be able to access, or select _All libraries_ for unrestricted access (this is the default option).
 
-<img src="/assets/media/guides/user-accounts/edit-libraries-dialog.png" style="vertical-align: middle" height="400" alt="Edit Shared Libraries"/>
+<img src="/assets/media/guides/user-accounts/edit-libraries-dialog.png" style="vertical-align: middle;max-height:400px" alt="Edit Shared Libraries"/>
 
 ## Deleting Users
 

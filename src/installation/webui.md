@@ -12,4 +12,4 @@ The default _`<port>`_ is `8080`.
 
 You will be asked to create a user account. Choose an _email_ and _password_, then click on __Create User Account__.
 
-<img src="/assets/media/installation/create-initial-account.png" height="500" alt="Create initial account"/>
+<img src="/assets/media/installation/create-initial-account.png" style="max-height: 500px" alt="Create initial account"/>
