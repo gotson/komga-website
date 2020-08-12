@@ -36,3 +36,19 @@ Where `-X` is a number.
   Book 12-1.jpg
   Book 12-2.png
 ```
+
+#### Series <Badge text="0.54.0+" />
+
+Custom poster must be located in the Series directory and named as follows:
+- `cover.ext`
+- `default.ext`
+- `folder.ext`
+- `series.ext`
+- `poster.ext`
+
+`ext` is the file extension.
+
+```
+/Series
+  poster.jpg
+```
