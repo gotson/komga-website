@@ -69,9 +69,14 @@ It will show you all books with a status of:
 
 Refreshing Metadata for a library, series, or individual book causes the metadata for the item to be refreshed, even if it already has metadata. You can think of refreshing as “update metadata for the requested item even if it already has some”.
 
+You should refresh a library or individual item if:
+- You’ve changed options for the library
+- You’ve added "local media assets" (such as artwork)
+
 Metadata is gathered from the following sources:
 - a local `ComicInfo.xml` file located inside a CBZ or CBR
 - the metadata of an EPUB file
+- local media assets
 
 The metadata refresh is dependent of the options of the Library.
 
