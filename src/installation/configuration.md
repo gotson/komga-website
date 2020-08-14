@@ -50,7 +50,7 @@ a list of patterns to exclude directories from the scan. If the full path contai
 
 Defaults to `#recycle,@eaDir`.
 
-#### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>`
+#### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed from 0.56.0" type="warning" />
 
 if set to `true`, it will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
@@ -134,7 +134,6 @@ komga:
   libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
     - "#recycle" #synology NAS recycle bin
     - "@eaDir"   #synology NAS index/metadata folders
-  filesystem-scanner-force-directory-modified-time: false #set to true only if newly added books in existing series are not scanned (ie Google Drive)
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month

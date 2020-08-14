@@ -18,9 +18,23 @@ From the web interface:
 
 <img src="/assets/media/guides/libraries/library-add-dialog.png" style="vertical-align: middle;max-height: 300px" alt="Add Library Dialog"/>
 
-You can also specify extra options regarding the import of metadata.
+You can also specify extra options.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 400px" alt="Add Library Dialog Options"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 500px" alt="Add Library Dialog Options"/>
+
+### Scanner options <Badge text="0.56.0+" />
+
+#### Force directory modified time
+
+This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
+
+#### Deep scan
+
+This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
+
+Enable Deep Scan if Komga often miss some books after a scan.
+
+### Metadata options
 
 Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
 

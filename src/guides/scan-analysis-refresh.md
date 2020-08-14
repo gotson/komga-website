@@ -120,3 +120,9 @@ This will import the following fields from the Epub metadata into Komga:
 The `belongs-to-collection` meta property will be used to overwirte the title of a Series, only if:
 - at least one book in the series has the property `belongs-to-collection` set
 - if multiple books have the property `belongs-to-collection` set, they must all have the same value
+
+### Import local media assets <Badge text="0.56.0+" />
+
+#### Local artwork
+
+This will enable import for local artwork, check the [Local Artwork Assets](/guides/local-artwork-assets) section for more information.

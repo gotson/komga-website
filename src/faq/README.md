@@ -1,5 +1,11 @@
 # Frequently Asked Questions
 
+## Can I use Komga with a Google Drive mount?
+
+Yes, you can use [Plexdrive](https://github.com/plexdrive/plexdrive) or [rclone](https://rclone.org/).
+
+You will need to configure your library to [force the directory modified time](/guides/libraries.md#force-directory-modified-time).
+
 ## Webreader double pages are not showing as single page
 
 The double pages feature of the webreader requires image sizes to be available. This feature was added in v`0.51.0`. If your books have been analyzed before that version, you will need to re-analyze them in order for the double pages feature to work properly.
