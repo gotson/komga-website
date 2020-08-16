@@ -1,5 +1,31 @@
 # Frequently Asked Questions
 
+## How to enable DEBUG or TRACE logs?
+
+### Via an `application.yml`
+
+Add the following key in your `application.yml`:
+
+```yaml
+logging.level.org.gotson.komga: DEBUG
+```
+
+### Using the `jar` via the command line
+
+Start the `jar` with the following option:
+
+```shell script
+java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=DEBUG
+```
+
+### Using Docker
+
+Add the following environment variable:
+
+```shell script
+LOGGING_LEVEL_ORG_GOTSON_KOMGA=DEBUG
+```
+
 ## Can I use Komga with a Google Drive mount?
 
 Yes, you can use [Plexdrive](https://github.com/plexdrive/plexdrive) or [rclone](https://rclone.org/).
