@@ -57,5 +57,7 @@ To delete a library, look for the action menu icon <img src="/assets/media/guide
 :::danger
 Deleting a library will remove all series and books contained in this library. Read progress for all those books will be deleted.
 
+Your media files will not be affected.
+
 This cannot be undone.
 :::
