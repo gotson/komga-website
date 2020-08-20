@@ -103,6 +103,12 @@ The `SeriesGroup` tag will be used to create a collection with that name, or add
 
 If the `SeriesGroup` tag is set to a different value in each book of the series, then each value of the tag will create a collection.
 
+#### Read lists <Badge text="0.57.0+" />
+
+The `AlternateSeries` or `StoryArc` tags will be used to create a read list with that name, or add the book to an existing read list with that name.
+
+If the `AlternateNumber` or `StoryArcNumber` tags are set, it will be used to position the book in the read list.
+
 ### Import metadata from EPUB files
 
 #### Book metadata

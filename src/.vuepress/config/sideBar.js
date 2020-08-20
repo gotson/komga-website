@@ -77,6 +77,7 @@ module.exports = {
                 '/guides/user-accounts',
                 '/guides/read-progress',
                 '/guides/collections',
+                '/guides/readlists',
                 '/guides/webreader',
                 '/guides/tachiyomi',
                 '/guides/opds',
