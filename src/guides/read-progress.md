@@ -1,4 +1,4 @@
-# Read progress
+# Read progress <Badge text="0.35.0+" />
 
 Komga can track which books you have read, and books that you are currently reading. Reading progress is tracked for each user separately.
 

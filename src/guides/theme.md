@@ -1,4 +1,4 @@
-# Theme
+# Theme <Badge text="0.49.0+" />
 
 You can customize the application theme from the sidebar.
 

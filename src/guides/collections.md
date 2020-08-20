@@ -1,4 +1,4 @@
-# Collections
+# Collections <Badge text="0.40.0+" />
 
 Collections let you gather related series together. For example, you might add all the Batman series together in a "Batman" collection.
 
@@ -39,7 +39,7 @@ Only show collections that exist in the library. Opening a collection goes to th
 
 ## Collection details
 
-The collections details screen contains all the series that belong to the collection. It can include series from any library. By adding items in different libraries to collections, you can relate them to each other.
+The collection details screen contains all the series that belong to the collection. It can include series from any library. By adding items in different libraries to collections, you can relate them to each other.
 
 ### Collection ordering
 
@@ -79,4 +79,4 @@ Once you are done with your changes, click the tick in the top bar. Click the cr
 
 To delete a collection, look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style="vertical-align: middle" height="32" /> and click on _Delete_.
 
-This will not delete the items in the collection.
+This will not delete the items in the collection, nor your media files.
