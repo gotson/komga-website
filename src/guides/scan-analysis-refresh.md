@@ -87,15 +87,18 @@ The metadata refresh is dependent of the options of the Library.
 This will import the following fields from the `ComicInfo.xml` file into Komga:
 - `Year`, `Month`, and `Day` to form the _Release Date_
 - `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, and `Editor` as _Authors_ with the according role
-- A `Manga` field with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_
-- `Title`, `Summary`, `Number`, and `Publisher` as their Komga equivalent
-- The various `AgeRating` values will be converted to a number in Komga
+- `Title`, `Summary`, `Number` as their Komga equivalent
 
-#### Series title
+#### Series metadata
 
-The `Series` tag will be used to overwrite the title of a Series, only if:
-- at least one book in the series has the tag `Series` set
-- if multiple books have the tag `Series` set, they must all have the same value
+This will import the following fields from the `ComicInfo.xml` of the Series' books into Komga.
+
+- The `Series` tag will be used to overwrite the title of the Series. If multiple values are present, the most frequent value from all books will be used.
+- The various `AgeRating` values will be converted to a number in Komga. The highest value from all books will be used.
+- The most frequent `Publisher` value will be used as Komga's equivalent.
+- A `Manga` field with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_. The most frequent value from all books will be used.
+- the `Genre` field will be split by `,`. All genres from all books will be added to the Series.
+- the `LanguageISO` field will be used as the Series' language. The most frequent value from all books will be used.
 
 #### Collections
 
@@ -121,11 +124,11 @@ This will import the following fields from the Epub metadata into Komga:
 - The `page-progression-direction` property of the `spine` element as the _Reading direction_
 - `dc:creator` element as _Authors_. The role will be imported either from the `opf:role` property, or from a `meta` element containing `role` property and a `marc:relators` scheme.
 
-#### Series title
+#### Series metadata
 
 The `belongs-to-collection` meta property will be used to overwirte the title of a Series, only if:
 - at least one book in the series has the property `belongs-to-collection` set
-- if multiple books have the property `belongs-to-collection` set, they must all have the same value
+- if multiple books have the property `belongs-to-collection` set, the most frequent value will be used
 
 ### Import local media assets <Badge text="0.56.0+" />
 
