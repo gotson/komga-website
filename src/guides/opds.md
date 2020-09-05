@@ -14,6 +14,7 @@ Here is a list of reader applications that have been tested:
 | Android | [PocketBook](https://play.google.com/store/apps/details?id=com.obreey.reader)                                        | :x: Doesn't show CBR/CBZ                                                                                 | No                 | No                     |
 | iOS     | [KyBook 3](http://kybook-reader.com/)                                                                                | :heavy_check_mark:                                                                                       | **Yes**            | No                     |
 | iOS     | [Chunky Comic Reader](http://chunkyreader.com/)                                                                      | :heavy_check_mark:                                                                                       | No                 | **Yes**                |
+| iOS     | [Panels](https://panels.app/)                                                                                        | :heavy_check_mark:                                                                                       | ?                  | No                     |
 
 The OPDS feed also supports:
 
