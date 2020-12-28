@@ -116,7 +116,7 @@ Komga automatically import metadata from `EPUB` files and from `ComicInfo.xml` f
 
 The server cannot be claimed if a user already exists in the database. It can happen when you start Komga for the first time without the `claim` profile as Komga will generate a default user.
 
-You can solve the issue by deleting the database. By default it is located in `~/.komga/database.h2`. `~` is your home directory on Unix, and your User profile on Windows.
+You can solve the issue by deleting the database. By default it is located in `~/.komga/database.sqlite`. `~` is your home directory on Unix, and your User profile on Windows.
 
 ## Tachiyomi does not show thumbnails
 
