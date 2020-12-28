@@ -50,7 +50,7 @@ a list of patterns to exclude directories from the scan. If the full path contai
 
 Defaults to `#recycle,@eaDir`.
 
-#### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed from 0.56.0" type="warning" />
+#### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed since 0.56.0" type="warning" />
 
 if set to `true`, it will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
@@ -78,25 +78,25 @@ Defaults to:
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
-#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
+#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
 
 a boolean indicating if Komga should automatically backup your database.
 
 Defaults to `true`.
 
-#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
+#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
 
 a boolean indicating if Komga should perform a database backup on startup (if backup is enabled).
 
 Defaults to `true`.
 
-#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
+#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
 
 a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) to execute database backups.
 
 Defaults to `0 0 */6 * * ?` (every 6 hours).
 
-#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" /> <Badge text="removed from 0.48.0" type="warning" />
+#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
 
 The path of the generated database backup. The backup generated is a `ZIP` file.
 
