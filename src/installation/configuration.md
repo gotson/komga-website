@@ -13,6 +13,12 @@ The easiest way to configure is either via environment variables (a good fit for
 
 Each configuration key can have a different format depending if it's from the environment variable, or from the `application.yml` file. In the following section I will provide both format in the form `ENVIRONMENT_VARIABLE` / `application-property`.
 
+You can also specify configuration via the command line, when launching the `jar`. Use the `application-property` form, and prefix with `--`. For example:
+
+```shell
+java -jar komga.jar --server.servlet.context-path="/komga" --server.port=8443
+```
+
 ## Optional configuration
 
 You can use some optional configuration keys:
