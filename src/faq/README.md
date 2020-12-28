@@ -1,5 +1,11 @@
 # Frequently Asked Questions
 
+## How can I sync reading progress with tracker websites?
+
+Komga does not support this outside the box.
+
+You can try [MAL-Sync](https://github.com/MALSync/MALSync) which integrates with Komga and works with MyAnimeList, Kitsu, Anilist and others.
+
 ## Tachiyomi cannot connect, but works in WebView
 
 Try disabling the __DNS over HTTPS__ option (in More > Settings > Advanced).
