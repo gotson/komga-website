@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+## Tachiyomi cannot connect, but works in WebView
+
+Try disabling the __DNS over HTTPS__ option (in More > Settings > Advanced).
+
 ## How to enable DEBUG or TRACE logs?
 
 ### Via an `application.yml`
