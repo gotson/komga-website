@@ -39,7 +39,3 @@ If you can't contribute code, but you still wish to help, then you can choose to
 <a href="https://www.jetbrains.com/?from=Komga" target="_blank" rel="noopener">
     <img src="/assets/media/sponsors/sponsors-jetbrains.png" height="100">
 </a>
-
-<a href="https://portable.guide" target="_blank" rel="noopener">
-    <img src="/assets/media/sponsors/sponsors-portableguide.png" height="100">
-</a>
