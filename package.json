@@ -5,11 +5,10 @@
     "build": "vuepress build src",
     "serve": "vuepress dev src"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.7.1",
-    "@vuepress/plugin-google-analytics": "^1.7.1",
-    "vuepress": "^1.7.1"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "vuepress": "^1.8.2"
   },
   "private": true
 }
