@@ -20,7 +20,7 @@ From the web interface:
 
 You can also specify extra options.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 500px" alt="Add Library Dialog Options"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 700px" alt="Add Library Dialog Options"/>
 
 ### Scanner options <Badge text="0.56.0+" />
 

@@ -135,3 +135,9 @@ The `belongs-to-collection` meta property will be used to overwirte the title of
 #### Local artwork
 
 This will enable import for local artwork, check the [Local Artwork Assets](/guides/local-artwork-assets) section for more information.
+
+### Import ISBN within barcode <Badge text="0.79.0+" />
+
+#### ISBN barcode
+
+Komga will inspect the fisrt and last 3 pages of each book for barcodes. If a barcode is present and contains an ISBN code, it will be imported.
