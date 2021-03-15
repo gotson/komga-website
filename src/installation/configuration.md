@@ -110,7 +110,7 @@ Defaults to:
 - `~/.komga/database-backup.zip` for _Jar_.
 - `/config/database-backup.zip` for _Docker_.
 
-#### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>`
+#### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
 
 The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.
 
@@ -153,12 +153,6 @@ komga:
 server:
   port: 8080
   servlet.context-path: /komga
-spring:
-  datasource:
-    url: jdbc:h2:/path/to/your/database.h2 #absolute path for Unix
-    url: jdbc:h2:D:\\komga\database.h2 #absolute path for Windows
-    url: jdbc:h2:~/.komga/database.h2 #relative path to user home directory
-    url: jdbc:h2:./komga/database.h2 #relative path to current directory
 ```
 
 ## HTTPS

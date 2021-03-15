@@ -61,6 +61,10 @@ The double pages feature of the webreader requires image sizes to be available. 
 
 ## Migration from H2 to SQLite
 
+:::tip NOTE
+The migration feature has been removed starting from `0.81.0`. Use a prior version if you still need to migrate from H2.
+:::
+
 The version `0.48.0` is changing the internal database from H2 to SQLite. The change is done transparently.
 
 A migration will be triggered automatically at startup:
