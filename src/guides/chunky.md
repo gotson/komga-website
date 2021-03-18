@@ -1,0 +1,37 @@
+# Configure Chunky Reader
+
+## Background
+
+Thanks to Komga's OPDS support, you can use the [Chunky Reader](https://apps.apple.com/app/id663567628) application for iPad to remotely download or stream your comics. Chunky Reader is at time of writing the only comic reader on iPad that supports the OPDS page streaming extension. This lets you stream individual pages without having to download the whole comic file onto your iPad.
+
+Please note that Chunky Reader's OPDS support requires the in app purchase which costs $3.99 or the equivalent of your local currency.
+
+## Adding your Komga server to chunky
+
+First you need to make sure that you can browse to your komga server's web UI from Safari. Open up Safari, navigate to your server's address and log in as normal. Next, open the address bar append `/opds/v1.2/catalog` to the end of the URL and press return.
+
+<img src ="/assets/media/guides/chunky-setup/safari-check1.png"/>
+
+You should then see a screen like the below image, if you do, you're ready to proceed with configuring Chunky Reader. You may wish to copy the URL to your iPad clipboard for pasting later.
+
+<img src ="/assets/media/guides/chunky-setup/safari-check2.png"/>
+
+Open Chunky Reader and click the cloud icon, circled in red in the screenshot below.
+
+<img src ="/assets/media/guides/chunky-setup/cloud-symbol.png"/>
+
+In the pop up window, click the plus button, circled in red in the screenshot below.
+
+<img src ="/assets/media/guides/chunky-setup/plus-button.png"/>
+
+Now choose the green plus button next to "Calibre/Ubooquity/OPDS".
+
+<img src ="/assets/media/guides/chunky-setup/opds-option.png"/>
+
+In this dialogue box, enter your server address (paste from the earlier step if you copied it to clipboard), username, and password. Then click Connect. Your Komga server should now appear in the cloud icon menu. You can stream comics by navigating to them and tapping the name, or download them via clicking the blue download button next to a comic. You can download all the comics in a given view by tapping the "All" button in the bottom right of the menu.
+
+<img src ="/assets/media/guides/chunky-setup/list-view.png"/>
+
+## Limitations
+
+Reading comics via Chunky Reader **does not** update the read progress. This means you will need to manually mark your comics as read via the web UI.
