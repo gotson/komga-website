@@ -60,3 +60,35 @@ Once you are done with your changes, click the tick in the top bar. Click the cr
 To delete a read list, look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style="vertical-align: middle" height="32" /> and click on _Delete_.
 
 This will not delete the items in the read list, nor your media files.
+
+## Import read lists from ComicRack <Badge text="0.82.0+" />
+
+You can import ComicRack reading lists in `.cbl` format from the _Server Settings > Data Import_ screen.
+
+Select multiple files to import them all at once.
+
+<img src="/assets/media/guides/readlists/import.png" style="vertical-align: middle;max-height:400px" />
+
+`.cbl` files contain the following information:
+- read list name
+- books contained in the list, in order
+- for each book:
+    - name of the series it is part of
+    - volume of the series
+    - year of the series
+    - number of that book in the series
+
+Komga will try to match each book in the list in the following way:
+- check if a read list with that name already exists
+- since Komga does not have a `volume` metadata field, it will apply the [same transformation](/guides/scan-analysis-refresh.md#series-metadata) as when importing data from `ComicInfo.xml`
+- it will try to find a unique series by name
+- if a unique series is found, it will try to find a unique book in that series by book number
+- if a unique book is found, it will be added to the read list
+
+The result will be shown after you click the _Import_ button.
+
+<img src="/assets/media/guides/readlists/import-results.png" style="vertical-align: middle;max-height:500px" />
+
+For each provided file you can see whether the import succeeded fully, partially, or failed. You can also expand the panel to get more details on why the import failed for each book.
+
+<img src="/assets/media/guides/readlists/import-results-details.png" style="vertical-align: middle;max-height:400px" />
