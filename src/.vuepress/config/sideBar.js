@@ -73,6 +73,7 @@ module.exports = {
                 '/guides/',
                 '/guides/libraries',
                 '/guides/scan-analysis-refresh',
+                '/guides/edit-metadata',
                 '/guides/local-artwork-assets',
                 '/guides/user-accounts',
                 '/guides/read-progress',
