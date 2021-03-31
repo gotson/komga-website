@@ -86,7 +86,7 @@ The metadata refresh is dependent of the options of the Library.
 
 This will import the following fields from the `ComicInfo.xml` file into Komga:
 - `Year`, `Month`, and `Day` to form the _Release Date_
-- `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, and `Editor` as _Authors_ with the according role
+- `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, and `Editor` as _Authors_ with the according role.  A value with multiple names separated by a `,` will be split in different authors.
 - `Title`, `Summary`, `Number` as their Komga equivalent
 
 #### Series metadata
@@ -122,7 +122,7 @@ This will import the following fields from the Epub metadata into Komga:
 - `dc:publisher` element as the _Publisher_
 - `dc:date` element as the _Release date_
 - The `page-progression-direction` property of the `spine` element as the _Reading direction_
-- `dc:creator` element as _Authors_. The role will be imported either from the `opf:role` property, or from a `meta` element containing `role` property and a `marc:relators` scheme.
+- `dc:creator` element as _Authors_. The role will be imported either from the `opf:role` property, or from a `meta` element containing `role` property and a `marc:relators` scheme. A value with multiple names separated by a `,` will be split in different authors.
 
 #### Series metadata
 
