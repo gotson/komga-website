@@ -22,7 +22,7 @@ docker create \
   --user 1000:1000 \
   -p 8080:8080 \
   --mount type=bind,source=/path/to/config,target=/config \
-  --mount type=bind,source=/path/to/books,target=/books \
+  --mount type=bind,source=/path/to/data,target=/data \
   --restart unless-stopped \
   gotson/komga
 ```
@@ -44,11 +44,11 @@ services:
     container_name: komga
     volumes:
       - type: bind
-        source: /path/to/data
+        source: /path/to/config
         target: /config
       - type: bind
-        source: /path/to/books
-        target: /books
+        source: /path/to/data
+        target: /data
       - type: bind
         source: /etc/timezone
         target: /etc/timezone
@@ -72,7 +72,7 @@ For example, `-p 8080:80` would expose port `80` from inside the container to be
 | `-p 8080`                                                 | The port for the Komga APIs and web interface                         |
 | `--user: 1000:1000`                                       | User:Group identifier - see below for explanation                     |
 | `--mount type=bind,source=/path/to/config,target=/config` | Database and Komga configurations                                     |
-| `--mount type=bind,source=/path/to/books,target=/books`   | Location of books library on disk                                     |
+| `--mount type=bind,source=/path/to/data,target=/data`   | Location of your data directory on disk. Choose a folder that contains both your books and your preferred import location for hardlinks to work. |
 | `-e ENV_VAR=value`            | Any [configuration](/configuration) environment variable |
 
 ## User / Group Identifiers
