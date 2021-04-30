@@ -37,7 +37,7 @@ Defaults to `/`.
 
 #### KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`
 
-a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) for libraries periodic scans.
+A [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) for libraries periodic scans.
 For example `0 0 * * * ?` will rescan every hour. `0 */15 * * * ?` will rescan every 15 minutes.
 
 To disable the periodic scan, set the value to `-`.
@@ -46,19 +46,19 @@ Defaults to `0 */15 * * * ?`.
 
 #### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>` <Badge text="0.28.0+" />
 
-a boolean indicating if Komga should scan your libraries at startup.
+A boolean indicating if Komga should scan your libraries at startup.
 
 Defaults to `false`.
 
 #### KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`
 
-a list of patterns to exclude directories from the scan. If the full path contains any of the patterns, the directory will be ignored. If using the environment variable you need to use a comma-separated list.
+A list of patterns to exclude directories from the scan. If the full path contains any of the patterns, the directory will be ignored. If using the environment variable you need to use a comma-separated list.
 
 Defaults to `#recycle,@eaDir`.
 
 #### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed since 0.56.0" type="warning" />
 
-if set to `true`, it will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
+If set to `true`, it will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
 Defaults to `false`.
 
@@ -84,31 +84,11 @@ Defaults to:
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
-#### KOMGA_DATABASE_BACKUP_ENABLED / komga.database-backup.enabled: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
+#### KOMGA_NATIVE_WEBP / komga.native-webp: `<true/false>` <Badge text="0.89.2+" />
 
-a boolean indicating if Komga should automatically backup your database.
+Enable or disable the native WebP library. You can use this flag if the native library is not compatible with your system and crashes Komga at startup.
 
-Defaults to `true`.
-
-#### KOMGA_DATABASE_BACKUP_STARTUP / komga.database-backup.startup: `<true/false>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
-
-a boolean indicating if Komga should perform a database backup on startup (if backup is enabled).
-
-Defaults to `true`.
-
-#### KOMGA_DATABASE_BACKUP_SCHEDULE / komga.database-backup.schedule: `<cron>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
-
-a [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) to execute database backups.
-
-Defaults to `0 0 */6 * * ?` (every 6 hours).
-
-#### KOMGA_DATABASE_BACKUP_PATH / komga.database-backup.path: `<path of the generated backup>` <Badge text="0.37.0+" /> <Badge text="removed since 0.48.0" type="warning" />
-
-The path of the generated database backup. The backup generated is a `ZIP` file.
-
-Defaults to:
-- `~/.komga/database-backup.zip` for _Jar_.
-- `/config/database-backup.zip` for _Docker_.
+Defaults to: `true`
 
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
 
@@ -133,6 +113,9 @@ _When overriding this configuration, you need to use `${user.home}` instead of `
 Here is a sample `application.yml` file in case you need to customize it. Keep only the lines you need.
 
 ```yaml
+# Only keep lines that are relevant to you!
+# This is a comment
+# Make sure indentation is correct (2 spaces), yaml is very sensitive!
 komga:
   libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
   libraries-scan-cron: "-" #disable periodic scan
@@ -145,11 +128,7 @@ komga:
     validity: 2592000 #validity of the cookie in seconds, here 1 month
   database:
     file: ${user.home}/.komga/database.sqlite
-  database-backup:
-    path: ~/.komga/database-backup.zip
-    schedule: "0 0 */6 * * ?" #every 6 hours
-    enabled: true
-    startup: true
+  native-webp: true
 server:
   port: 8080
   servlet.context-path: /komga
