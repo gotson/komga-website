@@ -73,7 +73,7 @@ For example, `-p 8080:80` would expose port `80` from inside the container to be
 | `--user: 1000:1000`                                       | User:Group identifier - see below for explanation                     |
 | `--mount type=bind,source=/path/to/config,target=/config` | Database and Komga configurations                                     |
 | `--mount type=bind,source=/path/to/data,target=/data`   | Location of your data directory on disk. Choose a folder that contains both your books and your preferred import location for hardlinks to work. |
-| `-e ENV_VAR=value`            | Any [configuration](/configuration) environment variable |
+| `-e ENV_VAR=value`            | Any [configuration](/installation/configuration.md) environment variable |
 
 ## User / Group Identifiers
 
