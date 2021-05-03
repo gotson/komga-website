@@ -126,4 +126,4 @@ Below are the instructions for updating containers:
 
 ### Automatic updates
 
-You can use tools like [Ouroboros](https://github.com/pyouroboros/ouroboros) or [Watchtower](https://github.com/containrrr/watchtower) to automatically update your containers.
+You can use [Watchtower](https://github.com/containrrr/watchtower) to automatically update your containers.
