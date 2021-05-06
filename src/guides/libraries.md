@@ -20,7 +20,7 @@ From the web interface:
 
 You can also specify extra options.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 700px" alt="Add Library Dialog Options"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 900px" alt="Add Library Dialog Options"/>
 
 ### Scanner options <Badge text="0.56.0+" />
 
@@ -33,6 +33,16 @@ This will force the last modified time of a directory as the maximum from its ow
 This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
 
 Enable Deep Scan if Komga often miss some books after a scan.
+
+### File management
+
+#### Automatically repair incorrect file extensions <Badge text="0.92.0+" />
+
+Files with an incorrect extension will be automatically renamed in the background. For exemple a `zip` file with a `.cbr` extension will be renamed to `.cbz`.
+
+#### Automatically convert to CBZ <Badge text="0.91.0+" />
+
+Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically in the background.
 
 ### Metadata options
 
