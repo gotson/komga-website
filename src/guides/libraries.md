@@ -42,7 +42,7 @@ Files with an incorrect extension will be automatically renamed in the backgroun
 
 #### Automatically convert to CBZ <Badge text="0.91.0+" />
 
-Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically in the background.
+Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically in the background. The `zip` files are created with the `DEFLATE` method without compression.
 
 ### Metadata options
 
