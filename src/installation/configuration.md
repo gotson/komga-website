@@ -90,6 +90,12 @@ Enable or disable the native WebP library. You can use this flag if the native l
 
 Defaults to: `true`
 
+#### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>` <Badge text="0.95.5+" />
+
+A list of origins to allow for CORS.
+
+Defaults to empty list.
+
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
 
 The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.
@@ -129,6 +135,9 @@ komga:
   database:
     file: ${user.home}/.komga/database.sqlite
   native-webp: true
+  cors.allowed-origins:
+    - http://localhost:8081
+    - http://localhost:8082
 server:
   port: 8080
   servlet.context-path: /komga
