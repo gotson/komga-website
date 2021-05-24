@@ -4,9 +4,15 @@ Komga can track which books you have read, and books that you are currently read
 
 ## Supported readers
 
-At the moment, only the webreader can track the progress as you read:
+### Webreader
+
+The webreader can track the progress as you read:
 - when you open a book that is in progress, the webreader will resume reading where you left it.
 - when you finish reading a book, the webreader will mark it as read.
+
+### Tachiyomi
+
+Tachiyomi can track progress of read books, using the Komga tracker. See [here](/guides/tachiyomi.md#track-read-progress) for more details.
 
 ## Unread and in progress indicators
 
