@@ -96,6 +96,18 @@ A list of origins to allow for CORS.
 
 Defaults to empty list.
 
+#### KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>` <Badge text="0.98.0+" />
+
+A boolean indicating if Komga should delete empty collections after a scan.
+
+Defaults to `true`.
+
+#### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>` <Badge text="0.98.0+" />
+
+A boolean indicating if Komga should delete empty read lists after a scan.
+
+Defaults to `true`.
+
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
 
 The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.
@@ -138,6 +150,8 @@ komga:
   cors.allowed-origins:
     - http://localhost:8081
     - http://localhost:8082
+  delete-empty-collections: true
+  delete-empty-read-lists: true
 server:
   port: 8080
   servlet.context-path: /komga
