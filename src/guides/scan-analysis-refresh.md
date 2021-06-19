@@ -140,4 +140,4 @@ This will enable import for local artwork, check the [Local Artwork Assets](/gui
 
 #### ISBN barcode
 
-Komga will inspect the fisrt and last 3 pages of each book for barcodes. If a barcode is present and contains an ISBN code, it will be imported.
+Komga will inspect the first and last 3 pages of each book for barcodes. If a barcode is present and contains an ISBN code, it will be imported.
