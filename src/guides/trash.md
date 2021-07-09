@@ -1,0 +1,37 @@
+# Emptying Library Trash <Badge text="0.107.0+" />
+
+Like modern operating systems, Komga uses a concept of placing items in the “trash” before they’re permanently removed. If you move or delete the file for a library item or if the file somehow becomes unavailable, then the library item will be placed into the “trash”. This helps prevent against items being accidentally or unintentionally removed from your Library. It can be particularly helpful in situations where a drive or network share where content is stored isn’t available when a Library Scan occurs. By default, the item will remain in the trash until you perform an “Empty Trash” on your Server.
+
+If an item is currently in the trash, it can be restored back to the Library by making the file for the library item available again at the expected location. Conversely, if you perform an “Empty Trash” on your Server, then the item is discarded from the trash and can no longer be automatically restored.
+
+Items currently in the trash will be displayed with an "Unavailable" indicator.
+
+<img src="/assets/media/guides/trash/unavailable-card.png" style="vertical-align: middle;max-height: 300px" alt="Unavailable indicator on card"/>
+
+<br/>
+<br/>
+
+<img src="/assets/media/guides/trash/unavailable-details.png" style="vertical-align: middle;max-height: 300px" alt="Unavailable indicator on details view"/>
+
+## Automatically Empty Trash
+
+By default, items found removed from a Library are placed in the trash until the trash is emptied. You can choose to have your Server automatically empty the trash after every scan occurs if you wish. To do so:
+
+1. Open Komga web interface
+1. Edit the library for which you want to change the setting
+1. Enable the _Empty trash automatically after every scan_ option
+1. Save Changes
+
+<img src="/assets/media/guides/trash/empty-trash-after-scan.png" style="vertical-align: middle;max-height: 300px" alt="Empty trash automatically after every scan option"/>
+
+:::danger
+Enabling this option means that content will be removed from your Library immediately with no chance to simply restore it if there was a mistake.
+:::
+
+## Manually Empty Trash
+
+If you have items in the trash that you’re ready to remove, you can empty the trash.  When you choose to empty the trash, you’ll need to confirm your choice.
+
+Look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style="vertical-align: middle" height="32" /> and click on _Empty Trash_.
+
+<img src="/assets/media/guides/trash/empty-trash-confirmation-dialog.png" style="vertical-align: middle;max-height: 250px" alt="Empty trash confirmation dialog"/>

@@ -6,10 +6,10 @@ actionText: Get Started →
 actionLink: /guides/
 features:
 - title: Organize
-  details: Organize your CBZ, CBR, PDF and EPUB files in different libraries and collections.
+  details: Organize your CBZ, CBR, PDF and EPUB files in different libraries and collections
 - title: Read
-  details: Use the integrated Webreader, the Tachiyomi extension, or any OPDS reader.
+  details: Use the integrated Webreader, the Tachiyomi extension, or any OPDS reader
 - title: Manage
-  details: Edit metadata for your series and books.
+  details: Edit metadata for your series and books
 footer: MIT Licensed
 ---

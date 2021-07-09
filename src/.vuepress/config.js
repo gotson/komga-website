@@ -4,7 +4,7 @@ const sideBarConfig = require('./config/sideBar')
 
 module.exports = {
     title: 'Komga',
-    description: 'Free and open source comics/mangas media server.',
+    description: 'Free and open source comics/mangas media server',
     dest: './public',
     port: 8082,
     themeConfig: {

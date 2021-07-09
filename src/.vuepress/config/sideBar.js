@@ -72,6 +72,7 @@ module.exports = {
             children: [
                 '/guides/',
                 '/guides/libraries',
+                '/guides/trash',
                 '/guides/scan-analysis-refresh',
                 '/guides/edit-metadata',
                 '/guides/local-artwork-assets',

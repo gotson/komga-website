@@ -8,8 +8,6 @@ For example if you have a library with a root path of `/books/mangas`, you can't
 
 ## Creating libraries
 
-[Click for video guide](/assets/media/guides/libraries/library-add.webm)
-
 From the web interface:
 - click on the _+_ icon next to _Libraries_ in the sidebar <img src="/assets/media/guides/libraries/library-add.png" style="vertical-align: middle" />
 - choose a _Name_ for your library
@@ -20,15 +18,22 @@ From the web interface:
 
 You can also specify extra options.
 
-<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 900px" alt="Add Library Dialog Options"/>
+<img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 350px" alt="Add Library Dialog Options"/>
+<br/>
+<br/>
+<img src="/assets/media/guides/libraries/library-add-metadata.png" style="vertical-align: middle; max-height: 500px" alt="Add Library Dialog Metadata"/>
 
-### Scanner options <Badge text="0.56.0+" />
+### Scanner options
 
-#### Force directory modified time
+#### Empty trash automatically after every scan <Badge text="0.107.0+" />
+
+See [Emptying library trash](/guides/trash.md#automatically-empty-trash)
+
+#### Force directory modified time <Badge text="0.56.0+" />
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
-#### Deep scan
+#### Deep scan <Badge text="0.56.0+" />
 
 This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
 
