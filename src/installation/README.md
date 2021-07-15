@@ -12,3 +12,4 @@ You can install Komga using various methods.
 - [AUR - Arch User Repository](thirdparty.md#aur-arch-user-repository)
 - [Qnap](thirdparty.md#qnap)
 - [FreeNAS](thirdparty.md#freenas)
+- [YunoHost](thirdparty.md#yunohost)
