@@ -23,3 +23,7 @@ Komga is available as a [QPKG](https://www.qnapclub.eu/en/qpkg/853).
 ## FreeNAS
 
 There is a [tutorial](https://blog.tommyku.com/blog/deploying-komga-on-freenas-jail/) to install Komga on FreeNAS jail.
+
+## YunoHost
+
+[![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
