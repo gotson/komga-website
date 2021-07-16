@@ -102,6 +102,12 @@ A boolean indicating if Komga should delete empty collections after a scan.
 
 Defaults to `true`.
 
+#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="0.107.0+" />
+
+A boolean indicating if Komga should compute a filehash for your files. This is required for the trash bin functionality to work, but can consume lots of resources on large libraries or slow hardware.
+
+Defaults to `true`.
+
 #### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>` <Badge text="0.98.0+" />
 
 A boolean indicating if Komga should delete empty read lists after a scan.
@@ -132,8 +138,8 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 
 ```yaml
 # Only keep lines that are relevant to you!
-# This is a comment
-# Make sure indentation is correct (2 spaces), yaml is very sensitive!
+# Lines starting with # are comments
+# Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
   libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
   libraries-scan-cron: "-" #disable periodic scan
@@ -152,6 +158,7 @@ komga:
     - http://localhost:8082
   delete-empty-collections: true
   delete-empty-read-lists: true
+  file-hashing: true
 server:
   port: 8080
   servlet.context-path: /komga

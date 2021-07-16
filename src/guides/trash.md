@@ -13,6 +13,12 @@ Items currently in the trash will be displayed with an "Unavailable" indicator.
 
 <img src="/assets/media/guides/trash/unavailable-details.png" style="vertical-align: middle;max-height: 300px" alt="Unavailable indicator on details view"/>
 
+## File Hashes
+
+With the trash bin, you can move or rename files and folders without losing your metadata, read progress, or read lists and collections.
+
+To track your files when they are renamed or restored, Komga generates a file hash for each file. If Komga doesn't have a file hash for a file, it won't be able to restore data after a file move or rename. Hashing files requires some computing power, so you may want to disable this entirely on low-end devices (see [Configuration](/installation/configuration.md)).
+
 ## Automatically Empty Trash
 
 By default, items found removed from a Library are placed in the trash until the trash is emptied. You can choose to have your Server automatically empty the trash after every scan occurs if you wish. To do so:
@@ -26,6 +32,8 @@ By default, items found removed from a Library are placed in the trash until the
 
 :::danger
 Enabling this option means that content will be removed from your Library immediately with no chance to simply restore it if there was a mistake.
+
+It will also prevent folder and file moves between libraries.
 :::
 
 ## Manually Empty Trash
