@@ -110,7 +110,7 @@ If the `SeriesGroup` tag is set to a different value in each book of the series,
 
 The `AlternateSeries` or `StoryArc` tags will be used to create a read list with that name, or add the book to an existing read list with that name.
 
-If the `AlternateNumber` or `StoryArcNumber` tags are set, it will be used to position the book in the read list.
+If the `AlternateNumber` tag is set, it will be used to position the book in the read list.
 
 ### Import metadata from EPUB files
 
