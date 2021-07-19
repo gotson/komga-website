@@ -21,7 +21,7 @@ You can also specify extra options.
 <img src="/assets/media/guides/libraries/library-add-options.png" style="vertical-align: middle; max-height: 350px" alt="Add Library Dialog Options"/>
 <br/>
 <br/>
-<img src="/assets/media/guides/libraries/library-add-metadata.png" style="vertical-align: middle; max-height: 500px" alt="Add Library Dialog Metadata"/>
+<img src="/assets/media/guides/libraries/library-add-metadata.png" style="vertical-align: middle; max-height: 600px" alt="Add Library Dialog Metadata"/>
 
 ### Scanner options
 
