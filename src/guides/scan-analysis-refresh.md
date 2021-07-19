@@ -112,6 +112,14 @@ The `AlternateSeries` or `StoryArc` tags will be used to create a read list with
 
 If the `AlternateNumber` tag is set, it will be used to position the book in the read list.
 
+##### StoryArcNumber <Badge text="0.108.0+" />
+
+If the `StoryArcNumber` tag is set, it will be used in conjunction with `StoryArc` to position the book in the read list.
+
+Both `StoryArc` and `StoryArcNumber` tags can contain multiple values, separated by `,`. Komga will do its best to match each pair:
+- If both tags are set, but do not contain the same number of values, the extra values will not be used
+- If there are invalid values, like blank strings or invalid numbers, the whole pair will be ignored
+
 ### Import metadata from EPUB files
 
 #### Book metadata
