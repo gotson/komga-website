@@ -84,6 +84,7 @@ module.exports = {
                 '/guides/tachiyomi',
                 '/guides/opds',
                 '/guides/chunky',
+                '/guides/gdrive',
                 '/guides/rest',
                 '/guides/theme',
             ],
