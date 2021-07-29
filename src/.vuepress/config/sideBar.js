@@ -80,6 +80,7 @@ module.exports = {
                 '/guides/read-progress',
                 '/guides/collections',
                 '/guides/readlists',
+                '/guides/search',
                 '/guides/webreader',
                 '/guides/tachiyomi',
                 '/guides/opds',
