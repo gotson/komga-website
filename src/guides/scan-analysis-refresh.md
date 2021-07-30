@@ -97,8 +97,9 @@ This will import the following fields from the `ComicInfo.xml` of the Series' bo
 - The various `AgeRating` values will be converted to a number in Komga. The highest value from all books will be used.
 - The most frequent `Publisher` value will be used as Komga's equivalent.
 - A `Manga` field with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_. The most frequent value from all books will be used.
-- the `Genre` field will be split by `,`. All genres from all books will be added to the Series.
-- the `LanguageISO` field will be used as the Series' language. The most frequent value from all books will be used.
+- The `Genre` field will be split by `,`. All genres from all books will be added to the Series.
+- The `LanguageISO` field will be used as the Series' language. The most frequent value from all books will be used.
+- The highest value from `Count` will be used as the total count of books.
 
 #### Collections
 
@@ -142,10 +143,11 @@ The `belongs-to-collection` meta property will be used to overwirte the title of
 
 [Mylar](https://github.com/mylar3/mylar3) can generate a `series.json` file inside your Series folders. This option will import the following fields into Komga:
 - The `name` field will be used for the Series title. If the `volume` field is set and is different from `1`, then the `year` field will be appended to the title, in the form `<name> (<year>)`.
-- `status` will be used to set the Series status
-- `description_formatted` or `description_text` will be used for the Series summary
-- `publisher` will be used for the Series publisher
-- `age_rating` will be used for the Series age rating
+- `status` will be used to set the Series status.
+- `description_formatted` or `description_text` will be used for the Series summary.
+- `publisher` will be used for the Series publisher.
+- `age_rating` will be used for the Series age rating.
+- `total_issues` will be used for the total count of books.
 
 ### Import local media assets <Badge text="0.56.0+" />
 
