@@ -31,10 +31,10 @@ You can browse series, use the filter menu, and search for series.
 
 ## Track read progress
 
-Tachiyomi Preview starting from `R3399` can keep your read progress in sync with your Komga server. Check the official Tachiyomi website for [instructions](https://tachiyomi.org/help/guides/tracking/#what-is-tracking).
+Tachiyomi starting from `0.12.1` can keep your read progress in sync with your Komga server. Check the official Tachiyomi website for [instructions](https://tachiyomi.org/help/guides/tracking/#what-is-tracking).
 
 Requirements:
-- Tachiyomi Preview `R3399+`
+- Tachiyomi `0.12.1+`
 - Komga `0. 95.2+`
 - Tachiyomi Komga extension `1.2.24+`
 
