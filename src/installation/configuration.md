@@ -141,7 +141,7 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
+  libraries-scan-cron: "0 */15 * * * ?" #periodic scan every 15 minutes
   libraries-scan-cron: "-" #disable periodic scan
   libraries-scan-startup: false #scan libraries at startup
   libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
