@@ -1,5 +1,22 @@
 # Frequently Asked Questions
 
+## Where can I find the log files?
+
+By default (if you haven't changed the configuration), log files are located:
+- on Windows: `%USERPROFILE%/.komga/komga.log`
+- on Unix: `~/.komga/komga.log`
+- on Docker: in the directory you mounted as `/config`, in a subdirectory called `logs`
+
+## Komga seems slow, how can I check what's going on?
+
+If any activity is going on, an animated yellow bar will appear below the top-left logo. Hover your cursor over the bar to see the details of all pending tasks.
+
+<video controls width="250">
+    <source src="/assets/media/faq/server-activity.webm"
+            type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
 ## After installing the Tachiyomi extension `1.2.24` my series are not connected to Komga anymore
 
 Use the __Migrate source__ function of Tachiyomi to migrate the Series to the same Komga source. This will fix your Series.
@@ -24,6 +41,12 @@ Add the following key in your `application.yml`:
 logging.level.org.gotson.komga: DEBUG
 ```
 
+or
+
+```yaml
+logging.level.org.gotson.komga: TRACE
+```
+
 ### Using the `jar` via the command line
 
 Start the `jar` with the following option:
@@ -32,12 +55,24 @@ Start the `jar` with the following option:
 java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=DEBUG
 ```
 
+or
+
+```shell script
+java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=TRACE
+```
+
 ### Using Docker
 
 Add the following environment variable:
 
 ```shell script
 LOGGING_LEVEL_ORG_GOTSON_KOMGA=DEBUG
+```
+
+or
+
+```shell script
+LOGGING_LEVEL_ORG_GOTSON_KOMGA=TRACE
 ```
 
 ## Webreader double pages are not showing as single page
