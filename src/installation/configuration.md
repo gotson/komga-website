@@ -104,7 +104,7 @@ Defaults to `true`.
 
 #### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="0.107.0+" />
 
-A boolean indicating if Komga should compute a filehash for your files. This is required for the trash bin functionality to work, but can consume lots of resources on large libraries or slow hardware.
+A boolean indicating if Komga should compute a filehash for your files. This is required for the restore from trash bin functionality to work, but can consume lots of resources on large libraries or slow hardware.
 
 Defaults to `true`.
 
