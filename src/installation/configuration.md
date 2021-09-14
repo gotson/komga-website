@@ -64,7 +64,7 @@ Defaults to `false`.
 
 #### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
 
-If set, the remember-me auto-login feature will be activated, and will generate a cookie with encoded login information to perform auto-login.
+If set, the remember-me auto-login feature will be activated, and will generate a cookie with encoded login information to perform auto-login. Set `<key>` to any random string.
 
 Not set by default, you need to set it to enable this feature.
 
