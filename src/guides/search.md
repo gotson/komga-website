@@ -5,9 +5,8 @@ Komga leverages [Full Text Search](https://en.wikipedia.org/wiki/Full-text_searc
 - FTS will order results by relevance
 - FTS is case-insensitive
 - When searching with CJK characters (Chinese, Japanese, Korean), a minimum of 2 characters is required.
-- FTS matches on complete words: `bat` will not match `Batman`
 - The order of words is not important: `batman robin` will match `Robin & Batman`
-- You can search by prefix by adding the `*` character: `bat*` will match `Batman`
+- To search by words in order, enclose your search in `"`: `"white knight"` will not match `knight white` nor `white and knight`
 - By default, the search will match the item title. For Books, the ISBN will also be matched by default.
 - You can use the `AND`, `OR` and `NOT` operators (UPPERCASE) to build complex queries:
   - `batman NOT publisher:dc` will match all `Batman` series not published by _DC Comics_
