@@ -83,6 +83,7 @@ module.exports = {
                 '/guides/search',
                 '/guides/webreader',
                 '/guides/tachiyomi',
+                '/guides/paperback',
                 '/guides/opds',
                 '/guides/chunky',
                 '/guides/gdrive',
