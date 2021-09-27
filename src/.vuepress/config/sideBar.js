@@ -41,6 +41,7 @@ module.exports = {
                 '/installation/thirdparty',
                 '/installation/webui',
                 '/installation/configuration',
+                '/installation/oauth2',
             ],
         },
         {
