@@ -210,6 +210,6 @@ With a base URL configured in Komga:
 
 ```
 yourdomain.com {
-  reverse_proxy /komga http://your-komga-server:8080
+  reverse_proxy /komga/* http://your-komga-server:8080
 }
 ```
