@@ -6,6 +6,8 @@ In order to setup social login, you will need to create an application in the de
 
 ## Guide for common providers
 
+You can easily configure Google, Github, and Facebook without any complex configuration.
+
 ### Google
 
 Follow the instructions on the [OpenID Connect page](https://developers.google.com/identity/protocols/OpenIDConnect), starting in the section, "Setting up OAuth 2.0".
@@ -26,6 +28,26 @@ spring:
           google:
             client-id: 1044613984fsf335-mnsdvkjy3yf98294unfmnvd8.apps.googleusercontent.com
             client-secret: jwhfkjhwefkn44t8vcxml3m
+```
+
+## Facebook
+
+Follow the [instructions](https://developers.facebook.com/docs/development/register) to create an App, and add the Facebook Login product.
+
+In the `Valid OAuth Redirect URIs`, use `{baseUrl}/login/oauth2/code/facebook`, where `baseUrl` is your server's address.
+
+Modify your `application.yml` as below and replace the values in the `client-id` and `client-secret` property with the App ID and App Secret.
+
+Sample configuration:
+```yaml
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: 227581266063919
+            client-secret: 47f03915334f49cdueru810069321964929
 ```
 
 ### Github
@@ -51,13 +73,15 @@ spring:
             scope: user:email
 ```
 
-### Keycloak
+## Advanced configuration
 
-If you run your own Keycloak install, you probably know how to setup OpenID Connect and obtain a Client ID and Client Secret.
+You can configure any OAuth2 provider, but you will need to provide a more extensive configuration. The below example shows how to configure a Keycloak instance, but any provider could be configured in a similar fashion.
 
 Modify your `application.yml` as below and replace the values in the `client-id` and `client-secret` property with your credentials You will also need to update the various URIs in the `provider` section.
 
-You need to make sure that Keyloak users have an email setup, and that it has been marked as verified.
+You need to make sure that the users have an email setup, and that it has been marked as verified.
+
+When configuring the client in your provider, you may need to input a redirect URI. Use the following: `{baseUrl}/login/oauth2/code/{registrationId}`, where `baseUrl` is your server's address, and `registrationId` is the name of the configuration key (`keycloak` in the below example).
 
 Sample configuration:
 ```yaml
