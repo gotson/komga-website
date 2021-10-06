@@ -70,11 +70,17 @@ If set, the remember-me auto-login feature will be activated, and will generate 
 
 Not set by default, you need to set it to enable this feature.
 
-#### KOMGA_REMEMBERME_VALIDITY / komga.remember-me.validity: `<validity>`
+#### KOMGA_REMEMBERME_VALIDITY / komga.remember-me.validity: `<duration>`
 
-The validity, in seconds, of the generated remember-me cookie.
+The validity of the generated remember-me cookie. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
 
 Defaults to 2 weeks.
+
+#### KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>` <Badge text="0.132.0+" />
+
+The duration after which an inactive session will expire. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
+
+Defaults to 7 days.
 
 #### KOMGA_DATABASE_FILE / komga.database.file: `<file path>` <Badge text="0.48.0+" />
 
@@ -151,7 +157,8 @@ komga:
     - "@eaDir"   #synology NAS index/metadata folders
   remember-me:
     key: changeMe! #required to activate the remember-me auto-login via cookies
-    validity: 2592000 #validity of the cookie in seconds, here 1 month
+    validity: 30d #validity of the cookie in seconds, here 30 days
+  session-timeout: 7d #session timeout, here 7 days
   database:
     file: ${user.home}/.komga/database.sqlite
   native-webp: true
