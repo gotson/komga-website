@@ -122,6 +122,18 @@ A boolean indicating if Komga should delete empty read lists after a scan.
 
 Defaults to `true`.
 
+#### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>` <Badge text="0.133.0+" />
+
+A boolean indicating whether Komga should create new users when a login via OAuth2/OIDC succeeds, but there is no existing user with that email.
+
+Such users will be created with a random password, which the user can subsequently change from the _Account Settings_ page later on, for example to be able to connect using OPDS or Tachiyomi.
+
+:::warning
+It is recommended to enable this only with OAuth2 providers you control
+:::
+
+Defaults to `false`.
+
 #### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
 
 The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.

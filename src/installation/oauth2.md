@@ -4,6 +4,8 @@ Komga supports social login via **OAuth2** and **OpenID Connect**. In order for 
 
 In order to setup social login, you will need to create an application in the developer portal of the social login provider of your choice (Google, Facebook, Github…), and retrieve a _Client ID_ and _Client Secret_. You will also need to configure a _Redirect URI_ in the application you created.
 
+You can enable automatic account creation upon successful social login, see [here](/installation/configuration.md#komga-oauth2-account-creation-komga-oauth2-account-creation-true-false) for more details.
+
 ## Guide for common providers
 
 You can easily configure Google, Github, and Facebook without any complex configuration.
