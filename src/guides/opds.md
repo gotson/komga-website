@@ -19,7 +19,7 @@ Here is a list of reader applications that have been tested:
 The OPDS feed also supports:
 
 - OpenSearch functionality, to search by `Series`
-- [OPDS Page Streaming Extension 1.0](https://vaemendis.net/opds-pse/)
+- [OPDS Page Streaming Extension 1.0](https://gotson.github.io/odps-pse/)
 
 ## Mark read progress while streaming pages <Badge text="0.134.0+" />
 
