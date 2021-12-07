@@ -19,4 +19,4 @@ Here is a list of reader applications that have been tested:
 The OPDS feed also supports:
 
 - OpenSearch functionality, to search by `Series`
-- [OPDS Page Streaming Extension 1.0](https://gotson.github.io/odps-pse/)
+- [OPDS Page Streaming Extension 1.0](https://anansi-project.github.io/odps-pse/)
