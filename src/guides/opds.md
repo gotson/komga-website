@@ -20,9 +20,3 @@ The OPDS feed also supports:
 
 - OpenSearch functionality, to search by `Series`
 - [OPDS Page Streaming Extension 1.0](https://gotson.github.io/odps-pse/)
-
-## Mark read progress while streaming pages <Badge text="0.134.0+" />
-
-You can configure clients that support the Page Streaming Extension to mark progress while reading.
-
-To do so, change the URL to `http(s)://your-server(:8080)(/baseUrl)/opds/v1.2/catalog?markread=true`.
