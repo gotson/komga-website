@@ -44,7 +44,7 @@ For example `0 0 * * * ?` will rescan every hour. `0 */15 * * * ?` will rescan e
 
 To disable the periodic scan, set the value to `-`.
 
-Defaults to `0 */15 * * * ?`.
+Defaults to `0 0 */8 * * ?` (every 8 hours).
 
 #### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>` <Badge text="0.28.0+" />
 
@@ -161,7 +161,7 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  libraries-scan-cron: "0 */15 * * * ?" #periodic scan every 15 minutes
+  libraries-scan-cron: "0 0 */8 * * ?" #periodic scan every 8 hours
   libraries-scan-cron: "-" #disable periodic scan
   libraries-scan-startup: false #scan libraries at startup
   libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
