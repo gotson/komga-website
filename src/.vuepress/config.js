@@ -16,7 +16,8 @@ module.exports = {
         editLinkText: 'Help us improve this page',
         lastUpdated: 'Last Updated',
         algolia: {
-            apiKey: '22e14c07fbfff1a7938d8f9fbd548bdd',
+            appId: 'YU8KIUZCE7',
+            apiKey: 'e73963bf9ea84cd3adf91eb33a62734f',
             indexName: 'komga',
         },
         nav: navBarConfig,
