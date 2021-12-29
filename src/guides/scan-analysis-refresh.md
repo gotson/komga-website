@@ -88,6 +88,7 @@ This will import the following fields from the `ComicInfo.xml` file into Komga:
 - `Year`, `Month`, and `Day` to form the _Release Date_
 - `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, and `Editor` as _Authors_ with the according role.  A value with multiple names separated by a `,` will be split in different authors.
 - `Title`, `Summary`, `Number` as their Komga equivalent
+- valid `Web` links as a book link
 
 #### Series metadata
 
