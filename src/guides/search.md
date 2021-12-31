@@ -38,6 +38,7 @@ Some extra fields are available for search using the `field:search` syntax, see 
 - `total_book_count`. Example: `total_book_count:100`
 - `release_date` will search by year released. Example: `release_date:1999`
 - `deleted` will search soft-deleted series. Example: `deleted:true` or `deleted:false`
+- `complete` will search complete series, ie series where the _total book counts_ (from metadata) is equals to the actual book counts (number of files). Example: `complete:true` or `complete:false`
 
 ### Book additional fields
 - `tag` will search any tag. Example: `tag:"double pages"`
