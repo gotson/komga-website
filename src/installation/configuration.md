@@ -189,6 +189,8 @@ Here are some sample configuration on how to configure reverse proxy for Komga.
 
 ### Caddy (v1)
 
+Without a base URL configured in Komga, using a subdomain:
+
 ```
 komga.yourdomain.com {
   proxy / http://your-komga-server:8080 {
@@ -208,6 +210,8 @@ yourdomain.com {
 ```
 
 ### Caddy (v2)
+
+Without a base URL configured in Komga, using a subdomain:
 
 ```
 komga.yourdomain.com {
