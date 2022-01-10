@@ -60,9 +60,7 @@ Defaults to `#recycle,@eaDir`.
 
 #### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed since 0.56.0" type="warning" />
 
-If set to `true`, it will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
-
-Defaults to `false`.
+This has been moved to [Library options](/guides/libraries.md#force-directory-modified-time).
 
 #### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
 
@@ -133,14 +131,6 @@ It is recommended to enable this only with OAuth2 providers you control
 :::
 
 Defaults to `false`.
-
-#### SPRING_DATASOURCE_URL / spring.datasource.url: `jdbc:h2:<path of the database file>` <Badge text="removed since 0.81.0" type="warning" />
-
-The path of the H2 database file on disk. From `0.48.0` the H2 database is only used to transfer existing data to SQLite.
-
-Defaults to:
-- `jdbc:h2:~/.komga/database.h2` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
-- `jdbc:h2:/config/database.h2` for _Docker_.
 
 #### LOGGING_FILE_NAME / logging.file.name: `<logfile name>`
 
