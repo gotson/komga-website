@@ -108,11 +108,9 @@ A boolean indicating if Komga should delete empty collections after a scan.
 
 Defaults to `true`.
 
-#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="0.107.0+" />
+#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="removed since 0.143.0" type="warning" />
 
-A boolean indicating if Komga should compute a filehash for your files. This is required for the restore from trash bin functionality to work, but can consume lots of resources on large libraries or slow hardware.
-
-Defaults to `true`.
+This has been moved to [Library options](/guides/libraries.md#compute-hash-for-files).
 
 #### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>` <Badge text="0.98.0+" />
 
@@ -169,7 +167,6 @@ komga:
     - http://localhost:8082
   delete-empty-collections: true
   delete-empty-read-lists: true
-  file-hashing: true
 server:
   port: 8080
   servlet.context-path: /komga
