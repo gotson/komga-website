@@ -1,4 +1,4 @@
-# Read lists <Badge text="0.57.0+" />
+# Read lists
 
 Read lists let you gather related books together. Think of it as playlists, but for books. For example, you might add all the books where Wolverine appears together in a "Wolverine" read list.
 
@@ -61,7 +61,7 @@ To delete a read list, look for the action menu icon <img src="/assets/media/gui
 
 This will not delete the items in the read list, nor your media files.
 
-## Import read lists from ComicRack <Badge text="0.82.0+" />
+## Import read lists from ComicRack
 
 You can import ComicRack reading lists in `.cbl` format from the _Server Settings > Data Import_ screen.
 

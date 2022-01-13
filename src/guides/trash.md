@@ -1,4 +1,4 @@
-# Emptying Library Trash <Badge text="0.107.0+" />
+# Emptying Library Trash
 
 Like modern operating systems, Komga uses a concept of placing items in the “trash” before they’re permanently removed. If you move or delete the file for a library item or if the file somehow becomes unavailable, then the library item will be placed into the “trash”. This helps prevent against items being accidentally or unintentionally removed from your Library. It can be particularly helpful in situations where a drive or network share where content is stored isn’t available when a Library Scan occurs. By default, the item will remain in the trash until you perform an “Empty Trash” on your Server.
 

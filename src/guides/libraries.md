@@ -25,15 +25,15 @@ You can also specify extra options.
 
 ### Scanner options
 
-#### Empty trash automatically after every scan <Badge text="0.107.0+" />
+#### Empty trash automatically after every scan
 
 See [Emptying library trash](/guides/trash.md#automatically-empty-trash)
 
-#### Force directory modified time <Badge text="0.56.0+" />
+#### Force directory modified time
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
-#### Deep scan <Badge text="0.56.0+" />
+#### Deep scan
 
 This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
 
@@ -41,19 +41,19 @@ Enable Deep Scan if Komga often miss some books after a scan.
 
 ### Analysis
 
-#### Compute hash for files <Badge text="0.143.0+" />
+#### Compute hash for files
 
 Komga will compute a filehash for your files. This is required for the "restore from trash bin" functionality to work, and to detect duplicate files.
 
 This can consume lots of resources on large libraries or slow hardware.
 
-#### Compute hash for pages <Badge text="0.143.0+" />
+#### Compute hash for pages
 
 Komga will compute a filehash for the pages in each book (`cbz`/`cbr` only). Those will be used to detect duplicate pages (in a future release).
 
 This can consume lots of resources on large libraries or slow hardware.
 
-#### Analyze page dimensions <Badge text="0.143.0+" />
+#### Analyze page dimensions
 
 Komga will retrieve each page's dimensions (width and height). This is useful for:
 - properly displaying landscape pages in the web reader, when using double pages
@@ -63,15 +63,15 @@ This can consume lots of resources on large libraries or slow hardware.
 
 ### File management
 
-#### Automatically repair incorrect file extensions <Badge text="0.92.0+" />
+#### Automatically repair incorrect file extensions
 
 Files with an incorrect extension will be automatically renamed in the background. For exemple a `zip` file with a `.cbr` extension will be renamed to `.cbz`.
 
-#### Automatically convert to CBZ <Badge text="0.91.0+" />
+#### Automatically convert to CBZ
 
 Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically in the background. The `zip` files are created with the `DEFLATE` method without compression.
 
-### Series cover <Badge text="0.110.0+" />
+### Series cover
 
 Choose which book cover is used for the series.
 

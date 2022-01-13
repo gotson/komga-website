@@ -1,4 +1,4 @@
-# Collections <Badge text="0.40.0+" />
+# Collections
 
 Collections let you gather related series together. For example, you might add all the Batman series together in a "Batman" collection.
 

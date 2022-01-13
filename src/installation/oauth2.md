@@ -1,4 +1,4 @@
-# Social login <Badge text="0.130.0+" />
+# Social login
 
 Komga supports social login via **OAuth2** and **OpenID Connect**. In order for this to work, Komga needs to retrieve the user's email address via your provider, and will match it with the email of the Komga users.
 

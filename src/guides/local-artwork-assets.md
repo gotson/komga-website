@@ -12,7 +12,7 @@ There are a number of supported custom media items that need to be named correct
 
 Posters are typically displayed for books, series and collections on dashboards, library views, and when looking at details for the element. Poster art is typically of 21:29.7 aspect ratio. Custom Poster artwork will be detected and used if named and stored as follows.
 
-#### Books <Badge text="0.53.0+" />
+#### Books
 
 Custom poster must have the same name as the book file:
 - `Exact book name.ext`
@@ -37,7 +37,7 @@ Where `-X` is a number.
   Book 12-2.png
 ```
 
-#### Series <Badge text="0.54.0+" />
+#### Series
 
 Custom poster must be located in the Series directory and named as follows:
 - `cover.ext`

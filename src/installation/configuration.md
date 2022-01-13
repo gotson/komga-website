@@ -46,7 +46,7 @@ To disable the periodic scan, set the value to `-`.
 
 Defaults to `0 0 */8 * * ?` (every 8 hours).
 
-#### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>` <Badge text="0.28.0+" />
+#### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>`
 
 A boolean indicating if Komga should scan your libraries at startup.
 
@@ -74,13 +74,13 @@ The validity of the generated remember-me cookie. You can specify the timeunit, 
 
 Defaults to 2 weeks.
 
-#### KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>` <Badge text="0.132.0+" />
+#### KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>`
 
 The duration after which an inactive session will expire. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
 
 Defaults to 7 days.
 
-#### KOMGA_DATABASE_FILE / komga.database.file: `<file path>` <Badge text="0.48.0+" />
+#### KOMGA_DATABASE_FILE / komga.database.file: `<file path>`
 
 File path for the SQLite database.
 
@@ -96,13 +96,13 @@ Enable or disable the native WebP library. You can use this flag if the native l
 
 Defaults to: `true`
 
-#### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>` <Badge text="0.95.5+" />
+#### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>`
 
 A list of origins to allow for CORS.
 
 Defaults to empty list.
 
-#### KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>` <Badge text="0.98.0+" />
+#### KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>`
 
 A boolean indicating if Komga should delete empty collections after a scan.
 

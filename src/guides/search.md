@@ -1,4 +1,4 @@
-# Full Text Search <Badge text="0.116.0+" />
+# Full Text Search
 
 Komga leverages [Full Text Search](https://en.wikipedia.org/wiki/Full-text_search) (FTS hereafter) to provide relevant results from your libraries.
 
