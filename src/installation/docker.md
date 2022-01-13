@@ -1,4 +1,4 @@
-# Install with Docker
+# Run with Docker
 
 ## Version tags
 
