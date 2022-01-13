@@ -1,7 +1,7 @@
 # Configuration options
 
 :::tip
-Since `v0.20.0` Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.
+Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.
 
 The `application.yml` file does not exist by default, you need to create one if you want to customize the configuration.
 
@@ -9,9 +9,10 @@ The `application.yml` file does not exist by default, you need to create one if 
 
 Komga relies heavily on [Spring Boot's configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html), leveraging `profiles` and configuration `properties`.
 
-The easiest way to configure is either via environment variables (a good fit for `docker` and `docker-compose`) or by using an `application.yml` file located in the current directory when you start Komga. The easiest way is to place it in the same directory as the `jar` file, and to `cd` to this directory before starting Komga.
+The easiest way to configure is either via environment variables (a good fit for `docker` and `docker-compose`) or by using an `application.yml` file located in the configuration directory:
 
-The Docker image will load an `application.yml` file located in the `/config` mounted folder (`v0.129.0+`).
+- The Docker image will load any `application.yml` file located in the `/config` mounted folder.
+- The Jar will load any `application.yml` file located in the `komga.config-dir` directory (defaults to `~/.komga`, [more details](#komga-configdir-komga-config-dir-directory)).
 
 Each configuration key can have a different format depending if it's from the environment variable, or from the `application.yml` file. In the following section I will provide both format in the form `ENVIRONMENT_VARIABLE` / `application-property`.
 
@@ -24,6 +25,14 @@ java -jar komga.jar --server.servlet.context-path="/komga" --server.port=8443
 ## Optional configuration
 
 You can use some optional configuration keys:
+
+#### KOMGA_CONFIGDIR / komga.config-dir: `<directory>`
+
+The Komga configuration directory. Will be used to store the logs, database, and any other file Komga needs.
+
+Defaults to `~/.komga`. `~` is your home directory on Unix, and your User profile on Windows.
+
+_When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
 #### SERVER_PORT / server.port: `<port>`
 
@@ -58,10 +67,6 @@ A list of patterns to exclude directories from the scan. If the full path contai
 
 Defaults to `#recycle,@eaDir`.
 
-#### KOMGA_FILESYSTEM_SCANNER_FORCE_DIRECTORY_MODIFIED_TIME / komga.filesystem-scanner-force-directory-modified-time: `<force>` <Badge text="removed since 0.56.0" type="warning" />
-
-This has been moved to [Library options](/guides/libraries.md#force-directory-modified-time).
-
 #### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
 
 If set, the remember-me auto-login feature will be activated, and will generate a cookie with encoded login information to perform auto-login. Set `<key>` to any random string.
@@ -84,13 +89,13 @@ Defaults to 7 days.
 
 File path for the SQLite database.
 
+If you want to change the directory, it is advised to change `komga.config-dir` instead.
+
 Defaults to:
-- `~/.komga/database.sqlite` for _Jar_.
+- `\${komga.config-dir}/database.sqlite` for _Jar_.
 - `/config/database.sqlite` for _Docker_.
 
-_When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
-
-#### KOMGA_NATIVE_WEBP / komga.native-webp: `<true/false>` <Badge text="0.89.2+" />
+#### KOMGA_NATIVE_WEBP / komga.native-webp: `<true/false>`
 
 Enable or disable the native WebP library. You can use this flag if the native library is not compatible with your system and crashes Komga at startup.
 
@@ -108,17 +113,17 @@ A boolean indicating if Komga should delete empty collections after a scan.
 
 Defaults to `true`.
 
-#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="removed since 0.143.0" type="warning" />
-
-This has been moved to [Library options](/guides/libraries.md#compute-hash-for-files).
-
-#### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>` <Badge text="0.98.0+" />
+#### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>`
 
 A boolean indicating if Komga should delete empty read lists after a scan.
 
 Defaults to `true`.
 
-#### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>` <Badge text="0.133.0+" />
+#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>` <Badge text="removed since 0.143.0" type="warning" />
+
+This has been moved to [Library options](/guides/libraries.md#compute-hash-for-files).
+
+#### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>`
 
 A boolean indicating whether Komga should create new users when a login via OAuth2/OIDC succeeds, but there is no existing user with that email.
 
@@ -134,8 +139,10 @@ Defaults to `false`.
 
 Name of the log file.
 
+If you want to change the directory, it is advised to change `komga.config-dir` instead.
+
 Defaults to:
-- `~/.komga/komga.log` for _Jar_. `~` is your home directory on Unix, and your User profile on Windows.
+- `\${komga.config-dir}/komga.log` for _Jar_.
 - `/config/logs/komga.log` for _Docker_.
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
