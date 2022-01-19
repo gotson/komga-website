@@ -147,6 +147,18 @@ Defaults to:
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
+#### KOMGA_TASKCONSUMERS / komga.task-consumers: `<int>`
+
+The initial number of thread that will consume tasks. Must be positive and lower or equal to `komga.task-consumers-max`.
+
+Defaults to `1`.
+
+#### KOMGA_TASKCONSUMERSMAX / komga.task-consumers-max: `<int>`
+
+The maximum number of thread that will consume tasks. Must be positive and greater or equal to `komga.task-consumers`.
+
+Defaults to `1`.
+
 ## Sample Configuration File
 
 Here is a sample `application.yml` file in case you need to customize it. Keep only the lines you need.
