@@ -149,3 +149,9 @@ Make sure the URL of your Komga server starts with `http` or `https` **in lowerc
 ## How can I disable the periodic scans?
 
 Configure `KOMGA_LIBRARIES_SCAN_CRON` / `komga.libraries-scan-cron` to `-`. See [here](/installation/configuration.md#komga-libraries-scan-cron-komga-libraries-scan-cron-cron) for more details.
+
+## Komga doesn't seem to be picking up new files that I've added and I'm using mergerfs.
+
+Add `func.getattr=newest` to the options in your /etc/fstab entry for the mergerfs volume. By default, mergerfs doesn't update the modified times for everything for performance reasons. This forces it to. In most cases the performance difference is negligible. 
+
+Example `/media/user/disk*  /media/user/storage    fuse.mergerfs defaults,nonempty,allow_other,use_ino,cache.files=off,moveonenospc=true,dropcacheonclose=true,minfreespace=50G,category.create=mfs,func.getattr=newest,fsname=mergerfs 0 0`
