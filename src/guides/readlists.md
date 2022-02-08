@@ -63,7 +63,7 @@ This will not delete the items in the read list, nor your media files.
 
 ## Import read lists from ComicRack
 
-You can import ComicRack reading lists in `.cbl` format from the _Server Settings > Data Import_ screen.
+You can import ComicRack reading lists in `.cbl` format from the _Import > Read Lists_ screen.
 
 Select multiple files to import them all at once.
 
