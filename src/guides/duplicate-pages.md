@@ -23,7 +23,7 @@ For each duplicate page, you can:
 - _Manual Delete_: You will be able to trigger manual deletion from the _Known_ view.
 - _Auto Delete_: Komga will automatically remove those pages after a library scan.
 
-You can also see the detailed list of matches by clicking on the _Matches_ button. It will show all the books containing the duplicate page, as well as the image for each, so you can perform a visual check.
+You can also see the detailed list of matches by clicking on the _Matches_ button. It will show all the books containing the duplicate page, as well as the image for each, so you can perform a visual check. You can also delete matches individually.
 
 ## Browsing Known Duplicates
 
@@ -31,6 +31,6 @@ This screen will show all the duplicate pages for which you chose an action. You
 
 <img src="/assets/media/guides/duplicate-pages/duplicate-pages-known.png" style="vertical-align: middle;max-height: 400px" alt="Browse Known Duplicates"/>
 
-For each page, you can change what to do with it. You can _Ignore_ a page that was set for deletion, or mark an ignored one for deletion, if you changed your mind.
+For each page, you can change the action. You can _Ignore_ a page that was set for deletion, or mark an ignored one for deletion, if you changed your mind.
 
 For pages set for _Manual Delete_, you can trigger the deletion using the _Delete Matches_ button.
