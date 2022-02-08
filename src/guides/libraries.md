@@ -49,7 +49,7 @@ This can consume lots of resources on large libraries or slow hardware.
 
 #### Compute hash for pages
 
-Komga will compute a filehash for the pages in each book (`cbz`/`cbr` only). Those will be used to detect duplicate pages (in a future release).
+Komga will compute a filehash for the first and last 3 pages in each book (`cbz` only). Those are used to detect duplicate pages.
 
 This can consume lots of resources on large libraries or slow hardware.
 

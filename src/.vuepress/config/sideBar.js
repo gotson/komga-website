@@ -82,6 +82,7 @@ module.exports = {
                 '/guides/collections',
                 '/guides/readlists',
                 '/guides/search',
+                '/guides/duplicate-pages',
                 '/guides/webreader',
                 '/guides/tachiyomi',
                 '/guides/paperback',
