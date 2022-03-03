@@ -65,7 +65,7 @@ Defaults to `false`.
 
 A list of patterns to exclude directories from the scan. If the full path contains any of the patterns, the directory will be ignored. If using the environment variable you need to use a comma-separated list.
 
-Defaults to `#recycle,@eaDir`.
+Defaults to `#recycle,@eaDir,@Recycle`.
 
 #### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
 
@@ -168,16 +168,17 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  libraries-scan-cron: "0 0 */8 * * ?" #periodic scan every 8 hours
-  libraries-scan-cron: "-" #disable periodic scan
-  libraries-scan-startup: false #scan libraries at startup
-  libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
-    - "#recycle" #synology NAS recycle bin
-    - "@eaDir"   #synology NAS index/metadata folders
+  libraries-scan-cron: "0 0 */8 * * ?"  # periodic scan every 8 hours
+  libraries-scan-cron: "-"              # disable periodic scan
+  libraries-scan-startup: false         # scan libraries at startup
+  libraries-scan-directory-exclusions:  # patterns to exclude directories from the scan
+    - "#recycle" # synology NAS recycle bin
+    - "@eaDir"   # synology NAS index/metadata folders
+    - "@Recycle" # QNAP NAS recycle bin
   remember-me:
-    key: changeMe! #required to activate the remember-me auto-login via cookies
-    validity: 30d #validity of the cookie in seconds, here 30 days
-  session-timeout: 7d #session timeout, here 7 days
+    key: changeMe!    # required to activate the remember-me auto-login via cookies
+    validity: 30d     # validity of the cookie in seconds, here 30 days
+  session-timeout: 7d # session timeout, here 7 days
   database:
     file: ${user.home}/.komga/database.sqlite
   native-webp: true
