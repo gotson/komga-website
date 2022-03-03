@@ -14,6 +14,10 @@ java -jar komga-x.y.z.jar
 
 Once Komga is started, you can access the [web interface](/installation/webui).
 
+:::tip
+On Windows, use `javaw` instead of `java` to launch Komga _without_ a command prompt window appearing.
+:::
+
 ## Increase memory limit
 
 By default the `java` process will be limited in the maximum amount of memory (RAM) it can use, usually 1gb. If you encounter some `OutOfMemoryException` in the logs you probably need to increase the maximum memory Komga can use.
