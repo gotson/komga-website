@@ -17,19 +17,11 @@ If any activity is going on, an animated yellow bar will appear below the top-le
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-## After installing the Tachiyomi extension `1.2.24` my series are not connected to Komga anymore
-
-Use the __Migrate source__ function of Tachiyomi to migrate the Series to the same Komga source. This will fix your Series.
-
 ## How can I sync reading progress with tracker websites?
 
 Komga does not support this outside the box.
 
 You can try [MAL-Sync](https://github.com/MALSync/MALSync) which integrates with Komga and works with MyAnimeList, Kitsu, Anilist and others.
-
-## Tachiyomi cannot connect, but works in WebView
-
-Try disabling the __DNS over HTTPS__ option (in More > Settings > Advanced). From version `1.2.23` the extension will ignore DNS over HTTPS setting.
 
 ## How to enable DEBUG or TRACE logs?
 
@@ -96,10 +88,6 @@ Komga automatically import metadata from `EPUB` files and from `ComicInfo.xml` f
 The server cannot be claimed if a user already exists in the database. It can happen when you start Komga for the first time without the `claim` profile as Komga will generate a default user.
 
 You can solve the issue by deleting the database. By default it is located in `~/.komga/database.sqlite`. `~` is your home directory on Unix, and your User profile on Windows.
-
-## Tachiyomi does not show thumbnails
-
-Make sure the URL of your Komga server starts with `http` or `https` **in lowercase**.
 
 ## How can I disable the periodic scans?
 
