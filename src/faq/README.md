@@ -23,6 +23,17 @@ Komga does not support this outside the box.
 
 You can try [MAL-Sync](https://github.com/MALSync/MALSync) which integrates with Komga and works with MyAnimeList, Kitsu, Anilist and others.
 
+## The memory consumption is huge
+
+TL;DR: The operating system _does not_ report the real memory usage of the application, so don't look at those figures.
+
+Komga runs on the Java Virtual Machine (JVM). The JVM works differently than other native programs in regard to memory consumption.
+On startup, the JVM will _reserve_ some memory from the OS, but that doesn't mean this memory is used by the application. If the OS needs to reclaim that memory, the JVM will try to release it.
+
+By default, the JVM would reserve 1/4th of the physical memory (depends on the total memory and JVM version), for instance if you have 32 Gb of memory, the JVM would reserve 8 Gb.
+
+To increase or limit the maximum memory, see [here](/installation/jar.md#increase-memory-limit) (jar) and [here](/installation/docker.md#increase-memory-limit) (Docker).
+
 ## How to enable DEBUG or TRACE logs?
 
 ### Via an `application.yml`
