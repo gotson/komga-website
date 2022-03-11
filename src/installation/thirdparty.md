@@ -4,6 +4,10 @@
 Those methods are not officially supported, if you encounter installation issues please contact the respective authors.
 :::
 
+## Windows Installer and Updater
+
+A [Powershell script](https://github.com/losslesspng/SetUpKomgaJava) to get up and running with Komga.
+
 ## AUR - Arch User Repository
 
 Komga is available as an [AUR](https://aur.archlinux.org/packages/komga/) package.
