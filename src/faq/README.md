@@ -113,3 +113,15 @@ Example:
 ```shell
 /media/user/disk* /media/user/storage fuse.mergerfs defaults,nonempty,allow_other,use_ino,cache.files=off,moveonenospc=true,dropcacheonclose=true,minfreespace=50G,category.create=mfs,func.getattr=newest,fsname=mergerfs 0 0
 ```
+
+## Docker on Raspberry PI arm32: No monotonic clock was available
+
+If you encounter the following message when starting the container:
+
+```log
+OpenJDK Server VM warning: No monotonic clock was available - timed services may be adversely affected if the time-of-day clock changes
+```
+
+Your host system needs to have installed:
+- Docker version `19.03.9` or newer
+- libseccomp version `2.4.2` or newer
