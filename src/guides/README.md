@@ -15,7 +15,7 @@ How it works:
 
 Komga supports the following file types:
 - Comic book archives: _CBZ_ and _CBR_ (except RAR5 and solid archives)
-- Comic books in _EPUB_ format
+- Comic books in _EPUB_ format (only images)
 - _PDF_ files
 
 ### Komga server compatibility
