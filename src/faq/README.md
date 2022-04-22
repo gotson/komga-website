@@ -1,5 +1,13 @@
 # Frequently Asked Questions
 
+## How to enable support for Jpeg XL?
+
+In order for Komga to handle Jpeg XL files (`.jxl`), you will need to:
+- install `libjxl` (see [here](https://github.com/gotson/NightMonkeys/tree/main/imageio-jxl) for some known installation methods)
+- follow the [requirements](https://github.com/gotson/NightMonkeys#requirements) to launch `java` with the correct arguments and environment variable
+
+Jpeg XL is not supported in the official Docker image.
+
 ## Where can I find the log files?
 
 By default (if you haven't changed the configuration), log files are located:
