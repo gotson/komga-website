@@ -192,6 +192,45 @@ server:
   servlet.context-path: /komga
 ```
 
+## Database performance
+
+:::warning
+Use at your own risk!
+
+:::
+
+Some specific configuration keys are available to tweak the database performance.
+
+```yaml
+komga:
+  database:
+    # sets the retry timeout when SQLITE_BUSY error happens
+    busy-timeout: 30s
+    
+    # changes the journal mode
+    # accepted values are: DELETE, TRUNCATE, PERSIST, MEMORY, WAL, OFF
+    # most likely to be set to wal if needed, check https://sqlite.org/wal.html for more details
+    journal-mode: wal
+    
+    # pool size will determine the number of connections in the pool
+    # this takes precedence over max-pool-size if set
+    # defaults to undefined
+    pool-size: 1
+    
+    # max-pool-size will determine the maximum number of connections in the pool
+    # when set, the number of connections is set to the number of available processors capped at max-pool-size
+    # defaults to 1
+    max-pool-size: 8
+    
+    # pragmas accepts a list of key/value pairs where:
+    # - key is the pragma name (see https://www.sqlite.org/pragma.html)
+    # - value is the pragma value
+    pragmas:
+      # here are some example pragmas
+      page_size: 1024
+      synchronous: OFF
+```
+
 ## HTTPS
 
 If you want to open your Komga server outside your local network, it is strongly advised to secure it with `https` (especially due to the use of http basic authentication).
