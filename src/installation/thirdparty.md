@@ -8,6 +8,42 @@ Those methods are not officially supported, if you encounter installation issues
 
 A [Powershell script](https://github.com/losslesspng/SetUpKomgaJava) to get up and running with Komga.
 
+## Scoop (Windows)
+
+Komga is available in [Scoop](https://github.com/ScoopInstaller/Scoop)'s [extras](https://github.com/ScoopInstaller/Extras) bucket.
+
+### Installation
+
+#### 1. Install Scoop (Skip if Scoop is installed)
+Open Powershell and run `iwr -useb get.scoop.sh | iex`. If you got an error, run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser`.
+
+#### 1.1 (Optional) Install aria2 for multi-connection download
+Run `scoop install aria2`.
+
+#### 2. Add java bucket (Skip if JDK is installed)
+Run `scoop add bucket extras`.
+
+#### 3. Install JDK (Skip if JDK is installed)
+Run `scoop install java/temurin-lts-jdk`.
+
+#### 3. Add extras bucket (Skip if extras bucket is added)
+Run `scoop add bucket extras`.
+
+#### 4. Install Komga
+Run `scoop install komga`.
+
+### Manage
+#### Run
+Run `komga`.
+
+Note: Default config dir is `%USERPROFILE%\scoop\apps\komga\current\config`
+
+#### Update
+Run `scoop update komga`.
+
+#### Uninstall
+Run `scoop uninstall komga`
+
 ## AUR - Arch User Repository
 
 Komga is available as an [AUR](https://aur.archlinux.org/packages/komga/) package.
