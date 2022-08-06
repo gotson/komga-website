@@ -14,22 +14,22 @@ Komga is available in [Scoop](https://github.com/ScoopInstaller/Scoop)'s [extras
 
 ### Installation
 
-#### 1. Install Scoop (Skip if Scoop is installed)
+#### 1. (Skip if Scoop is installed) Install Scoop
 Open Powershell and run `iwr -useb get.scoop.sh | iex`. If you got an error, run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser`.
 
 #### 1.1 (Optional) Install aria2 for multi-connection download
 Run `scoop install aria2`.
 
-#### 2. Add java bucket (Skip if JDK is installed)
+#### 2. (Skip if JDK is installed) Add java bucket
 Run `scoop add bucket extras`.
 
-#### 3. Install JDK (Skip if JDK is installed)
+#### 3. (Skip if JDK is installed) Install JDK
 Run `scoop install java/temurin-lts-jdk`.
 
-#### 3. Add extras bucket (Skip if extras bucket is added)
+#### 4. (Skip if extras bucket is added) Add extras bucket
 Run `scoop add bucket extras`.
 
-#### 4. Install Komga
+#### 5. Install Komga
 Run `scoop install komga`.
 
 ### Manage
