@@ -16,8 +16,8 @@ Once Paperback opens choose "Add as Source Repo" on the popup.
 ::: details Add the source repository manually
 If you prefer, it is also possible to add the repository manually:
 
-1. In the app, go to **Settings**, **External Sources** then press **Edit** on the top right hand corner.
-1. Press the top left hand corner **+** button to add a repository.
+1. In the app, go to **Settings**, **External Sources** then press **Edit** on the top right-hand corner.
+1. Press the top left-hand corner **+** button to add a repository.
 1. Use the base url:
    ```
    https://paperback-ios.github.io/extensions-main-promises/
@@ -25,8 +25,7 @@ If you prefer, it is also possible to add the repository manually:
 :::
 
 ### Install the source
-1. In the app **Settings**, **External Sources** windows, choose <code>Browse <span style="color: grey;">Official Repo</span></code>
-   > or `Browse ...` followed by the repository name you chose previously
+1. In the app **Settings**, **External Sources** windows, choose `Browse Official Repo`, or `Browse ...` followed by the repository name you chose previously
 
 1. Install the source **Paperback**
 
@@ -39,19 +38,17 @@ If you prefer, it is also possible to add the repository manually:
 1. Press **Save** to exit
 
 ::: tip Tip
-You can test your settings by opening **Try Settings** bellow the Server Settings section
+You can test your settings by opening **Try Settings** below the Server Settings section
 :::
-
----
 
 ## Track read progress
 
 It is possible to sync read chapters from the app to the Komga server using an implicit tracker.
 
 ### Add the tracker repository
-1. In the app, go to **Settings**, **External Trackers** then press **Edit** on the top right hand corner
-1. Press the top left hand corner **+** button to add a repository.
-1. Use the base url (**DO NOT** open this url):
+1. In the app, go to **Settings**, **External Trackers** then press **Edit** on the top right-hand corner
+1. Press the top left-hand corner **+** button to add a repository.
+1. Use the base url (**do not** open this url):
    ```
    https://paperback-ios.github.io/trackers-main/main/
    ```
