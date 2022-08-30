@@ -17,10 +17,10 @@ Komga is available in [Scoop](https://github.com/ScoopInstaller/Scoop)'s [extras
 You need Scoop to use this installation method. Instruction to install Scoop can be found [here](https://github.com/ScoopInstaller/Scoop#installation).
 
 #### 1. (Skip if JDK is installed) Install JDK
-Run `scoop add bucket java` and then run `scoop install java/temurin-lts-jdk`.
+Run `scoop bucket add java` and then run `scoop install java/temurin-lts-jdk`.
 
 #### 2. Install Komga
-Run `scoop add bucket extras` and then run `scoop install komga`.
+Run `scoop bucket add extras` and then run `scoop install komga`.
 
 ### Manage
 #### Run
