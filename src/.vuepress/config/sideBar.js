@@ -88,6 +88,7 @@ module.exports = {
                 '/guides/webreader',
                 '/guides/tachiyomi',
                 '/guides/paperback',
+                '/guides/cdisplayex',
                 '/guides/opds',
                 '/guides/chunky',
                 '/guides/gdrive',

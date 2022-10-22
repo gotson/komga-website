@@ -14,6 +14,10 @@ The webreader can track the progress as you read:
 
 Tachiyomi can track progress of read books, using the Komga tracker. See [here](/guides/tachiyomi.md#track-read-progress) for more details.
 
+### CDisplayEx
+
+CDisplayEx syncs read status and reading progress, See [here](/guides/cdisplayex.html#reading-status).
+
 ## Unread and in progress indicators
 
 The book card will display read progress indicators:
