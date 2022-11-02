@@ -95,12 +95,6 @@ Defaults to:
 - `\${komga.config-dir}/database.sqlite` for _Jar_.
 - `/config/database.sqlite` for _Docker_.
 
-#### KOMGA_NATIVE_WEBP / komga.native-webp: `<true/false>`
-
-Enable or disable the native WebP library. You can use this flag if the native library is not compatible with your system and crashes Komga at startup.
-
-Defaults to: `true`
-
 #### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>`
 
 A list of origins to allow for CORS.
@@ -181,7 +175,6 @@ komga:
   session-timeout: 7d # session timeout, here 7 days
   database:
     file: ${user.home}/.komga/database.sqlite
-  native-webp: true
   cors.allowed-origins:
     - http://localhost:8081
     - http://localhost:8082
