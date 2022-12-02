@@ -93,6 +93,7 @@ spring:
       client:
         registration:
           keycloak:
+            provider: keycloak
             client-id: your-client-id
             client-secret: c830e452-a2a9-40a0-93c1-eb84ea688245
             client-name: Keycloak
@@ -101,6 +102,7 @@ spring:
             redirect-uri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
         provider:
           keycloak:
+            issuer-uri: http://localhost:8085/auth/realms/komgatest
             authorization-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/auth
             token-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/token
             jwk-set-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/certs
