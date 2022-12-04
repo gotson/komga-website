@@ -32,7 +32,7 @@ spring:
             client-secret: jwhfkjhwefkn44t8vcxml3m
 ```
 
-## Facebook
+### Facebook
 
 Follow the [instructions](https://developers.facebook.com/docs/development/register) to create an App, and add the Facebook Login product.
 
@@ -107,3 +107,20 @@ spring:
             user-info-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/userinfo
             user-name-attribute: sub
 ```
+### Debugging Oauth2
+There are cases where we need to log to a higher level than the default one. We may need to check, for example, users' roles or how endpoints are secured. Or maybe we also need more info about authentication or authorization, for example, to see why a user fails to access an endpoint. This can be enabled via the application properties in the `application.yml` file:
+
+`logging.level.org.springframework.security=DEBUG`
+
+Likewise, we can use the yaml syntax:
+
+```
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+```
+
+This way, we can check out logs about the Authentication or the Filter Chain. Moreover, we can even use the trace level for deeper debugging.
+
