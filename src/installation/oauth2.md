@@ -85,6 +85,15 @@ You need to make sure that the users have an email setup, and that it has been m
 
 When configuring the client in your provider, you may need to input a redirect URI. Use the following: `{baseUrl}/login/oauth2/code/{registrationId}`, where `baseUrl` is your server's address, and `registrationId` is the name of the configuration key (`keycloak` in the below example).
 
+There are 2 options to configure a provider, either set `issuer-uri` or all of the following: `authorization-uri`, `token-uri`,
+`jwk-set-uri`, `user-info-uri`. If your authentication server provides `issuer-uri`, this option is preffered.
+(In the configuration below all `uri`s are specified for completeness).
+
+The `registration` section contains a `provider` option, this must be the same name as specified in the
+`provider` configuration. (In the example below, we've configured `provider` with name `keycloak`, so in the
+`registration` section we set `provider: keycloak`). The name of the provider can be whatever you want, no need
+to use the service's name if you don't want to.
+
 Sample configuration:
 ```yaml
 spring:
