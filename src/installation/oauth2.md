@@ -86,8 +86,7 @@ You need to make sure that the users have an email setup, and that it has been m
 When configuring the client in your provider, you may need to input a redirect URI. Use the following: `{baseUrl}/login/oauth2/code/{registrationId}`, where `baseUrl` is your server's address, and `registrationId` is the name of the configuration key (`keycloak` in the below example).
 
 There are 2 options to configure a provider, either set `issuer-uri` or all of the following: `authorization-uri`, `token-uri`,
-`jwk-set-uri`, `user-info-uri`. If your authentication server provides `issuer-uri`, this option is preffered.
-(In the configuration below all `uri`s are specified for completeness).
+`jwk-set-uri`, `user-info-uri`. If your authentication server provides `issuer-uri`, this option is preferred.
 
 The `registration` section contains a `provider` option, this must be the same name as specified in the
 `provider` configuration. (In the example below, we've configured `provider` with name `keycloak`, so in the
@@ -102,19 +101,22 @@ spring:
       client:
         registration:
           keycloak:
-            provider: keycloak
+            provider: keycloak # this must match the provider below
             client-id: your-client-id
             client-secret: c830e452-a2a9-40a0-93c1-eb84ea688245
             client-name: Keycloak
             scope: openid,email
             authorization-grant-type: authorization_code
+            # the placeholders in {} will be replaced automatically, you don't need to change this line
             redirect-uri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
         provider:
-          keycloak:
+          keycloak: # this must match the provider above
+            user-name-attribute: sub
+            # either set the issuer-uri, in which case the app will lookup the configuration for you automatically
             issuer-uri: http://localhost:8085/auth/realms/komgatest
+            # or set all of the following
             authorization-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/auth
             token-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/token
             jwk-set-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/certs
             user-info-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/userinfo
-            user-name-attribute: sub
 ```
