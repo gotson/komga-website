@@ -8,11 +8,8 @@ This image provides various versions that are available via tags.
 |     **Tag**      | **Description**                                              |
 |:----------------:|--------------------------------------------------------------|
 |     `latest`     | latest commit                                                |
-| `latest-legacy`  | latest commit, using legacy AdoptOpenJDK base image          |
 |    `MAJOR.x`     | latest `MAJOR` version, for example `0.x`                    |
-| `MAJOR.x-legacy` | latest `MAJOR` version, using legacy AdoptOpenJDK base image |
 |     `x.y.z`      | version `x.y.z`                                              |
-|  `x.y.z-legacy`  | version `x.y.z`, using legacy AdoptOpenJDK base image        |
 
 ## Usage
 
