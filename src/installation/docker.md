@@ -51,7 +51,7 @@ services:
         source: /path/to/data
         target: /data
       - type: bind
-        source: /etc/timezone
+        source: /etc/timezone #alternatively you can use a TZ environment variable, like TZ=Europe/London
         target: /etc/timezone
         read_only: true
     ports:
