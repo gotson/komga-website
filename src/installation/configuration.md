@@ -129,6 +129,16 @@ It is recommended to enable this only with OAuth2 providers you control
 
 Defaults to `false`.
 
+#### KOMGA_OIDC_EMAIL_VERIFICATION / komga.oidc-email-verification: `<true/false>`
+
+A boolean indicating whether Komga should check whether the `email_verified` claim is present and true in the OpenID Connect request.
+
+:::warning
+It is recommended to disable this only with OIDC providers that do not verify emails (like Azure AD)
+:::
+
+Defaults to `true`.
+
 #### LOGGING_FILE_NAME / logging.file.name: `<logfile name>`
 
 Name of the log file.
