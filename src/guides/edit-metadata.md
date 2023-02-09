@@ -102,6 +102,6 @@ The `Sort Number` field lets you control how items are sorted within a series. T
 For example, if you have a "2015 Special" that is between book 24 and 25:
 
 - set the `Number` to "2015 Special"
-- set the `Sort Number` to "25.5"
+- set the `Sort Number` to "24.5"
 
 The result is that the special book will appear between book 24 and 25, and will show "2015 Special" as its number.
