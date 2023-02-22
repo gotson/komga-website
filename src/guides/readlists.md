@@ -41,6 +41,26 @@ Only show read lists that exist in the library. Opening a read list goes to the 
 
 The read list details screen contains all the books that belong to the read list. It can include books from any library and any series. By adding items in different libraries or series to read lists, you can relate them to each other.
 
+### Read List ordering
+
+By default books in a read list are ordered manually. However, you can edit a read list and choose to disable the manual ordering, in which case books will be ordered by release date.
+
+Either click on the edit button on the read list card.
+
+<img src="/assets/media/guides/readlists/readlist-edit-card.png" style="vertical-align: middle;max-height:300px" />
+
+Or click on the edit button from the read list details screen.
+
+<img src="/assets/media/guides/readlists/readlist-edit-button.png" style="vertical-align: middle;max-height:60px" />
+
+A dialog will show up, where you can edit the read list's ordering.
+
+<img src="/assets/media/guides/readlists/readlist-edit-dialog.png" style="vertical-align: middle;max-height:300px" />
+
+A manually ordered read list will be showing as such in the read list details screen.
+
+<img src="/assets/media/guides/readlists/readlist-manual-ordering.png" style="vertical-align: middle;max-height:50px" />
+
 ### Edit read list elements
 
 From the read list details screen you can edit the elements composing a read list. To do so, click on the corresponding button in the toolbar.
@@ -49,7 +69,7 @@ From the read list details screen you can edit the elements composing a read lis
 
 The book cards will show two extra elements:
 - a delete button, to remove the book from the read list
-- a grip handle, which let you drag and drop books to reorder them
+- a grip handle, which let you drag and drop books to reorder them (only available when the read list is manually ordered)
 
 Once you are done with your changes, click the tick in the top bar. Click the cross to discard your changes.
 
