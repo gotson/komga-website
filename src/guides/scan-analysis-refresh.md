@@ -84,61 +84,63 @@ The metadata refresh is dependent of the options of the Library.
 
 #### Book metadata
 
-This will import the following fields from the `ComicInfo.xml` file into Komga:
+This will import the following elements from the `ComicInfo.xml` file in Komga:
 - `Year`, `Month`, and `Day` to form the _Release Date_
-- `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, and `Editor` as _Authors_ with the according role.  A value with multiple names separated by a `,` will be split in different authors.
+- `Writer`, `Penciller`, `Inker`, `Colorist`, `Letterer`, `CoverArtist`, `Editor`, and `Translator` as _Authors_ with the according role. A value with multiple names separated by a `,` will be split in different authors.
 - `Title`, `Summary`, `Number` as their Komga equivalent
-- valid `Web` links as a book link
+- Valid `Web` links as a book link
+- The `Tags` element will be split by `,` and added to the book's _tags_
+- If the `GTIN` element contains a valid ISBN, as the book's _ISBN_
 
 #### Series metadata
 
-This will import the following fields from the `ComicInfo.xml` of the Series' books into Komga.
-
-- The `Series` and `Volume` tags will be used to overwrite the title of the Series, in the form `<Series> (<Volume>)`, or just `<Series>` if the `Volume` tag is not present or if the `Volume` is `1`. If multiple values are present, the most frequent value from all books will be used.
+This will import the following elements from the `ComicInfo.xml` of the Series' books in Komga:
+- The `Series` and `Volume` elements will be used to overwrite the title of the Series, in the form `<Series> (<Volume>)`, or just `<Series>` if the `Volume` element is not present or if the `Volume` is `1`. If multiple values are present, the most frequent value from all books will be used.
 - The various `AgeRating` values will be converted to a number in Komga. The highest value from all books will be used.
 - The most frequent `Publisher` value will be used as Komga's equivalent.
-- A `Manga` field with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_. The most frequent value from all books will be used.
-- The `Genre` field will be split by `,`. All genres from all books will be added to the Series.
-- The `LanguageISO` field will be used as the Series' language. The most frequent value from all books will be used.
+- A `Manga` element with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_. The most frequent value from all books will be used.
+- The `Genre` element will be split by `,`. All genres from all books will be added to the Series.
+- The `LanguageISO` element will be used as the Series' language. The most frequent value from all books will be used.
 - The highest value from `Count` will be used as the total count of books.
 
 #### Collections
 
-The `SeriesGroup` tag will be used to create a collection with that name, or add the series to an existing collection with that name.
+The `SeriesGroup` element will be used to create a collection with that name, or add the series to an existing collection with that name.
 
-If the `SeriesGroup` tag is set to a different value in each book of the series, then each value of the tag will create a collection.
+If the `SeriesGroup` element is set to a different value in each book of the series, then each value of the element will create a collection.
 
 #### Read lists
 
-The `AlternateSeries` or `StoryArc` tags will be used to create a read list with that name, or add the book to an existing read list with that name.
+The `AlternateSeries` or `StoryArc` elements will be used to create a read list with that name, or add the book to an existing read list with that name.
 
-If the `AlternateNumber` tag is set, it will be used to position the book in the read list.
+If the `AlternateNumber` element is set, it will be used to position the book in the read list.
 
 ##### StoryArcNumber
 
-If the `StoryArcNumber` tag is set, it will be used in conjunction with `StoryArc` to position the book in the read list.
+If the `StoryArcNumber` element is set, it will be used in conjunction with `StoryArc` to position the book in the read list.
 
-Both `StoryArc` and `StoryArcNumber` tags can contain multiple values, separated by `,`. Komga will do its best to match each pair:
-- If both tags are set, but do not contain the same number of values, the extra values will not be used
+Both `StoryArc` and `StoryArcNumber` elements can contain multiple values, separated by `,`. Komga will do its best to match each pair:
+- If both elements are set, but do not contain the same number of values, the extra values will not be used
 - If there are invalid values, like blank strings or invalid numbers, the whole pair will be ignored
 
 ### Import metadata from EPUB files
 
 #### Book metadata
 
-This will import the following fields from the Epub metadata into Komga:
+This will import the following fields from the Epub metadata in Komga:
 - `dc:title` element as the _Title_
 - `dc:description` element as the _Summary_
-- `dc:publisher` element as the _Publisher_
 - `dc:date` element as the _Release date_
-- The `page-progression-direction` property of the `spine` element as the _Reading direction_
+- `dc:identifier` element as the _ISBN_, if it is a valid ISBN
 - `dc:creator` element as _Authors_. The role will be imported either from the `opf:role` property, or from a `meta` element containing `role` property and a `marc:relators` scheme. A value with multiple names separated by a `,` will be split in different authors.
 
 #### Series metadata
 
-The `belongs-to-collection` meta property will be used to overwirte the title of a Series, only if:
-- at least one book in the series has the property `belongs-to-collection` set
-- if multiple books have the property `belongs-to-collection` set, the most frequent value will be used
+This will import the following fields from the Epub metadata in Komga:
+- `dc:publisher` element as the _Publisher_
+- `dc:language` element as the _Language_
+- The `page-progression-direction` property of the `spine` element as the _Reading direction_
+- The `belongs-to-collection` meta property will be used to overwrite the title of a Series. If multiple values are present, the most frequent value from all books will be used.
 
 ### Import metadata generated by Mylar 
 
