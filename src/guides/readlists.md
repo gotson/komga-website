@@ -83,9 +83,7 @@ This will not delete the items in the read list, nor your media files.
 
 ## Import read lists from ComicRack
 
-You can import ComicRack reading lists in `.cbl` format from the _Import > Read Lists_ screen.
-
-Select multiple files to import them all at once.
+You can import ComicRack reading lists in `.cbl` format from the _Import > Read List_ screen.
 
 <img src="/assets/media/guides/readlists/import.png" style="vertical-align: middle;max-height:400px" />
 
@@ -99,16 +97,13 @@ Select multiple files to import them all at once.
     - number of that book in the series
 
 Komga will try to match each book in the list in the following way:
-- check if a read list with that name already exists
-- since Komga does not have a `volume` metadata field, it will apply the [same transformation](/guides/scan-analysis-refresh.md#series-metadata) as when importing data from `ComicInfo.xml`
-- it will try to find a unique series by name
-- if a unique series is found, it will try to find a unique book in that series by book number
-- if a unique book is found, it will be added to the read list
+- part of a series named `Series` or `Series (Volume)`
+- where the number matches
 
-The result will be shown after you click the _Import_ button.
+The result will be shown after you click the _Match_ button.
 
 <img src="/assets/media/guides/readlists/import-results.png" style="vertical-align: middle;max-height:500px" />
 
-For each provided file you can see whether the import succeeded fully, partially, or failed. You can also expand the panel to get more details on why the import failed for each book.
+If some books are not matched, you can manually choose a series and a book. Duplicates and missing books will be shown with an error indicator on the right side.
 
-<img src="/assets/media/guides/readlists/import-results-details.png" style="vertical-align: middle;max-height:400px" />
+Click _Create_ to create the read list. If some books are unmatched, you can still create the read list (a confirmation dialog will pop-up).
