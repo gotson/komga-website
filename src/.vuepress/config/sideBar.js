@@ -42,6 +42,7 @@ module.exports = {
                 '/installation/webui',
                 '/installation/configuration',
                 '/installation/oauth2',
+                '/installation/upgrade',
             ],
         },
         {
