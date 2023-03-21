@@ -1,5 +1,11 @@
 # Run with Docker
 
+## Registries
+
+The Docker images are published on:
+- [DockerHub](https://hub.docker.com/r/gotson/komga)
+- [ghcr.io](https://github.com/gotson/komga/pkgs/container/komga)
+
 ## Version tags
 
 This image provides various versions that are available via tags.
