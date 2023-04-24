@@ -10,7 +10,7 @@ Please note that Chunky Reader's OPDS support requires the in app purchase which
 
 ## Adding your Komga server to Chunky
 
-First you need to make sure that you can browse to your komga server's web UI from Safari on your iPad. Open up Safari, navigate to your server's address and log in as normal. Next, open the address bar append `/opds/v1.2/catalog` to the end of the URL and press return.
+First you need to make sure that you can browse to your komga server's web UI from Safari on your iPad. Open up Safari, navigate to your server's address and log in as normal. Next, open the address bar, delete `/dashboard` part which is added automatically when you log in, and then append `/opds/v1.2/catalog` to the end of the URL and press return.
 
 <img src ="/assets/media/guides/chunky-setup/safari-check1.png"/>
 
