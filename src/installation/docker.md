@@ -27,7 +27,7 @@ Here are some example snippets to help you get started creating a container.
 docker create \
   --name=komga \
   --user 1000:1000 \
-  -p 8080:8080 \
+  -p 25600:25600 \
   --mount type=bind,source=/path/to/config,target=/config \
   --mount type=bind,source=/path/to/data,target=/data \
   --restart unless-stopped \
@@ -61,7 +61,7 @@ services:
         target: /etc/timezone
         read_only: true
     ports:
-      - 8080:8080
+      - 25600:25600
     user: "1000:1000"
     # remove the whole environment section if you don't need it
     environment:
@@ -77,7 +77,7 @@ For example, `-p 8080:80` would expose port `80` from inside the container to be
 
 |                         Parameter                         | Function                                                                                                                                         |
 |:---------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|                         `-p 8080`                         | The port for the Komga APIs and web interface                                                                                                    |
+|                        `-p 25600`                         | The port for the Komga APIs and web interface                                                                                                    |
 |                    `--user: 1000:1000`                    | User:Group identifier - see below for explanation                                                                                                |
 | `--mount type=bind,source=/path/to/config,target=/config` | Database and Komga configurations                                                                                                                |
 |   `--mount type=bind,source=/path/to/data,target=/data`   | Location of your data directory on disk. Choose a folder that contains both your books and your preferred import location for hardlinks to work. |

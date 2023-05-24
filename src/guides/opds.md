@@ -2,7 +2,7 @@
 
 Komga should work with any OPDS reader, unfortunately most readers badly implement the OPDS protocol :disappointed:.
 
-The URL should be configured as `http(s)://your-server(:8080)(/baseUrl)/opds/v1.2/catalog`.
+The URL should be configured as `http(s)://your-server(:25600)(/baseUrl)/opds/v1.2/catalog`.
 
 Here is a list of reader applications that have been tested:
 

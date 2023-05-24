@@ -13,7 +13,7 @@ Once installed, the extension will let you configure up to 3 Komga servers.
 You will need to configure the extension with your _server address_, _username_ and _password_ before you can use it.
 
 :::tip
-Example server address: `http://my.server:8080(/baseUrl)`
+Example server address: `http://my.server:25600(/baseUrl)`
 
 **Note that there is no trailing slash (`/`).**
 :::

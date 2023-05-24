@@ -38,7 +38,7 @@ _When overriding this configuration, you need to use `${user.home}` instead of `
 
 Port to listen to for the API and web interface.
 
-Defaults to `8080`.
+Defaults to `25600`.
 
 #### SERVER_SERVLET_CONTEXT_PATH / server.servlet.context-path: `<baseUrl>`
 
@@ -191,7 +191,7 @@ komga:
   delete-empty-collections: true
   delete-empty-read-lists: true
 server:
-  port: 8080
+  port: 25600
   servlet.context-path: /komga
 ```
 
@@ -252,7 +252,7 @@ Without a base URL configured in Komga, using a subdomain:
 
 ```
 komga.yourdomain.com {
-  proxy / http://your-komga-server:8080 {
+  proxy / http://your-komga-server:25600 {
     transparent
   }
 }
@@ -262,7 +262,7 @@ With a base URL configured in Komga:
 
 ```
 yourdomain.com {
-  proxy /komga http://your-komga-server:8080 {
+  proxy /komga http://your-komga-server:25600 {
     transparent
   }
 }
@@ -274,7 +274,7 @@ Without a base URL configured in Komga, using a subdomain:
 
 ```
 komga.yourdomain.com {
-  reverse_proxy http://your-komga-server:8080
+  reverse_proxy http://your-komga-server:25600
 }
 ```
 
@@ -282,6 +282,6 @@ With a base URL configured in Komga:
 
 ```
 yourdomain.com {
-  reverse_proxy /komga/* http://your-komga-server:8080
+  reverse_proxy /komga/* http://your-komga-server:25600
 }
 ```
