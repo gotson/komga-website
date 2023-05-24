@@ -91,6 +91,7 @@ module.exports = {
                 '/guides/paperback',
                 '/guides/cdisplayex',
                 '/guides/opds',
+                '/guides/panels',
                 '/guides/chunky',
                 '/guides/gdrive',
                 '/guides/rest',
