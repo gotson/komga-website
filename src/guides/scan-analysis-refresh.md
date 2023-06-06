@@ -55,7 +55,7 @@ Depending on the size of your Library, analysis may take a while.
 
 ### Media Analysis screen
 
-You can check all the media for which the analysis did not succeed from the Media Analysis screen. You can access it from _Server Settings > Media Analysis_.
+You can check all the media for which the analysis did not succeed from the Media Analysis screen. You can access it from _Media Management > Media Analysis_.
 
 It will show you all books with a status of:
 - Error: Komga could not analyze the book. If possible, there will be a comment to describe the error.
