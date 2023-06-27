@@ -105,9 +105,9 @@ This will import the following elements from the `ComicInfo.xml` of the Series' 
 
 #### Collections
 
-The `SeriesGroup` element will be used to create a collection with that name, or add the series to an existing collection with that name.
+The `SeriesGroup` element will be split by `,` and used to create collections with those names, or add the series to an existing collection if it exists.
 
-If the `SeriesGroup` element is set to a different value in each book of the series, then each value of the element will create a collection.
+If the `SeriesGroup` element is set to different values in each book of the series, then each value of the elements will create a collection.
 
 #### Read lists
 
