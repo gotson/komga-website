@@ -15,6 +15,12 @@ You should Scan Library Files if you have:
 
 By default, Komga will scan your libraries regularly.
 
+### Deep scan
+
+This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
+
+Trigger a Deep Scan if Komga is missing some books after a scan.
+
 ## What happens during a Scan?
 
 Komga will generate a library representation of your files on disk. A Komga library does _not_ represent exactly your folder structure.

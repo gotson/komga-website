@@ -33,12 +33,6 @@ See [Emptying library trash](/guides/trash.md#automatically-empty-trash)
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
-#### Deep scan
-
-This will force the scanner to compare all scanned books with the ones stored in the database. Normally this is not required, as Komga uses the last modified time of the parent folders to decide whether to compare books, but some filesystems may behave differently.
-
-Enable Deep Scan if Komga often miss some books after a scan.
-
 ### Analysis
 
 #### Compute hash for files
