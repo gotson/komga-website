@@ -1,7 +1,7 @@
 # Run with the Jar file
 
 :::tip
-You need Java version 8+ (or 1.8+) to run Komga. Check your version with `java -version`.
+You need Java version 17+ to run Komga. Check your version with `java -version`.
 :::
 
 You can run Komga from the fat `jar` file. You can download them in the [releases](https://github.com/gotson/komga/releases) section.
