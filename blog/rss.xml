@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Komga Blog</title>
+        <link>https://komga.org/blog</link>
+        <description>Komga Blog</description>
+        <lastBuildDate>Tue, 21 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Prepare for v1.0.0]]></title>
+            <link>https://komga.org/blog/prepare-v1</link>
+            <guid>https://komga.org/blog/prepare-v1</guid>
+            <pubDate>Tue, 21 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The future v1.0.0 will bring some breaking changes, this guide will help you to prepare for the next major version.]]></description>
+            <content:encoded><![CDATA[<p>The future v1.0.0 will bring some breaking changes, this guide will help you to prepare for the next major version.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="before-upgrading">Before upgrading<a href="#before-upgrading" class="hash-link" aria-label="Direct link to Before upgrading" title="Direct link to Before upgrading">​</a></h2><ul><li>If you run Docker, it is advisable to use the <code>0.x</code> tag instead of <code>latest</code>. You will be able to decide when you want to upgrade, especially if you are updating containers automatically.</li><li>Backup your <code>database.sqlite</code>. You can find it in the configuration directory, by default:<ul><li>on Windows: <code>%USERPROFILE%/.komga/database.sqlite</code></li><li>on Unix: <code>~/.komga/database.sqlite</code></li><li>on Docker: in the directory you mounted as <code>/config</code></li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="breaking-changes">Breaking changes<a href="#breaking-changes" class="hash-link" aria-label="Direct link to Breaking changes" title="Direct link to Breaking changes">​</a></h2><ul><li>The minimum Java version required will be Java 17:<ul><li>If you run Komga using the <code>jar</code>, you will need to make sure your Java version is sufficient by running <code>java -version</code>.</li><li>If you run Komga using Docker, you don't need to do anything.</li></ul></li><li>The hashing algorithm for files and pages will change. Previous hashes for files and pages will be deleted. On startup, if hashing is enabled, Komga will re-hash files and pages using the new algorithm.</li><li>The default port will be changed from <code>8080</code> to <code>25600</code>:<ul><li>If you use Docker, you will need to update your container or compose configuration to expose the new port.</li><li>You may need to adjust your reverse proxy settings.</li><li>You can still change the port <a href="/docs/installation/configuration#server_port--serverport-port">through configuration</a>.</li></ul></li></ul>]]></content:encoded>
+            <category>breaking change</category>
+            <category>upgrade</category>
+            <category>komga</category>
+        </item>
+    </channel>
+</rss>
