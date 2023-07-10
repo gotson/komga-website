@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkomga_website=self.webpackChunkkomga_website||[]).push([[7426],{5414:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/breaking-change","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

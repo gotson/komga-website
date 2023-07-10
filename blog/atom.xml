@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/blog</id>
-    <title>Komga Blog</title>
+    <title>Announcements</title>
     <updated>2023-03-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/blog"/>
-    <subtitle>Komga Blog</subtitle>
+    <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Prepare for v1.0.0]]></title>
