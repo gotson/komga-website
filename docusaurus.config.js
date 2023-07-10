@@ -44,7 +44,14 @@ const config = {
                     showLastUpdateTime: true,
                 },
                 blog: {
+                    blogTitle: 'Announcements',
+                    blogDescription: 'Latest Komga announcements',
                     showReadingTime: true,
+                    feedOptions: {
+                        type: 'all',
+                        title: 'Announcements',
+                        description: 'Latest Komga announcements',
+                    },
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
