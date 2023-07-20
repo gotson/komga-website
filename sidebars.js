@@ -94,6 +94,7 @@ const sidebars = {
             ],
         },
         'contribution',
+        'community',
         'faq',
     ],
     api: [
