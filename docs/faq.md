@@ -103,8 +103,8 @@ Configure `KOMGA_LIBRARIES_SCAN_CRON` / `komga.libraries-scan-cron` to `-`. See 
 ## How can I move a library to a different folder?
 
 You can follow those steps:
-1. Make sure [File Hashing](/guides/libraries#compute-hash-for-files) is enabled on the library.
-2. Disable [automatically emptying the trash](/guides/trash#automatically-empty-trash) for the library.
+1. Make sure [File Hashing](/guides/libraries.md#compute-hash-for-files) is enabled on the library.
+2. Disable [automatically emptying the trash](/guides/trash.md#automatically-empty-trash) for the library.
 3. Perform a scan on the library and let all tasks finish. This will ensure all files are hashed.
 4. Stop Komga.
 5. Move/copy the files to the new folder.
