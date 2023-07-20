@@ -32,7 +32,7 @@ spring:
             client-secret: jwhfkjhwefkn44t8vcxml3m
 ```
 
-## Facebook
+### Facebook
 
 Follow the [instructions](https://developers.facebook.com/docs/development/register) to create an App, and add the Facebook Login product.
 
