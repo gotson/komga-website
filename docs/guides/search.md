@@ -51,3 +51,14 @@ Some extra fields are available for search using the `field:search` syntax, see 
   - Possible values: `ready`, `unknown`, `error`, `unsupported`, `outdated`
   - Example: `status:(error OR unsupported)`
 - `deleted` will search soft-deleted books. Example: `deleted:true` or `deleted:false`
+- `oneshot` will search for One-Shots only. Example: `oneshot:true` or `oneshot:false`
+
+Some additional Series fields will be available if the book is a One-Shot:
+- `publisher`
+- `status`, which should always be `ended`
+- `reading_direction`
+- `age_rating`
+- `language`
+- `genre`
+- `sharing_label`
+- `complete`, which will always be `true`

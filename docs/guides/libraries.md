@@ -19,19 +19,20 @@ From the web interface:
 You can also specify extra options.
 
 <img src="/assets/media/guides/libraries/library-add-options.png" style={{maxHeight: '600px'}} alt="Add Library Dialog Options"/>
-<br/>
-<br/>
-<img src="/assets/media/guides/libraries/library-add-metadata.png" style={{maxHeight: '600px'}} alt="Add Library Dialog Metadata"/>
 
 ### Scanner options
 
 #### Empty trash automatically after every scan
 
-See [Emptying library trash](/guides/trash.md#automatically-empty-trash)
+See [Emptying library trash](/guides/trash.md#automatically-empty-trash).
 
 #### Force directory modified time
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
+
+#### One-Shots directory
+
+See [One-Shots](/guides/oneshots.md).
 
 ### Analysis
 
@@ -70,6 +71,8 @@ Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically
 Choose which book cover is used for the series.
 
 ### Metadata options
+
+<img src="/assets/media/guides/libraries/library-add-metadata.png" style={{maxHeight: '600px'}} alt="Add Library Dialog Metadata"/>
 
 Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
 
