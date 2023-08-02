@@ -92,6 +92,7 @@ const sidebars = {
                 },
                 'guides/theme',
                 'guides/announcements',
+                'guides/cli',
             ],
         },
         'contribution',

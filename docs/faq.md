@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+## I forgot my password
+
+Either ask an admin to reset your password, or use the [Command Line Interface](/guides/cli.md#reset-password-for-a-user) to reset it by yourself.
+
 ## Where can I find the log files?
 
 By default (if you haven't changed the configuration), log files are located:
