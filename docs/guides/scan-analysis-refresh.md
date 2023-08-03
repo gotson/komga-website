@@ -101,7 +101,7 @@ This will import the following elements from the `ComicInfo.xml` file in Komga:
 #### Series metadata
 
 This will import the following elements from the `ComicInfo.xml` of the Series' books in Komga:
-- The `Series` and `Volume` elements will be used to overwrite the title of the Series, in the form `<Series> (<Volume>)`, or just `<Series>` if the `Volume` element is not present or if the `Volume` is `1`. If multiple values are present, the most frequent value from all books will be used.
+- The `Series` and `Volume` elements will be used to overwrite the title of the Series, in the form `<Series> (<Volume>)`, or just `<Series>` if the `Volume` element is not present, if the `Volume` is `1`, or if _Append volume to series title_ is disabled. If multiple values are present, the most frequent value from all books will be used.
 - The various `AgeRating` values will be converted to a number in Komga. The highest value from all books will be used.
 - The most frequent `Publisher` value will be used as Komga's equivalent.
 - A `Manga` element with the value `YesAndRightToLeft` will mark the reading direction as _Right to left_. The most frequent value from all books will be used.
