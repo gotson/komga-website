@@ -100,7 +100,17 @@ const sidebars = {
         'faq',
     ],
     api: [
-        'api/rest',
+        {
+            type: 'category',
+            label: 'REST API',
+            link: {
+                type: 'doc',
+                id: 'api/rest',
+            },
+            items: [
+                'api/deprecation',
+            ],
+        },
     ],
 }
 
