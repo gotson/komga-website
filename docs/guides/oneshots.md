@@ -88,10 +88,7 @@ The Dashboard has specific handling for One-Shots:
 - Item card in Book views (when browsing readlists or recommended) will not display the Series name nor the book number
 - the Series filter panel has a _One-shot_ filter
 - One-Shots will not show in the Series picker dialog when importing books
-
-### Search
-
-One-Shots do not appear as series in the [full text search](./search.md) results. Instead, additional series fields are made available at the book level (see [here](./search#book-additional-fields) for details).
+- One-Shots will show only as books in the search bar and detailed search view
 
 ### REST API
 
