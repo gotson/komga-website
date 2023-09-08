@@ -7,8 +7,10 @@ Either ask an admin to reset your password, or use the [Command Line Interface](
 ## Where can I find the log files?
 
 By default (if you haven't changed the configuration), log files are located:
+- on the Windows app: `%LOCALAPPDATA%/Komga/logs/komga.log`
+- on the macOS app: `~/Library/Logs/Komga/komga.log`
 - on Windows: `%USERPROFILE%/.komga/komga.log`
-- on Unix: `~/.komga/komga.log`
+- on macOS or Unix: `~/.komga/komga.log`
 - on Docker: in the directory you mounted as `/config`, in a subdirectory called `logs`
 
 ## How to enable DEBUG or TRACE logs?

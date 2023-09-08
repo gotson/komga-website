@@ -30,6 +30,8 @@ const sidebars = {
                         type: 'generated-index',
                     },
                     items: [
+                        'installation/ms-store',
+                        'installation/desktop',
                         'installation/docker',
                         'installation/jar',
 
