@@ -19,7 +19,7 @@ Here is a list of reader applications that have been tested:
 | iPadOS  | [Chunky Comic Reader](https://apps.apple.com/us/app/chunky-comic-reader/id663567628)                                 |                               :x: Does not work anymore with Komga 1.4.0+                                |           No            |                     **OPDS PSE 1.0**                      |
 
 
-The OPDS feed also supports:
+The OPDS v1 feed also supports:
 
 - OpenSearch functionality, to search by `Series`
 - [OPDS Page Streaming Extension 1.2](https://anansi-project.github.io/docs/opds-pse/intro)
