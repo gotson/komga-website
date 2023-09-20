@@ -30,7 +30,12 @@ You can use some optional configuration keys:
 
 The Komga configuration directory. Will be used to store the logs, database, and any other file Komga needs.
 
-Defaults to `~/.komga`. `~` is your home directory on Unix, and your User profile on Windows.
+Defaults to:
+- `%LOCALAPPDATA%/Komga` on the _Windows app_. That folder is virtualized by Windows. 
+- `~/Library/Application Support/Komga` on the macOS app. 
+- `~/.komga` otherwise.
+
+`~` is your home directory on Unix, and your User profile on Windows.
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
@@ -92,8 +97,8 @@ File path for the SQLite database.
 If you want to change the directory, it is advised to change `komga.config-dir` instead.
 
 Defaults to:
-- `\${komga.config-dir}/database.sqlite` for _Jar_.
 - `/config/database.sqlite` for _Docker_.
+- `\${komga.config-dir}/database.sqlite` otherwise.
 
 #### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>`
 
@@ -113,7 +118,7 @@ A boolean indicating if Komga should delete empty read lists after a scan.
 
 Defaults to `true`.
 
-#### KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>`
+#### ~~KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>`~~
 
 This has been moved to [Library options](/guides/libraries.md#compute-hash-for-files).
 
@@ -146,8 +151,11 @@ Name of the log file.
 If you want to change the directory, it is advised to change `komga.config-dir` instead.
 
 Defaults to:
-- `\${komga.config-dir}/komga.log` for _Jar_.
+- `~/Library/Logs/Komga/komga.log` for the _macOS app_.
 - `/config/logs/komga.log` for _Docker_.
+- `\${komga.config-dir}/komga.log` otherwise.
+
+`~` is your home directory on Unix, and your User profile on Windows.
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
