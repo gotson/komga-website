@@ -51,20 +51,13 @@ Base URL, useful if you need to reverse proxy with a subfolder.
 
 Defaults to `/`.
 
-#### KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`
+#### ~~KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`~~
 
-A [Spring cron expression](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html) for libraries periodic scans.
-For example `0 0 * * * ?` will rescan every hour. `0 */15 * * * ?` will rescan every 15 minutes.
+This has been moved to [Library options: scan interval](/guides/libraries.md#scan-interval).
 
-To disable the periodic scan, set the value to `-`.
+#### ~~KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>`~~
 
-Defaults to `0 0 */8 * * ?` (every 8 hours).
-
-#### KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>`
-
-A boolean indicating if Komga should scan your libraries at startup.
-
-Defaults to `false`.
+This has been moved to [Library options: scan on startup](/guides/libraries.md#scan-on-startup).
 
 #### KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`
 
@@ -117,10 +110,6 @@ Defaults to `true`.
 A boolean indicating if Komga should delete empty read lists after a scan.
 
 Defaults to `true`.
-
-#### ~~KOMGA_FILE_HASHING / komga.file-hashing: `<true/false>`~~
-
-This has been moved to [Library options](/guides/libraries.md#compute-hash-for-files).
 
 #### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>`
 
@@ -180,9 +169,6 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  libraries-scan-cron: "0 0 */8 * * ?"  # periodic scan every 8 hours
-  libraries-scan-cron: "-"              # disable periodic scan
-  libraries-scan-startup: false         # scan libraries at startup
   libraries-scan-directory-exclusions:  # patterns to exclude directories from the scan
     - "#recycle" # synology NAS recycle bin
     - "@eaDir"   # synology NAS index/metadata folders
