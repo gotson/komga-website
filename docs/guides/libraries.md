@@ -59,6 +59,21 @@ This will configure the scanner to only look for files with specific file extens
 - PDF: `pdf`
 - Epub: `epub`
 
+#### Directory exclusions
+
+You can specify any pattern to exclude directory subtrees from the scan.
+
+Any directory for which the full path contains any of the configured patterns will be ignored during the scan.
+
+Patterns are checked against **any part of the directory path**:
+- `#recycle` will match on:
+  - `/data/books/Comics/#recycle`
+  - `/data/books/Comics/My weirdly named #recycle comic`
+
+:::tip
+To match only directories starting with the provided string, prefix the pattern with `/`, like `/#recycle`
+:::
+
 ### Options
 
 <img src="/assets/media/guides/libraries/library-add-options.png" style={{maxHeight: '500px'}} alt="Add Library Dialog Options"/>

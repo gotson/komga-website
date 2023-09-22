@@ -59,11 +59,9 @@ This has been moved to [Library options: scan interval](/guides/libraries.md#sca
 
 This has been moved to [Library options: scan on startup](/guides/libraries.md#scan-on-startup).
 
-#### KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`
+#### ~~KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`~~
 
-A list of patterns to exclude directories from the scan. If the full path contains any of the patterns, the directory will be ignored. If using the environment variable you need to use a comma-separated list.
-
-Defaults to `#recycle,@eaDir,@Recycle`.
+This has been moved to [Library options: directory exclusions](/guides/libraries.md#directory-exclusions).
 
 #### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
 
@@ -169,10 +167,6 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  libraries-scan-directory-exclusions:  # patterns to exclude directories from the scan
-    - "#recycle" # synology NAS recycle bin
-    - "@eaDir"   # synology NAS index/metadata folders
-    - "@Recycle" # QNAP NAS recycle bin
   remember-me:
     key: changeMe!    # required to activate the remember-me auto-login via cookies
     validity: 30d     # validity of the cookie in seconds, here 30 days
