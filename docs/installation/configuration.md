@@ -51,6 +51,12 @@ Base URL, useful if you need to reverse proxy with a subfolder.
 
 Defaults to `/`.
 
+#### SERVER_SERVLET_SESSION_TIMEOUT / server.servlet.session.timeout: `<duration>`
+
+The duration after which an inactive session will expire. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
+
+Defaults to 30 minutes.
+
 #### ~~KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`~~
 
 This has been moved to [Library options: scan interval](/guides/libraries.md#scan-interval).
@@ -63,23 +69,17 @@ This has been moved to [Library options: scan on startup](/guides/libraries.md#s
 
 This has been moved to [Library options: directory exclusions](/guides/libraries.md#directory-exclusions).
 
-#### KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`
+#### ~~KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`~~
 
-If set, the remember-me auto-login feature will be activated, and will generate a cookie with encoded login information to perform auto-login. Set `<key>` to any random string.
+This has been moved to Server Settings.
 
-Not set by default, you need to set it to enable this feature.
+#### ~~KOMGA_REMEMBERME_VALIDITY / komga.remember-me.validity: `<duration>`~~
 
-#### KOMGA_REMEMBERME_VALIDITY / komga.remember-me.validity: `<duration>`
+This has been moved to Server Settings.
 
-The validity of the generated remember-me cookie. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
+#### ~~KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>`~~
 
-Defaults to 2 weeks.
-
-#### KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>`
-
-The duration after which an inactive session will expire. You can specify the timeunit, for example `14d` for 14 days, or `24h` for 24 hours. If no unit is set, seconds will be used.
-
-Defaults to 7 days.
+This has been replaced by `server.servlet.session.timeout`.
 
 #### KOMGA_DATABASE_FILE / komga.database.file: `<file path>`
 
@@ -97,17 +97,13 @@ A list of origins to allow for CORS.
 
 Defaults to empty list.
 
-#### KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>`
+#### ~~KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>`~~
 
-A boolean indicating if Komga should delete empty collections after a scan.
+This has been moved to Server Settings.
 
-Defaults to `true`.
+#### ~~KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>`~~
 
-#### KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>`
-
-A boolean indicating if Komga should delete empty read lists after a scan.
-
-Defaults to `true`.
+This has been moved to Server Settings.
 
 #### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>`
 
