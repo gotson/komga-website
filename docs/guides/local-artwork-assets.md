@@ -6,6 +6,7 @@ There are a number of supported custom media items that need to be named correct
 - jpg
 - jpeg
 - png
+- webp
 - tbn
 
 ## Poster Artwork
