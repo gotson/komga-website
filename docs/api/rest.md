@@ -17,6 +17,10 @@ Upon successful authentication, a session is created, and can be reused.
 
 If you need to set the session cookie later on, you can call `/api/v1/login/set-cookie` with `X-Auth-Token`. The response will contain the `Set-Cookie` header.
 
+## Remember Me
+
+During authentication, if a request parameter `remember-me` is passed and set to `true`, the server will also return a `remember-me` cookie. This cookie will be used to login automatically even if the session has expired.
+
 ## Logout
 
 You can explicitely logout an existing session by calling `/api/logout`. This would return a `204`.
