@@ -163,10 +163,6 @@ Here is a sample `application.yml` file in case you need to customize it. Keep o
 # Lines starting with # are comments
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
-  remember-me:
-    key: changeMe!    # required to activate the remember-me auto-login via cookies
-    validity: 30d     # validity of the cookie in seconds, here 30 days
-  session-timeout: 7d # session timeout, here 7 days
   database:
     file: ${user.home}/.komga/database.sqlite
   cors.allowed-origins:
@@ -176,7 +172,9 @@ komga:
   delete-empty-read-lists: true
 server:
   port: 25600
-  servlet.context-path: /komga
+  servlet:
+    session.timeout: 7d # session timeout, here 7 days
+    context-path: /komga
 ```
 
 ## Database performance
