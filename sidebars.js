@@ -70,6 +70,7 @@ const sidebars = {
                 'guides/edit-metadata',
                 'guides/local-artwork-assets',
                 'guides/user-accounts',
+                'guides/server-settings',
                 'guides/read-progress',
                 'guides/collections',
                 'guides/readlists',
