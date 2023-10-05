@@ -7,3 +7,15 @@ The desktop application is available for Windows, macOS and Linux.
 ## Updating
 
 The application will automatically update itself when a new version is available.
+
+### Windows
+
+The OS itself will check for updates every 8 hours and upgrade the app in the background, even if it's not being used. Users will never see an update prompt.
+
+### macOS
+
+The app will check for updates on startup without blocking the user, and on a schedule whilst the app runs. Once the user agrees, updates will be downloaded and applied in the background ready for the next launch.
+
+### Linux
+
+An update check will be performed synchronously on each app start. If a new version is available then the update process will start and the update downloaded and applied, without any user interaction being required.
