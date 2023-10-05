@@ -102,10 +102,6 @@ The server cannot be claimed if a user already exists in the database. It can ha
 
 You can solve the issue by deleting the database. By default it is located in `~/.komga/database.sqlite`. `~` is your home directory on Unix, and your User profile on Windows.
 
-## How can I disable the periodic scans?
-
-Configure `KOMGA_LIBRARIES_SCAN_CRON` / `komga.libraries-scan-cron` to `-`. See [here](/installation/configuration.md#komga-libraries-scan-cron-komga-libraries-scan-cron-cron) for more details.
-
 ## How can I move a library to a different folder?
 
 You can follow those steps:
@@ -128,10 +124,6 @@ Example:
 ```shell
 /media/user/disk* /media/user/storage fuse.mergerfs defaults,nonempty,allow_other,use_ino,cache.files=off,moveonenospc=true,dropcacheonclose=true,minfreespace=50G,category.create=mfs,func.getattr=newest,fsname=mergerfs 0 0
 ```
-
-## ChunkyTNG displays the wrong number for my books
-
-ChunkyTNG is doing a lot of caching, you may need to remove/add your OPDS server to force ChunkyTNG to update.
 
 ## How to enable support for Jpeg XL?
 
