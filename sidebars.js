@@ -62,6 +62,7 @@ const sidebars = {
             },
             items: [
                 'guides/webui',
+                'guides/desktop',
                 'guides/libraries',
                 'guides/trash',
                 'guides/scan-analysis-refresh',
