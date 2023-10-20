@@ -6,7 +6,7 @@ The _Server Settings > Server_ screen allows for more configuration of your serv
 
 This section allows to configure some server-wide options.
 
-<img src="/assets/media/guides/server-settings/server-settings.png" style={{maxHeight: '350px'}} alt="Server Settings"/>
+<img src="/assets/media/guides/server-settings/server-settings.png" style={{maxHeight: '450px'}} alt="Server Settings"/>
 
 #### Delete empty collections after scan
 
@@ -15,6 +15,10 @@ Indicate whether Komga should delete empty collections after a scan.
 #### Delete empty read lists after scan
 
 Indicate whether Komga should delete empty read lists after a scan.
+
+#### Task threads
+
+The number of threads dedicated to the processing of background tasks.
 
 #### Remember Me duration
 
