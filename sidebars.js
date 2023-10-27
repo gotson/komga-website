@@ -66,6 +66,7 @@ const sidebars = {
                 'guides/libraries',
                 'guides/trash',
                 'guides/scan-analysis-refresh',
+                'guides/image-formats',
                 'guides/oneshots',
                 'guides/edit-metadata',
                 'guides/local-artwork-assets',
