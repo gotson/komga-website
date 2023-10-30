@@ -43,11 +43,15 @@ _When overriding this configuration, you need to use `${user.home}` instead of `
 
 Port to listen to for the API and web interface.
 
+Can also be configured from the [Server Settings](../guides/server-settings.md#server-port).
+
 Defaults to `25600`.
 
 #### SERVER_SERVLET_CONTEXT_PATH / server.servlet.context-path: `<baseUrl>`
 
 Base URL, useful if you need to reverse proxy with a subfolder.
+
+Can also be configured from the [Server Settings](../guides/server-settings.md#base-url).
 
 Defaults to `/`.
 

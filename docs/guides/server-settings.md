@@ -6,7 +6,7 @@ The _Server Settings > Server_ screen allows for more configuration of your serv
 
 This section allows to configure some server-wide options.
 
-<img src="/assets/media/guides/server-settings/server-settings.png" style={{maxHeight: '450px'}} alt="Server Settings"/>
+<img src="/assets/media/guides/server-settings/server-settings.png" style={{maxHeight: '600px'}} alt="Server Settings"/>
 
 #### Delete empty collections after scan
 
@@ -27,6 +27,18 @@ The duration (in days) of the remember-me cookie that will be saved in the brows
 #### Regenerate the RememberMe key
 
 The RememberMe feature works with a secret key. If you want to invalidate all the remember-me cookies that have been issued, you can regenerate the key.
+
+#### Server Port
+
+Port to listen to for the API and web interface.
+
+This takes precedence over the `server.port` configuration key.
+
+#### Base URL
+
+Base URL, useful if you need to reverse proxy with a subfolder.
+
+This takes precedence over the `server.servlet.context-path` configuration key.
 
 
 ## Server Management
