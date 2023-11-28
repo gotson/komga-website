@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Komga',
-    tagline: 'Free and open source comics/mangas media server',
+    tagline: 'A media server for your comics, mangas, BDs, magazines and eBooks',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
