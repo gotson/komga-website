@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkomga_website=self.webpackChunkkomga_website||[]).push([[7547],{1621:e=>{e.exports=JSON.parse('{"label":"upgrade","permalink":"/blog/tags/upgrade","allTagsPath":"/blog/tags","count":2}')}}]);

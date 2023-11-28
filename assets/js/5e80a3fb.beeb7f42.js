@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkomga_website=self.webpackChunkkomga_website||[]).push([[5370],{6072:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/komga","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Latest Komga announcements","blogTitle":"Announcements"}')}}]);

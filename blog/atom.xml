@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/blog</id>
     <title>Announcements</title>
-    <updated>2023-03-21T00:00:00.000Z</updated>
+    <updated>2023-11-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/blog"/>
     <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[eBook support]]></title>
+        <id>https://komga.org/blog/ebook-support</id>
+        <link href="https://komga.org/blog/ebook-support"/>
+        <updated>2023-11-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Version 1.8.0 is bringing a long awaited feature: proper eBook support!]]></summary>
+        <content type="html"><![CDATA[<p>Version <a href="https://github.com/gotson/komga/releases/tag/1.8.0" target="_blank" rel="noopener noreferrer">1.8.0</a> is bringing a long awaited feature: <strong>proper eBook support!</strong></p><p>Github issue <a href="https://github.com/gotson/komga/issues/221" target="_blank" rel="noopener noreferrer">#221</a> has been opened for more than 3 years, and has finally been tackled.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-you-need-to-know">What you need to know<a href="#what-you-need-to-know" class="hash-link" aria-label="Direct link to What you need to know" title="Direct link to What you need to know">​</a></h2><ul><li>eBooks behave like any other book in Komga, in regards to series or metadata. You can even mix comic books and ebooks in the same series.</li><li>only EPUB format is supported. Other formats will not be supported in the future.</li><li>existing EPUB files will be re-analyzed. If you had image-only EPUB, those may not be compatible anymore with third-party clients.</li><li>the web EPUB reader is a very first version, and <strong>does not support saving progress</strong>. Read progress saving and restore will come in a future release.</li><li>any book in Komga can be read with <a href="https://readium.org/webpub-manifest/" target="_blank" rel="noopener noreferrer">WebPub</a> compatible clients.</li><li><strong>There will be issues</strong>. EPUB is a complex format, and many EPUB files are not properly built. Raise issues <a href="https://github.com/gotson/komga/issues/new/choose" target="_blank" rel="noopener noreferrer">on Github</a> for support.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-recent-changes-you-may-have-missed">Other recent changes you may have missed<a href="#other-recent-changes-you-may-have-missed" class="hash-link" aria-label="Direct link to Other recent changes you may have missed" title="Direct link to Other recent changes you may have missed">​</a></h2><p>In case you haven't kept up with the release notes since version 1.0.0, here are the most significant changes:</p><ul><li>Komga is now available as a <a href="/blog/docs/installation/desktop">desktop app</a>, and is available in the <a href="/blog/docs/installation/ms-store">Microsoft Store</a></li><li>Multiple settings are now configurable from the <a href="/blog/docs/guides/server-settings">Server Settings</a> screen. You may need to cleanup your configuration file and remove deprecated entries.</li><li>Thumbnails size can now be configured in Server Settings.</li><li>Background task management has been revamped, and now supports proper parallel executions (configurable in Server Settings).</li><li>Komga now has support for <a href="/blog/docs/guides/oneshots">One-Shots</a>.</li><li>a <a href="/blog/docs/guides/cli">Command Line Interface</a> was added to update forgotten password for the admin account.</li></ul>]]></content>
+        <author>
+            <name>gotson</name>
+            <uri>https://github.com/gotson</uri>
+        </author>
+        <category label="upgrade" term="upgrade"/>
+        <category label="komga" term="komga"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Prepare for v1.0.0]]></title>
         <id>https://komga.org/blog/prepare-v1</id>
