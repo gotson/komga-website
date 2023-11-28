@@ -1,7 +1,7 @@
 # Introduction
 
 ## What is Komga?
-Komga is a media server for your comics, mangas, BDs and magazines.
+Komga is a media server for your comics, mangas, BDs, magazines and eBooks.
 
 How it works:
 1. Install and run Komga on a computer or NAS.
@@ -15,7 +15,7 @@ How it works:
 
 Komga supports the following file types:
 - Comic book archives: _CBZ_ and _CBR_ (except RAR5 and solid archives)
-- Comic books in _EPUB_ format (only images)
+- eBooks in _EPUB_ format
 - _PDF_ files
 
 ### Komga server compatibility
