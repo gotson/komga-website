@@ -22,12 +22,14 @@ The following types are supported on every platform:
 
 More advanced types are supported on some platforms only, as they rely on native libraries for decoding.
 
-| Platform     | JPEG XL (jxl)      | AVIF / HEIF        |
-|--------------|--------------------|--------------------|
-| macOS app    | :heavy_check_mark: | :heavy_check_mark: |
-| Windows app  | :heavy_check_mark: | :x:                |
-| Docker amd64 | :heavy_check_mark: | :heavy_check_mark: |
-| Docker arm64 | :x:                | :heavy_check_mark: |
-| Docker arm   | :x:                | :x:                |
+For WebP, the native library will be used if present. Else, the Java implementation will be used as fallback.
+
+| Platform     | JPEG XL (jxl)      | AVIF / HEIF        | WebP                        |
+|--------------|--------------------|--------------------|-----------------------------|
+| macOS app    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (native) |
+| Windows app  | :heavy_check_mark: | :x:                | :heavy_check_mark: (java)   |
+| Docker amd64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (java)   |
+| Docker arm64 | :x:                | :heavy_check_mark: | :heavy_check_mark: (java)   |
+| Docker arm   | :x:                | :x:                | :heavy_check_mark: (java)   |
 
 When using the `jar`, you will need to provide the native libraries yourself, and run Java with the correct arguments. You can check for more details [here](https://github.com/gotson/NightMonkeys#requirements).
