@@ -23,7 +23,7 @@ npm-debug.log
 .idea
 
 # Production
-/build
+build
 
 # Generated files
 .docusaurus

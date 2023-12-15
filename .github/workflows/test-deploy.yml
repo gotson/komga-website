@@ -17,4 +17,4 @@ jobs:
       - name: yarn install
         run: yarn install --frozen-lockfile
       - name: yarn build
-        run: yarn build
+        run: yarn workspace website build
