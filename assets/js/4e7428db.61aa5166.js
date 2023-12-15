@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9835],{7821:e=>{e.exports=JSON.parse('{"label":"komga","permalink":"/blog/tags/komga","allTagsPath":"/blog/tags","count":3}')}}]);
