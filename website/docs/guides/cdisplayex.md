@@ -3,7 +3,7 @@
 The premium version of [CDisplayEx](https://www.cdisplayex.com/mobile/) for Android allows you to connect 
 to Komga using the [REST API](../api/rest#authenticating).
 
-:::caution
+:::warning
 If you have disabled the [page dimensions analysis](libraries#analyze-page-dimensions) option, re-enable it, 
 it is necessary to open books with CDisplayEx.
 :::

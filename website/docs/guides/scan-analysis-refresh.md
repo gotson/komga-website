@@ -55,7 +55,7 @@ You can analyze content in multiple ways: for a book, for a series, or even for 
 
 Look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style={{verticalAlign: 'middle', maxHeight: '32px'}} /> and click on _Analyze_.
 
-:::caution
+:::warning
 Depending on the size of your Library, analysis may take a while.
 :::
 

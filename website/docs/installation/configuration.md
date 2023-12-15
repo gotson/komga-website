@@ -115,7 +115,7 @@ A boolean indicating whether Komga should create new users when a login via OAut
 
 Such users will be created with a random password, which the user can subsequently change from the _Account Settings_ page later on, for example to be able to connect using OPDS or Tachiyomi.
 
-:::caution
+:::warning
 It is recommended to enable this only with OAuth2 providers you control
 :::
 
@@ -125,7 +125,7 @@ Defaults to `false`.
 
 A boolean indicating whether Komga should check whether the `email_verified` claim is present and true in the OpenID Connect request.
 
-:::caution
+:::warning
 It is recommended to disable this only with OIDC providers that do not verify emails (like Azure AD)
 :::
 
@@ -179,7 +179,7 @@ server:
 
 ## Database performance
 
-:::caution
+:::warning
 Use at your own risk!
 
 :::

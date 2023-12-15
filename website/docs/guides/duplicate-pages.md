@@ -6,7 +6,7 @@ You need to enable [page hashing](libraries#compute-hash-for-pages) for your lib
 
 You can manage duplicate pages from _Server Settings > Duplicate Pages_.
 
-:::caution
+:::warning
 **Duplicate page removal will modify your files.**
 
 It is recommended to perform a backup, and to try using manual deletion before using automatic deletion.

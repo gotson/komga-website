@@ -4,7 +4,7 @@
 
 [Panels app](https://apps.apple.com/us/app/panels-comic-reader/id1236567663) allows you to connect with any OPDS compatible server. With Panels you will be able to to remotely download or stream your comics using your iPhone or iPad. With Panels, users can conveniently navigate through their entire Komga library and keep track of their reading progress.
 
-:::caution
+:::warning
 Please note that Panels OPDS support requires either a Panels+ subscription or Panels in-app purchase.
 :::
 
