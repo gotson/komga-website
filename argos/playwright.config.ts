@@ -4,7 +4,7 @@ import type {PlaywrightTestConfig} from '@playwright/test';
 const config: PlaywrightTestConfig = {
     webServer: {
         port: 3000,
-        command: 'yarn docusaurus serve',
+        command: 'yarn workspace website docusaurus serve',
     },
     projects: [
         {
