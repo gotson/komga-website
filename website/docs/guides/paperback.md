@@ -15,6 +15,7 @@ Once Paperback opens choose "Add as Source Repo" on the popup.
 
 <details>
 <summary>Add the source repository manually</summary>
+
 If you prefer, it is also possible to add the repository manually:
 
 1. In the app, go to **Settings**, **External Sources** then press **Edit** on the top right-hand corner.
