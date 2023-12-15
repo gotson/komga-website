@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkomga_website=self.webpackChunkkomga_website||[]).push([[8315],{2233:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/upgrade","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Latest Komga announcements","blogTitle":"Announcements"}')}}]);
