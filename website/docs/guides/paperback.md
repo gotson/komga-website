@@ -2,7 +2,7 @@
 
 Komga has an extension for [Paperback](https://paperback.moe/), a free iOS and iPadOS reader.
 
-:::caution
+:::warning
 Paperback requires iOS 13.4+ or iPadOS 13.4+.
 :::
 

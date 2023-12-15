@@ -1,6 +1,6 @@
 # Read with Chunky Reader (iPad)
 
-:::warning Note
+:::danger Note
 Chunky Reader does not work anymore with Komga 1.4.0+
 :::
 
@@ -8,7 +8,7 @@ Chunky Reader does not work anymore with Komga 1.4.0+
 
 Thanks to Komga's OPDS support, you can use the [Chunky Reader](https://apps.apple.com/app/id663567628) application for iPad to remotely download or stream your comics. Chunky Reader is at time of writing the only comic reader on iPad that supports the OPDS page streaming extension. This lets you stream individual pages without having to download the whole comic file onto your iPad.
 
-:::caution
+:::warning
 Please note that Chunky Reader's OPDS support requires the in app purchase which costs $3.99 or the equivalent of your local currency.
 :::
 

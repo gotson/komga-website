@@ -1,6 +1,6 @@
 # Install via third-party integrations
 
-:::caution Warning
+:::warning Warning
 Those methods are not officially supported, if you encounter installation issues please contact the respective authors.
 :::
 
@@ -60,7 +60,7 @@ There is a [tutorial](https://blog.tommyku.com/blog/deploying-komga-on-freenas-j
 
 ## TrueNAS SCALE
 
-:::caution
+:::warning
 SCALE is still in beta
 :::
 
