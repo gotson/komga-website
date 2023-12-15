@@ -4,10 +4,20 @@
         <title>Announcements</title>
         <link>https://komga.org/blog</link>
         <description>Latest Komga announcements</description>
-        <lastBuildDate>Wed, 29 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[eBook drop 2]]></title>
+            <link>https://komga.org/blog/ebook-drop2</link>
+            <guid>https://komga.org/blog/ebook-drop2</guid>
+            <pubDate>Fri, 15 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Version 1.9.0 contains the second feature drop for Ebooks support.]]></description>
+            <content:encoded><![CDATA[<p>Version <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">1.9.0</a> contains the second feature drop for Ebooks support.</p><p>It brings nice additions to the initial release, most notably the read progress will be kept when reading and restored, same as with other books.</p><p>The analysis process of EPUB files was also revamped, and some EPUB files that were not analyzed before should be working fine now.</p><p>While the first release forced all the EPUB files through the Epub Reader, this release brings back compatibility with the Divina Reader for pre-paginated EPUB files containing only images. This also restores support for the Pages API, and thus the compatibility with Tachiyomi, or any OPDS-PSE client.</p><p>Head over to the <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">Release Notes</a> for more details on all the new features and fixes.</p>]]></content:encoded>
+            <category>upgrade</category>
+            <category>komga</category>
+        </item>
         <item>
             <title><![CDATA[eBook support]]></title>
             <link>https://komga.org/blog/ebook-support</link>

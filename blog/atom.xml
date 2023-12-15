@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/blog</id>
     <title>Announcements</title>
-    <updated>2023-11-29T00:00:00.000Z</updated>
+    <updated>2023-12-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/blog"/>
     <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[eBook drop 2]]></title>
+        <id>https://komga.org/blog/ebook-drop2</id>
+        <link href="https://komga.org/blog/ebook-drop2"/>
+        <updated>2023-12-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Version 1.9.0 contains the second feature drop for Ebooks support.]]></summary>
+        <content type="html"><![CDATA[<p>Version <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">1.9.0</a> contains the second feature drop for Ebooks support.</p><p>It brings nice additions to the initial release, most notably the read progress will be kept when reading and restored, same as with other books.</p><p>The analysis process of EPUB files was also revamped, and some EPUB files that were not analyzed before should be working fine now.</p><p>While the first release forced all the EPUB files through the Epub Reader, this release brings back compatibility with the Divina Reader for pre-paginated EPUB files containing only images. This also restores support for the Pages API, and thus the compatibility with Tachiyomi, or any OPDS-PSE client.</p><p>Head over to the <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">Release Notes</a> for more details on all the new features and fixes.</p>]]></content>
+        <author>
+            <name>gotson</name>
+            <uri>https://github.com/gotson</uri>
+        </author>
+        <category label="upgrade" term="upgrade"/>
+        <category label="komga" term="komga"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[eBook support]]></title>
         <id>https://komga.org/blog/ebook-support</id>
