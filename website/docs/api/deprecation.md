@@ -5,7 +5,7 @@
 
 The following API endpoints will be removed in version `2.0.0`.
 
-### PUT /api/v1/libraries/{libraryId}
+### PUT /api/v1/libraries/\{libraryId}
 
 Deprecated since version: `1.3.0`
 
