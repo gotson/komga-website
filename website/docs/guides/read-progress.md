@@ -12,7 +12,7 @@ The webreader can track the progress as you read:
 
 ### Tachiyomi
 
-Tachiyomi can track progress of read books, using the Komga tracker. See [here](tachiyomi#track-read-progress) for more details.
+Tachiyomi can track progress of read manga using the Komga tracker. See [here](tachiyomi#track-read-progress) for more details.
 
 ### CDisplayEx
 
