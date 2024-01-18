@@ -71,8 +71,8 @@ TrueCharts offers more features, such as easier management of domain names and h
 1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
 2. Click on `Komga` and then click on `Install`.
 3. Leave everything as default, except:
-4. Optional: Under `Network Configuration` you can change the `Web Port`. This is the port at which you can later access Komga.
-5. Optional: Under `Storage Configuration` you can add the location to wherever your media files are currently stored by clicking `Add` next to `Additional Storage`.
+    1. Optional: Under `Network Configuration` you can change the `Web Port`. This is the port at which you can later access Komga.
+    2. Optional: Under `Storage Configuration` you can add the location to wherever your media files are currently stored by clicking `Add` next to `Additional Storage`.
 6. Click `Install`.
 
 ### TrueCharts
@@ -81,7 +81,7 @@ There is a [tutorial](https://truecharts.org/manual/SCALE/guides/getting-started
 1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
 2. Click on `Komga` and then click on `Install`. Make sure that the `Komga` that you select says `Truecharts` in the UI, and not `TrueNAS`.
 3. Leave everything as default, except:
-4. Optional: Under `Networking and Services` you can change the `Port`. This is the port at which you can later access Komga.
-5. Optional: If you will only access Komga through a domain name, see the TrueCharts guides for (a) [Networking and Services](https://truecharts.org/manual/SCALE/options/networking) and (b) [Ingress](https://truecharts.org/manual/SCALE/options/ingress).
-6. Optional: In `Storage and Persistence`, under `App Data Storage` you can change the location to wherever your media files are currently stored. For detailed instructions, see the [TrueCharts guide for adding storage](https://truecharts.org/manual/SCALE/guides/add-storage).
-10. Click `Install`.
+    1. Optional: Under `Networking and Services` you can change the `Port`. This is the port at which you can later access Komga.
+    2. Optional: If you will only access Komga through a domain name, see the TrueCharts guides for (a) [Networking and Services](https://truecharts.org/manual/SCALE/options/networking) and (b) [Ingress](https://truecharts.org/manual/SCALE/options/ingress).
+    3. Optional: In `Storage and Persistence`, under `App Data Storage` you can change the location to wherever your media files are currently stored. For detailed instructions, see the [TrueCharts guide for adding storage](https://truecharts.org/manual/SCALE/guides/add-storage).
+4. Click `Install`.
