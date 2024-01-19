@@ -60,22 +60,28 @@ There is a [tutorial](https://blog.tommyku.com/blog/deploying-komga-on-freenas-j
 
 ## TrueNAS SCALE
 
-:::warning
-SCALE is still in beta
-:::
+There are two primary methods to get Komga on TrueNAS SCALE. These are:
+1. The built-in Community repository.
+2. The TrueCharts community repository.
 
-There is a [tutorial](https://truecharts.org/manual/Quick-Start%20Guides/01-Open-Apps/) to install Truecharts on TrueNAS SCALE. Follow steps 1-4 to add TrueCharts to SCALE. 
-In order to create komga you need to find it under the TrueCharts apps in SCALE.
-Scale needs access to ip range of: 172.16.0.0/16 in order to deploy. 
-Keep all defaults and change:  
-1. Enter a name with lowercase letters.
-2. Change the update type to "Rolling Update:Create new pods and then kill old ones"
-3. Next
-4. You can change the node port to whatever you prefer, this is the port you will be accessing komga over. 
-5. This is the Komga Data source, add what you need. 
-6. Next
-7. Next
-8. Choose the container resources (I chose default), Next.
-9. I left this at disabled, Next.
-10. Install Komga and let it run. 
-Once its installed click portal and you  now have komga setup in SCALE. 
+TrueCharts offers more features, such as easier management of domain names and https certificates.
+
+### Built-in Community Repository
+
+1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
+2. Click on `Komga` and then click on `Install`.
+3. Leave everything as default, except:
+    1. Optional: Under `Network Configuration` you can change the `Web Port`. This is the port at which you can later access Komga.
+    2. Optional: Under `Storage Configuration` you can add the location to wherever your media files are currently stored by clicking `Add` next to `Additional Storage`.
+6. Click `Install`.
+
+### TrueCharts
+
+There is a [tutorial](https://truecharts.org/manual/SCALE/guides/getting-started#adding-truecharts) to install Truecharts on TrueNAS SCALE. Follow the steps to add TrueCharts to SCALE.
+1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
+2. Click on `Komga` and then click on `Install`. Make sure that the `Komga` that you select says `Truecharts` in the UI, and not `TrueNAS`.
+3. Leave everything as default, except:
+    1. Optional: Under `Networking and Services` you can change the `Port`. This is the port at which you can later access Komga.
+    2. Optional: If you will only access Komga through a domain name, see the TrueCharts guides for (a) [Networking and Services](https://truecharts.org/manual/SCALE/options/networking) and (b) [Ingress](https://truecharts.org/manual/SCALE/options/ingress).
+    3. Optional: In `Storage and Persistence`, under `App Data Storage` you can change the location to wherever your media files are currently stored. For detailed instructions, see the [TrueCharts guide for adding storage](https://truecharts.org/manual/SCALE/guides/add-storage).
+4. Click `Install`.
