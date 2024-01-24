@@ -33,3 +33,8 @@ Mermaid diagrams are rendered client-side and produce layout shifts
 .docusaurus-mermaid-container {
     display: none;
 }
+
+/* Weblate status is dynamic */
+#weblate-status {
+    display: none;
+}

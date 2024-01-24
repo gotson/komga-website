@@ -13,7 +13,7 @@ The official Komga extension for Tachiyomi: [tachiyomiorg/tachiyomi-extensions](
 The repository that hosts this very website you're reading on now: [gotson/komga-website](https://github.com/gotson/komga-website)
 
 ## Translation
-<a href="https://hosted.weblate.org/engage/komga/">
+<a id="weblate-status" href="https://hosted.weblate.org/engage/komga/">
 <img src="https://hosted.weblate.org/widgets/komga/-/svg-badge.svg" alt="Translation status" />
 </a>
 
@@ -27,7 +27,7 @@ Visit our translation project [here](https://hosted.weblate.org/engage/komga/).
 * [Subscriptions](https://docs.weblate.org/en/latest/user/profile.html#subscriptions)
 
 #### Project status
-<a href="https://hosted.weblate.org/engage/komga/">
+<a id="weblate-status" href="https://hosted.weblate.org/engage/komga/">
 <img src="https://hosted.weblate.org/widgets/komga/-/horizontal-auto.svg" alt="Translation status" />
 </a>
 
