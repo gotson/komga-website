@@ -162,7 +162,7 @@ This will import the following fields from the Epub metadata in Komga:
 
 #### Local artwork
 
-This will enable import for local artwork, check the [Local Artwork Assets](local-artwork-assets) section for more information.
+This will enable import for local artwork, check the [Local Artwork Assets](local-artwork-assets.md) section for more information.
 
 ### Import ISBN within barcode
 

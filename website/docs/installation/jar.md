@@ -12,7 +12,7 @@ In order to run Komga, use the following command (replace `x.y.z` with the actua
 java -jar komga-x.y.z.jar
 ```
 
-Once Komga is started, you can access the [web interface](../guides/webui).
+Once Komga is started, you can access the [web interface](/guides/webui.md).
 
 :::tip
 On Windows, use `javaw` instead of `java` to launch Komga _without_ a command prompt window appearing.

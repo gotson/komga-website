@@ -18,7 +18,7 @@ One-Shots are still composed of a series with a single book, but are handled sli
 
 ### Configuration
 
-You can enable One-Shots handling through [Library options](/guides/libraries.md#one-shots-directory).
+You can enable One-Shots handling through [Library options](libraries.md#one-shots-directory).
 
 ### Processing
 

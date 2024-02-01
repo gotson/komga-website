@@ -12,11 +12,11 @@ The webreader can track the progress as you read:
 
 ### Tachiyomi
 
-Tachiyomi can track progress of read books, using the Komga tracker. See [here](tachiyomi#track-read-progress) for more details.
+Tachiyomi can track progress of read books, using the Komga tracker. See [here](tachiyomi.md#track-read-progress) for more details.
 
 ### CDisplayEx
 
-CDisplayEx syncs read status and reading progress, See [here](cdisplayex#reading-status).
+CDisplayEx syncs read status and reading progress, See [here](cdisplayex.md#reading-status).
 
 ## Unread and in progress indicators
 

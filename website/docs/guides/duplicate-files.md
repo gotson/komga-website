@@ -2,7 +2,7 @@
 
 Komga can detect duplicate files among your books.
 
-You need to enable [file hashing](libraries#compute-hash-for-files) for your libraries.
+You need to enable [file hashing](libraries.md#compute-hash-for-files) for your libraries.
 
 You can manage duplicate pages from _Server Settings > Duplicate Files_.
 

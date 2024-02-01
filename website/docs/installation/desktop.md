@@ -22,4 +22,4 @@ An update check will be performed synchronously on each app start. If a new vers
 
 ## Read next
 
-Check the [Desktop Application](../guides/desktop) page.
+Check the [Desktop Application](/guides/desktop.md) page.

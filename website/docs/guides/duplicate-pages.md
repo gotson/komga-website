@@ -2,7 +2,7 @@
 
 Komga can detect duplicate pages among your books, and delete them manually or automatically.
 
-You need to enable [page hashing](libraries#compute-hash-for-pages) for your libraries.
+You need to enable [page hashing](libraries.md#compute-hash-for-pages) for your libraries.
 
 You can manage duplicate pages from _Server Settings > Duplicate Pages_.
 

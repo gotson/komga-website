@@ -10,4 +10,4 @@ Note that it takes up to a day or two for new releases to show in the Microsoft 
 
 ## Read next
 
-Check the [Desktop Application](../guides/desktop) page.
+Check the [Desktop Application](/guides/desktop.md) page.
