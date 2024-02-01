@@ -19,3 +19,7 @@ The app will check for updates on startup without blocking the user, and on a sc
 ### Linux
 
 An update check will be performed synchronously on each app start. If a new version is available then the update process will start and the update downloaded and applied, without any user interaction being required.
+
+## Read next
+
+Check the [Desktop Application](../guides/desktop) page.
