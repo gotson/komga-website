@@ -32,7 +32,7 @@ This will force the last modified time of a directory as the maximum from its ow
 
 #### Scan on startup
 
-If enabled, the library will be scanner when Komga starts.
+If enabled, the library will be scanned when Komga starts.
 
 #### Scan interval
 
