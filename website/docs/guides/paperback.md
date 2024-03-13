@@ -9,7 +9,7 @@ Paperback requires iOS 13.4+ or iPadOS 13.4+.
 ## Install and configure
 
 ### Add the source repository
-Support for Komga comes pre-installed with Paperback under the `Paperback` source name. If deleted the extension and repository simply open [the repository page](https://paperback-ios.github.io/extensions-main-promises/) on your device and tap **Add to Paperback**.
+Support for Komga comes pre-installed with Paperback under the `Paperback` source name. If deleted the extension and repository simply open [the repository page](https://paperback-ios.github.io/extensions-default/0.8/) on your device and tap **Add to Paperback**.
 
 Once Paperback opens choose "Add as Source Repo" on the popup.
 
@@ -22,7 +22,7 @@ If you prefer, it is also possible to add the repository manually:
 1. Press the top left-hand corner **+** button to add a repository.
 1. Use the base url:
    ```
-   https://paperback-ios.github.io/extensions-main-promises/
+   https://paperback-ios.github.io/extensions-default/0.8/
    ```
    
 </details>
