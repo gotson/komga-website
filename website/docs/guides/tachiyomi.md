@@ -1,14 +1,10 @@
-# Read with Tachiyomi
+# Read with Mihon
 
 ## Install and configure
 
-Komga has an official extension for [Tachiyomi](https://tachiyomi.org), available from within Tachiyomi's extension menu.
+Komga has an official extension for [Mihon](https://mihon.app/) (formerly Tachiyomi), available from the [Keiyoushi repository of extensions](https://keiyoushi.github.io/).
 
-Once installed, the extension will let you configure up to 3 Komga servers.
-
-<img src="/assets/media/guides/tachiyomi/tachiyomi-extension-info.png" style={{maxHeight: '600px'}} alt="Tachiyomi extension info"/>
-
-<img src="/assets/media/guides/tachiyomi/tachiyomi-configuration.png" style={{maxHeight: '600px'}} alt="Tachiyomi extension configuration"/>
+Once installed, the extension will let you configure up to 10 Komga servers.
 
 You will need to configure the extension with your _server address_, _username_ and _password_ before you can use it.
 
@@ -31,13 +27,11 @@ You can browse series, use the filter menu, and search for series.
 
 ## Track read progress
 
-Tachiyomi starting from `0.12.1` can keep your read progress in sync with your Komga server. Check the official Tachiyomi website for [instructions](https://tachiyomi.org/help/guides/tracking/#what-is-tracking).
+Mihon can keep your read progress in sync with your Komga server. Check the official Mihon website for [instructions](https://mihon.app/docs/guides/tracking#enhanced-services).
 
-Requirements:
-- Tachiyomi `0.12.1+`
-- Komga `0. 95.2+`
-- Tachiyomi Komga extension `1.2.24+`
+## Compatibility
 
-## Changelog and Compatibility
-
-Each version of the Komga extension need a specific version of the Komga server to work properly. Check the [CHANGELOG](https://github.com/inorichi/tachiyomi-extensions/blob/master/src/all/komga/CHANGELOG.md) for more information.
+For better compatibility, ensure you always have the latest versions of:
+- Komga server
+- Mihon
+- Komga extension
