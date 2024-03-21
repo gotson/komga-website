@@ -113,7 +113,7 @@ This has been moved to Server Settings.
 
 A boolean indicating whether Komga should create new users when a login via OAuth2/OIDC succeeds, but there is no existing user with that email.
 
-Such users will be created with a random password, which the user can subsequently change from the _Account Settings_ page later on, for example to be able to connect using OPDS or Tachiyomi.
+Such users will be created with a random password, which the user can subsequently change from the _Account Settings_ page later on, for example to be able to connect using OPDS or Mihon.
 
 :::warning
 It is recommended to enable this only with OAuth2 providers you control

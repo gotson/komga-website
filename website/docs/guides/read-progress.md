@@ -10,9 +10,9 @@ The webreader can track the progress as you read:
 - when you open a book that is in progress, the webreader will resume reading where you left it.
 - when you finish reading a book, the webreader will mark it as read.
 
-### Tachiyomi
+### Mihon
 
-Tachiyomi can track progress of read books, using the Komga tracker. See [here](tachiyomi.md#track-read-progress) for more details.
+Mihon can track progress of read books, using the Komga tracker. See [here](mihon.md#track-read-progress) for more details.
 
 ### CDisplayEx
 

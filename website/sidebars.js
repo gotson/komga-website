@@ -87,7 +87,7 @@ const sidebars = {
                     },
                     items: [
                         'guides/webreader',
-                        'guides/tachiyomi',
+                        'guides/mihon',
                         'guides/paperback',
                         'guides/cdisplayex',
                         'guides/opds',

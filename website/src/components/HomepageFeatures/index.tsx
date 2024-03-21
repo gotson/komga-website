@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
         title: 'Read',
         description: (
             <>
-                Use the integrated Webreader, the Tachiyomi extension, any OPDS reader, or other integrations.
+                Use the integrated Webreader, the Mihon extension, any OPDS reader, or other integrations.
             </>
         ),
     },

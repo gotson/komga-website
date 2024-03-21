@@ -6,8 +6,8 @@ Skilled at code? Know how to improve something or you generally want to support 
 ### Application
 The main application: [gotson/komga](https://github.com/gotson/komga) ![GitHub issues](https://img.shields.io/github/issues/gotson/komga?style=social)
 
-### Tachiyomi Extension
-The official Komga extension for Tachiyomi: [tachiyomiorg/tachiyomi-extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/tree/master/src/all/komga)
+### Mihon Extension
+The official Komga extension for Mihon: [keiyoushi/extensions-source](https://github.com/keiyoushi/extensions-source/tree/main/src/all/komga)
 
 ### Website
 The repository that hosts this very website you're reading on now: [gotson/komga-website](https://github.com/gotson/komga-website)
