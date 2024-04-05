@@ -4,6 +4,12 @@
 Those methods are not officially supported, if you encounter installation issues please contact the respective authors.
 :::
 
+## PikaPods
+
+Offers managed hosting for Komga and shares part of the revenue back to the project. From $2.9/month with $5 free welcome credit.
+
+[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=komga)
+
 ## Windows Installer and Updater
 
 A [Powershell script](https://github.com/losslesspng/SetUpKomgaJava) to get up and running with Komga.
