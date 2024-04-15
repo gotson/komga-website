@@ -4,7 +4,7 @@
 Skilled at code? Know how to improve something or you generally want to support the creation of the app?
 
 ### Application
-The main application: [gotson/komga](https://github.com/gotson/komga) ![GitHub issues](https://img.shields.io/github/issues/gotson/komga?style=social)
+The main application: [gotson/komga](https://github.com/gotson/komga) <span class="playgroundPreview">![GitHub issues](https://img.shields.io/github/issues/gotson/komga?style=social)</span>
 
 ### Mihon Extension
 The official Komga extension for Mihon: [keiyoushi/extensions-source](https://github.com/keiyoushi/extensions-source/tree/main/src/all/komga)

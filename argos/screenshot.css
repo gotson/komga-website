@@ -14,6 +14,8 @@ iframe,
 img[src$='.gif'],
     /* Algolia Keyboard shortcuts appear with a little delay */
 .DocSearch-Button-Keys > kbd,
+    /* Video loading spinner may not always be the same */
+video,
     /* The live playground preview can often display dates/counters */
 [class*='playgroundPreview'] {
     visibility: hidden;
