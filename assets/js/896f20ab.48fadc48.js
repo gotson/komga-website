@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8341],{7930:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/breaking-change","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Latest Komga announcements","blogTitle":"Announcements"}')}}]);
