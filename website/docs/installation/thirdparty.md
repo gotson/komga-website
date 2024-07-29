@@ -66,28 +66,9 @@ There is a [tutorial](https://blog.tommyku.com/blog/deploying-komga-on-freenas-j
 
 ## TrueNAS SCALE
 
-There are two primary methods to get Komga on TrueNAS SCALE. These are:
-1. The built-in Community repository.
-2. The TrueCharts community repository.
-
-TrueCharts offers more features, such as easier management of domain names and https certificates.
-
-### Built-in Community Repository
-
 1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
 2. Click on `Komga` and then click on `Install`.
 3. Leave everything as default, except:
     1. Optional: Under `Network Configuration` you can change the `Web Port`. This is the port at which you can later access Komga.
     2. Optional: Under `Storage Configuration` you can add the location to wherever your media files are currently stored by clicking `Add` next to `Additional Storage`.
 6. Click `Install`.
-
-### TrueCharts
-
-There is a [tutorial](https://truecharts.org/manual/SCALE/guides/getting-started#adding-truecharts) to install Truecharts on TrueNAS SCALE. Follow the steps to add TrueCharts to SCALE.
-1. Open `Apps` then go to `Discover Apps` and then search for `Komga`.
-2. Click on `Komga` and then click on `Install`. Make sure that the `Komga` that you select says `Truecharts` in the UI, and not `TrueNAS`.
-3. Leave everything as default, except:
-    1. Optional: Under `Networking and Services` you can change the `Port`. This is the port at which you can later access Komga.
-    2. Optional: If you will only access Komga through a domain name, see the TrueCharts guides for (a) [Networking and Services](https://truecharts.org/manual/SCALE/options/networking) and (b) [Ingress](https://truecharts.org/manual/SCALE/options/ingress).
-    3. Optional: In `Storage and Persistence`, under `App Data Storage` you can change the location to wherever your media files are currently stored. For detailed instructions, see the [TrueCharts guide for adding storage](https://truecharts.org/manual/SCALE/guides/add-storage).
-4. Click `Install`.
