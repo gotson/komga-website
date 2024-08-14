@@ -108,7 +108,7 @@ Files with an incorrect extension will be automatically renamed in the backgroun
 
 ##### Automatically convert to CBZ
 
-Books in `rar`/`cbr` format (RAR4 only) will be converted to `cbz` automatically in the background. The `zip` files are created with the `DEFLATE` method without compression.
+Books in `rar`/`cbr` format will be converted to `cbz` automatically in the background. The `zip` files are created with the `DEFLATE` method without compression.
 
 #### Series cover
 
