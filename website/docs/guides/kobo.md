@@ -6,12 +6,12 @@ The Kobo integration is based on the native Kobo Sync capability, where your Kob
 
 This is what is currently supported:
 - Only **EPUB** books from all libraries, along with their metadata and cover image, will be synced.
+- When books metadata is edited in Komga, they will be updated on the Kobo eReader.
 - When books are deleted in Komga, they will be deleted on the Kobo eReader.
 - Read progress is synced both ways (see also limitations below)
 - If Kobo proxying is enabled in _Server Settings_, Komga will relay requests to the official Kobo servers, and return both the Komga content and Kobo content to the Kobo eReader. This can be useful if you have official Kobo purchases.
 
 Limitations:
-- When book metadata is modified on Komga, Kobo eReader will not update the metadata. This is a Kobo limitation.
 - Read progress
     - For regular EPUB books, Kobo can only keep track of read progress at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from Kobo to Komga or Komga to Kobo.
     - For Kobo EPUB (KEPUB) books, Kobo uses its own mechanism to track progress. Komga does its best to map the Kobo specific read progress to Komga, but it may be off by a few pages.
@@ -46,6 +46,14 @@ You will need to replace this line with your external server address, in the fol
 ```
 api_endpoint=https://<your_komga_address.com>/kobo/<api_key>
 ```
+
+### Force external port
+
+The Kobo eReader does not send valid HTTP `Host` header, which could break the covers and file download in certain circumstances.  Komga will try its best to automatically fix the incorrect Kobo headers, but in some specific cases it's not possible.
+
+If you experience some issues downloading covers or files from the Kobo, you will need to configure the _Kobo Sync external port_ (in _Server Settings_) to the port that your Kobo is accessing. Normally it should be what you have configured in `api_endpoint`.
+
+A case where this would be required is if you access your Komga server directly (without a reverse proxy), with Komga running in Docker, and with a Docker mapped port that is different from the internal Komga port.
 
 ## Migrating from Calibre-Web
 
