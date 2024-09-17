@@ -23,7 +23,7 @@ RAR 5 is supported on some platforms only, as it relies on native libraries for 
 | Platform     | RAR 5              |
 |--------------|--------------------|
 | macOS app    | :heavy_check_mark: |
-| Windows app  | :x:                |
+| Windows app  | :heavy_check_mark: |
 | Docker amd64 | :heavy_check_mark: |
 | Docker arm64 | :heavy_check_mark: |
 | Docker arm   | :x:                |
