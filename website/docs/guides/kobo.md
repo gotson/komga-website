@@ -6,16 +6,16 @@ The Kobo integration is based on the native Kobo Sync capability, where your Kob
 
 This is what is currently supported:
 - Only **EPUB** books from all libraries, along with their metadata and cover image, will be synced.
-- When books metadata is edited in Komga, they will be updated on the Kobo eReader.
+- When books metadata or cover is edited in Komga, they will be updated on the Kobo eReader.
 - When books are deleted in Komga, they will be deleted on the Kobo eReader.
-- Read progress is synced both ways (see also limitations below)
+- Read progress is synced both ways
+- EPUB books will be converted to KEPUB on-the-fly when downloaded by the Kobo, if Kepubify is configured and available (see [Kepubify](#kepubify))
 - If Kobo proxying is enabled in _Server Settings_, Komga will relay requests to the official Kobo servers, and return both the Komga content and Kobo content to the Kobo eReader. This can be useful if you have official Kobo purchases.
 
-Limitations:
-- Read progress
-    - For regular EPUB books, Kobo can only keep track of read progress at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from Kobo to Komga or Komga to Kobo.
-    - For Kobo EPUB (KEPUB) books, Kobo uses its own mechanism to track progress. Komga does its best to map the Kobo specific read progress to Komga, but it may be off by a few pages.
-    When syncing from Komga to Kobo, the Kobo will start at the beginning of the chapter.
+Read progress syncs in the following way:
+- For pre-paginated books, the read progress will be accurate per page.
+- For regular EPUB books, Kobo can only keep track of read progress at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from Kobo to Komga or Komga to Kobo. This is a Kobo limitation.
+- For Kobo EPUB (KEPUB) books, Kobo uses its own mechanism to track progress. Komga does its best to map the Kobo specific read progress to Komga, but it may be off by a few pages.
 
 ## Configuration
 
@@ -28,6 +28,19 @@ Proxying of unknown requests to the official Kobo servers can be enabled in _Ser
 The Kobo Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _Account Settings_ page. Make sure to write down the generated key, as it won't be shown afterwards.
 
 If you have multiple Kobo devices, it is recommended to use a different API key for each.
+
+### Kepubify
+
+Komga uses [Kepubify](https://pgaskin.net/kepubify/) to automatically convert EPUB books to KEPUB when the Kobo requests a file.
+
+Kepubify is bundled on the following distributions:
+- Windows app
+- macOS app
+- Docker amd64
+- Docker arm64
+- Docker arm
+
+When using the `jar`, you will need to configure the path to `kepubify` or `kepubify.exe` from the _Server Settings_.
 
 ### Setup Kobo
 
