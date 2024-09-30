@@ -35,7 +35,7 @@ If you prefer, it is also possible to add the repository manually:
 ### Configure the source
 1. In the app **Settings**, **External Sources**, press the `Paperback` source
 1. Select **Server Settings** and set your:
-   * server url
+   * server url (it must be **HTTPS**, as Apple blocks HTTP requests from apps)
    * username
    * password
 1. Press **Save** to exit
