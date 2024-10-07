@@ -35,7 +35,7 @@ jobs:
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Algolia crawler
-        uses: algolia/algoliasearch-crawler-github-actions@v1.1.10
+        uses: algolia/algoliasearch-crawler-github-actions@v1.1.12
         id: algolia_crawler
         with:
           crawler-user-id: ${{ secrets.ALGOLIA_CRAWLER_USER_ID }}
