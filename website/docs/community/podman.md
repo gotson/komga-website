@@ -73,7 +73,7 @@ TimeoutStartSec=900
 WantedBy=multi-user.target default.target
 ```
 
-- Run `systemctl --user daemon-reload` to generate the systemd service.
+- Run `systemctl --user daemon-reload` to generate the systemd service from the quadlet file.
 - Run `systemctl --user start komga.service` to start the container.
 
 ### podman quadlet files for using komf
@@ -123,7 +123,7 @@ SuccessExitStatus=0 143
 TimeoutStartSec=900
 ```
 
-#### komf.container
+komga-pod.container
 
 Create a podman secret called `komga_password` for the komga admin password. See [this page](https://docs.podman.io/en/latest/markdown/podman-secret-create.1.html) for info on how to create a podman secret.
 
@@ -155,7 +155,7 @@ SuccessExitStatus=0 143
 TimeoutStartSec=900
 ```
 
-- Run `systemctl --user daemon-reload` to generate the systemd services.
+- Run `systemctl --user daemon-reload` to generate the systemd services from the quadlet files.
 - Run `systemctl --user start komga-pod.service` to start the pod.
 
 ## Parameters
