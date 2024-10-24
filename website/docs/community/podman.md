@@ -35,16 +35,16 @@ Run the container:
 ```
 podman start komga
 ```
-### podman quadlet files
+### podman quadlet file
 
 > These quadlet files were tested with podman version 4.5.3
 
-Create the following podman quadlet file at `~/.config/containers/systemd`.
+Create the following quadlet file at `~/.config/containers/systemd`
 
 #### komga.container
 ```
 [Unit]
-Description=A media server for your comics, mangas, BDs, magazines and eBooks
+Description=Media server for comics/mangas/BDs/magazines/eBooks with API, OPDS and Kobo Sync support
 
 [Container]
 ## General
@@ -72,12 +72,13 @@ TimeoutStartSec=900
 # Start komga on boot
 WantedBy=multi-user.target default.target
 ```
+Start the container: `systemctl --user start komga.service`
 
 ### podman quadlet files for using komf
 
 > These quadlet files were tested with podman version 4.5.3
 
-If you wanted to run komf alongside komga I would recommend running them both of them in a pod. Create the following Quadlet files in `~/.config/containers/systemd/komga`
+Create the following quadlet files at `~/.config/containers/systemd/komga`
 
 #### komga.pod
 
@@ -154,6 +155,7 @@ SuccessExitStatus=0 143
 # Extend Timeout to allow time to pull the image
 TimeoutStartSec=900
 ```
+Start the pod: `systemctl --user start komga-pod.service`
 
 ## Parameters
 
