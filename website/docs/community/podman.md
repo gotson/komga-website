@@ -21,12 +21,56 @@ This image provides various versions that are available via tags.
 
 Here are some example snippets to help you get started creating a container.
 
-### podman quadlet
+### Podman
+Create the container with:
+```
+podman create \
+  --name=komga \
+  -p 25600:25600 \
+  --mount type=bind,source=/path/to/config,target=/config \
+  --mount type=bind,source=/path/to/data,target=/data \
+  gotson/komga
+```
+Run the container:
+```
+podman start komga
+```
+### Podman Quadlet
 
-Create the following podman quadlet files
-####
+> These quadlet files were tested with podman 4.5.3
+
+Create the following podman quadlet file at `~/.config/containers/systemd`
+
+#### komga.container
 ```
 [Unit]
+Description=A media server for your comics, mangas, BDs, magazines and eBooks
+
+[Container]
+## General
+AutoUpdate=registry
+Image=docker.io/gotson/komga:latest
+
+## Network
+PublishPort=25600:25600
+
+## Volumes
+# %h is for user home directory
+Volume=%h/path/to/config:/config
+Volume=%h/path/to/data:/data
+
+## Environment Variables
+Environment=<ENV_VAR>=<extra configuration>
+
+[Service]
+# Add 143 exit code to prevent the systemd service entering a failed state when stopping it
+SuccessExitStatus=0 143
+# Extend Timeout to allow time to pull the image
+TimeoutStartSec=900
+
+[Install]
+# Start komga on boot
+WantedBy=multi-user.target default.target
 ```
 
 ## Parameters
@@ -62,17 +106,21 @@ JAVA_TOOL_OPTIONS=-Xmx4g
 Below are the instructions for updating containers:
 
 ### Via podman auto-update
-- Add `AutoUpdate=registry` under the `[Container]` section of the quadlet file if using them.
+
+- Add `AutoUpdate=registry` under the `[Container]` section of the quadlet file.
 - Use the `latest` tag for the image.
+- Check if a new image is available: `podman auto-update --dry-run`
+- Update containers: `podman auto-update`
 
 ### Automatic Updates
-- Follow the above instructions to enable `podman auto-update`.
+
+- Follow the above instructions to configure `podman auto-update`.
 - Enable the systemd timer for `podman auto-update`: `systemctl enable podman-auto-update.timer`.
 - By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl edit podman-auto-update.timer`.
 - See [this page](https://man.archlinux.org/man/core/systemd/systemd.timer.5.en) for more information about systemd timers.
 
-Example Override for the systemd timer:
+Example systemd timer override for weekly updates:
 ```
 [Timer]
-OnCalendar=daily
+OnCalendar=weekly
 ```
