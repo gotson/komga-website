@@ -6,8 +6,6 @@
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change, or come have a chat on Discord.
 
-Please open issues on the [main repo](https://github.com/gotson/komga/).
-
 ## Repositories
 
 * [Komga](https://github.com/gotson/komga/)
