@@ -106,9 +106,6 @@ AutoUpdate=registry
 Image=docker.io/gotson/komga:latest
 Pod=komga.pod
 
-## Network
-PublishPort=25600:25600
-
 ## Volumes
 # %h is for user home directory
 Volume=%h/path/to/config:/config
