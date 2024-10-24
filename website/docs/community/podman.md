@@ -39,7 +39,7 @@ podman start komga
 
 > These quadlet files were tested with podman version 4.5.3
 
-Create the following quadlet file at `~/.config/containers/systemd`
+Create the following quadlet file at `~/.config/containers/systemd` and run `systemctl --user start komga.service` to start the container.
 
 #### komga.container
 ```
@@ -72,13 +72,12 @@ TimeoutStartSec=900
 # Start komga on boot
 WantedBy=multi-user.target default.target
 ```
-Start the container: `systemctl --user start komga.service`
 
 ### podman quadlet files for using komf
 
 > These quadlet files were tested with podman version 4.5.3
 
-Create the following quadlet files at `~/.config/containers/systemd/komga`
+Create the following quadlet files at `~/.config/containers/systemd/komga` and run `systemctl start komga-pod.service` to start the pod.
 
 #### komga.pod
 
