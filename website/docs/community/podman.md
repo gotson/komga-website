@@ -125,7 +125,7 @@ SuccessExitStatus=0 143
 TimeoutStartSec=900
 ```
 
-komga-pod.container
+#### komf.container
 
 Create a podman secret called `komga_password` for the komga admin password. See [this page](https://docs.podman.io/en/latest/markdown/podman-secret-create.1.html) for info on how to create a podman secret.
 
