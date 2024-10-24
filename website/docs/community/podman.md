@@ -39,7 +39,7 @@ podman start komga
 
 > These quadlet files were tested with podman 4.5.3
 
-Create the following podman quadlet file at `~/.config/containers/systemd`
+Create the following podman quadlet file at `~/.config/containers/systemd`.
 
 #### komga.container
 ```
@@ -72,8 +72,9 @@ TimeoutStartSec=900
 # Start komga on boot
 WantedBy=multi-user.target default.target
 ```
+### Podman Quadlet (with Komf)
 
-If you wanted to run komf alongside komga I would recommend running them both of them in a pod. Here's some example Quadlet files:
+If you wanted to run komf alongside komga I would recommend running them both of them in a pod. Create the following Quadlet files in `~/.config/containers/systemd`. Optionally create a subfolder for komga in `~/.config/containers/systemd` to keep the Quadlet files.
 
 #### komga.pod
 
@@ -119,6 +120,8 @@ TimeoutStartSec=900
 
 #### komf.container
 
+Create a podman secret called `komga_password` for the komga admin password. See [this page](https://docs.podman.io/en/latest/markdown/podman-secret-create.1.html) for info on how to create a podman secret.
+
 ```
 [Unit]
 Description=Komga and Kavita metadata fetcher
@@ -131,9 +134,10 @@ Image=docker.io/sndxr/komf:latest
 Pod=komga.pod
 
 ## Volumes
-Volume=%h/Server/komga-pod/komf:/config
+# %h is for user home directory
+Volume=%h/path/to/config:/config
 
-# Environment Variables
+## Environment Variables
 Environment="KOMF_KOMGA_BASE_URI=http://localhost:25600"
 Environment="KOMF_KOMGA_USER=admin@kethi.xyz"
 Environment="JAVA_TOOL_OPTIONS=-XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC -XX:ShenandoahGCHeuristics=compact -XX:ShenandoahGuaranteedGCInterval=3600000 -XX:TrimNativeHeapInterval=3600000"
@@ -190,7 +194,7 @@ Below are the instructions for updating containers:
 - Follow the above instructions to configure `podman auto-update`.
 - Enable the systemd timer for `podman auto-update`: `systemctl enable podman-auto-update.timer`.
 - By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl edit podman-auto-update.timer`.
-- See [this page](https://man.archlinux.org/man/core/systemd/systemd.timer.5.en) for more information about systemd timers.
+- See [this page](https://man.archlinux.org/man/core/systemd/systemd.timer.5.en) for more info about systemd timers.
 
 Example systemd timer override for weekly updates:
 ```
