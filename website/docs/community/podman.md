@@ -76,6 +76,7 @@ WantedBy=multi-user.target default.target
 
 - Run `systemctl --user daemon-reload` to generate the systemd service from the quadlet file.
 - Run `systemctl --user start komga.service` to start the container.
+- Make sure to create the folders under the Volumes section of the quadlet file before starting the container.
 
 ### podman quadlet files for using komf
 
@@ -160,6 +161,7 @@ TimeoutStartSec=900
 
 - Run `systemctl --user daemon-reload` to generate the systemd services from the quadlet files.
 - Run `systemctl --user start komga-pod.service` to start the pod.
+- Make sure to create the folders under the Volumes section of the quadlet files before starting the pod.
 
 ## Parameters
 
