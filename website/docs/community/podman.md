@@ -22,7 +22,7 @@ This image provides various versions that are available via tags.
 Here are some example snippets to help you get started creating a container.
 
 ### Podman
-Create the container with:
+Create the container:
 ```
 podman create \
   --name=komga \
@@ -71,6 +71,79 @@ TimeoutStartSec=900
 [Install]
 # Start komga on boot
 WantedBy=multi-user.target default.target
+```
+
+If you wanted to run komf alongside komga I would recommend running them both of them in a pod. Here's some example Quadlet files:
+
+#### komga.pod
+
+```
+[Pod]
+# Komga
+PublishPort=25600
+
+[Install]
+# Start komga pod on boot
+WantedBy=multi-user.target default.target
+```
+
+#### komga.container
+
+```
+[Unit]
+Description=Media server for comics/mangas/BDs/magazines/eBooks with API, OPDS and Kobo Sync support
+
+[Container]
+## General
+AutoUpdate=registry
+Image=docker.io/gotson/komga:latest
+Pod=komga.pod
+
+## Network
+PublishPort=25600:25600
+
+## Volumes
+# %h is for user home directory
+Volume=%h/path/to/config:/config
+Volume=%h/path/to/data:/data
+
+## Environment Variables
+Environment=<ENV_VAR>=<extra configuration>
+
+[Service]
+# Add 143 exit code to prevent the systemd service entering a failed state when stopping it
+SuccessExitStatus=0 143
+# Extend Timeout to allow time to pull the image
+TimeoutStartSec=900
+```
+
+#### komf.container
+
+```
+[Unit]
+Description=Komga and Kavita metadata fetcher
+After=komga.service
+
+[Container]
+## General
+AutoUpdate=registry
+Image=docker.io/sndxr/komf:latest
+Pod=komga.pod
+
+## Volumes
+Volume=%h/Server/komga-pod/komf:/config
+
+# Environment Variables
+Environment="KOMF_KOMGA_BASE_URI=http://localhost:25600"
+Environment="KOMF_KOMGA_USER=admin@kethi.xyz"
+Environment="JAVA_TOOL_OPTIONS=-XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC -XX:ShenandoahGCHeuristics=compact -XX:ShenandoahGuaranteedGCInterval=3600000 -XX:TrimNativeHeapInterval=3600000"
+Secret=komga_password,type=env,target=KOMF_KOMGA_PASSWORD
+
+[Service]
+# Add 143 exit code to prevent the systemd service entering a failed state when stopping it
+SuccessExitStatus=0 143
+# Extend Timeout to allow time to pull the image
+TimeoutStartSec=900
 ```
 
 ## Parameters
