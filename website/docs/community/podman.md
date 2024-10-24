@@ -55,7 +55,8 @@ Image=docker.io/gotson/komga:latest
 PublishPort=25600:25600
 
 ## Volumes
-# %h is for user home directory
+# %h is for user home directory.
+# see https://man.archlinux.org/man/systemd.unit.5.en#SPECIFIERS for more info about this.
 Volume=%h/path/to/config:/config
 Volume=%h/path/to/data:/data
 
@@ -109,7 +110,8 @@ Image=docker.io/gotson/komga:latest
 Pod=komga.pod
 
 ## Volumes
-# %h is for user home directory
+# %h is for user home directory.
+# see https://man.archlinux.org/man/systemd.unit.5.en#SPECIFIERS for more info about this.
 Volume=%h/path/to/config:/config
 Volume=%h/path/to/data:/data
 
@@ -139,7 +141,8 @@ Image=docker.io/sndxr/komf:latest
 Pod=komga.pod
 
 ## Volumes
-# %h is for user home directory
+# %h is for user home directory.
+# see https://man.archlinux.org/man/systemd.unit.5.en#SPECIFIERS for more info about this.
 Volume=%h/path/to/config:/config
 
 ## Environment Variables
