@@ -39,7 +39,7 @@ podman start komga
 
 > These quadlet files were tested with podman version 4.5.3
 
-Create the following quadlet file at `~/.config/containers/systemd` and run `systemctl --user start komga.service` to start the container.
+- Create the following quadlet file at `~/.config/containers/systemd`
 
 #### komga.container
 ```
@@ -73,11 +73,14 @@ TimeoutStartSec=900
 WantedBy=multi-user.target default.target
 ```
 
+- Run `systemctl --user daemon-reload` to generate the systemd service.
+- Run `systemctl --user start komga.service` to start the container.
+
 ### podman quadlet files for using komf
 
 > These quadlet files were tested with podman version 4.5.3
 
-Create the following quadlet files at `~/.config/containers/systemd/komga` and run `systemctl start komga-pod.service` to start the pod.
+- Create the following quadlet files at `~/.config/containers/systemd/komga`
 
 #### komga.pod
 
@@ -151,7 +154,9 @@ SuccessExitStatus=0 143
 # Extend Timeout to allow time to pull the image
 TimeoutStartSec=900
 ```
-Start the pod: `systemctl --user start komga-pod.service`
+
+- Run `systemctl --user daemon-reload` to generate the systemd services.
+- Run `systemctl --user start komga-pod.service` to start the pod.
 
 ## Parameters
 
