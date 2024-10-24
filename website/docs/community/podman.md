@@ -1,4 +1,5 @@
 # Run with Podman
+
 ## Registries
 
 Container images are published on:
@@ -18,12 +19,12 @@ This image provides various versions that are available via tags.
 
 ## Usage
 
-
+Here are some example snippets to help you get started creating a container.
 
 ### podman quadlet
-Tested with podman version 5.2.4
 
 Create the following podman quadlet files
+####
 ```
 [Unit]
 ```
@@ -53,11 +54,16 @@ JAVA_TOOL_OPTIONS=-Xmx4g
 
 ## Support info
 
-- Shell access whilst the container is running: `podmam exec -it komga /bin/bash`
-- To monitor the logs of the container in realtime: `podmam logs -f komga`
+- Shell access whilst the container is running: `podman exec -it komga /bin/bash`
+- To monitor the logs of the container in realtime: `podman logs -f komga`
 
 ## Updating
 
 Below are the instructions for updating containers:
 
 ### Via podman auto-update
+- Add `AutoUpdate=registry` under the `[Container]` section of the quadlet file if using them.
+- Use the `latest` tag for the image.
+
+### Automatic Updates
+Podman provides a systemd service and timer for `podman auto-update`. Simply enable the systemd timer with `systemctl enable podman-auto-update.timer`. By default the timer will auto-update the containers daily at midnight, you can customize this by running `systemctl edit podman-auto-update.timer` and adding an override for the OnCalendar value. See https://www.freedesktop.org/software/systemd/man/latest/systemd.time.html# for the format of OnCalendar value.  
