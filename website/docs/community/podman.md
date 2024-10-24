@@ -74,6 +74,8 @@ WantedBy=multi-user.target default.target
 ```
 ### Podman Quadlet (with Komf)
 
+> These quadlet files were tested with podman 4.5.3
+
 If you wanted to run komf alongside komga I would recommend running them both of them in a pod. Create the following Quadlet files in `~/.config/containers/systemd`. Optionally create a subfolder for komga in `~/.config/containers/systemd` to keep the Quadlet files.
 
 #### komga.pod
