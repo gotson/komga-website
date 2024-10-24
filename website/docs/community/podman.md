@@ -29,7 +29,7 @@ podman create \
   -p 25600:25600 \
   --mount type=bind,source=/path/to/config,target=/config \
   --mount type=bind,source=/path/to/data,target=/data \
-  gotson/komga
+  docker.io/gotson/komga:latest
 ```
 Run the container:
 ```
