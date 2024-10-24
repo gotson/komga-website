@@ -31,7 +31,7 @@ podman create \
   --mount type=bind,source=/path/to/data,target=/data \
   docker.io/gotson/komga:latest
 ```
-Run the container:
+Start the container:
 ```
 podman start komga
 ```
@@ -145,7 +145,7 @@ Volume=%h/path/to/config:/config
 
 ## Environment Variables
 Environment="KOMF_KOMGA_BASE_URI=http://localhost:25600"
-Environment="KOMF_KOMGA_USER=admin@kethi.xyz"
+Environment="KOMF_KOMGA_USER=admin@example.com"
 Environment="JAVA_TOOL_OPTIONS=-XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC -XX:ShenandoahGCHeuristics=compact -XX:ShenandoahGuaranteedGCInterval=3600000 -XX:TrimNativeHeapInterval=3600000"
 Secret=komga_password,type=env,target=KOMF_KOMGA_PASSWORD
 
@@ -199,8 +199,8 @@ Below are the instructions for updating containers:
 ### Automatic updates
 
 - Follow the above instructions to configure `podman auto-update`
-- Enable the systemd timer for `podman auto-update`: `systemctl enable podman-auto-update.timer`
-- By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl edit podman-auto-update.timer`.
+- Enable the systemd timer: `systemctl enable podman-auto-update.timer`
+- By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl edit podman-auto-update.timer`
 - See [this page](https://man.archlinux.org/man/core/systemd/systemd.timer.5.en) for more info about systemd timers.
 
 Example systemd timer override for weekly updates:
