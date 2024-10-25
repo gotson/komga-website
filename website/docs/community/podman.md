@@ -89,7 +89,7 @@ WantedBy=multi-user.target default.target
 ```
 [Pod]
 # Komga
-PublishPort=25600
+PublishPort=25600:25600
 # Komf
 PublishPort=8085:8085
 
