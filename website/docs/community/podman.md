@@ -205,8 +205,8 @@ Below are the instructions for updating containers:
 ### Automatic updates
 
 - Follow the instructions on the previous section to configure `podman auto-update`
-- Enable the systemd timer: `systemctl enable podman-auto-update.timer`
-- By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl edit podman-auto-update.timer`
+- Enable the systemd timer: `systemctl --user enable podman-auto-update.timer`
+- By default the timer will update the containers daily at midnight. You can customize the timer by running `systemctl --user edit podman-auto-update.timer`
 - See [this page](https://man.archlinux.org/man/core/systemd/systemd.timer.5.en) for more info about systemd timers.
 
 Example systemd timer override for weekly updates:
