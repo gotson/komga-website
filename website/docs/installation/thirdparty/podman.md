@@ -155,7 +155,7 @@ These quadlet files were tested with podman version 4.5.3
 
 ## Parameters
 
-Refer to [Run with Docker](../docker.md#parameters) for information about parameters and lemory limit.
+Refer to [Run with Docker](../docker.md#parameters) for information about parameters and memory limit.
 
 ## Support info
 
