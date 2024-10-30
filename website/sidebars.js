@@ -37,7 +37,24 @@ const sidebars = {
 
                     ],
                 },
-                'installation/thirdparty',
+                {
+                    type: 'category',
+                    label: 'Third-party methods',
+                    link: {
+                        type: 'generated-index',
+                    },
+                    items: [
+                        'installation/thirdparty/podman',
+                        'installation/thirdparty/pikapods',
+                        'installation/thirdparty/scoop',
+                        'installation/thirdparty/powershell-script',
+                        'installation/thirdparty/yunohost',
+                        'installation/thirdparty/freenas',
+                        'installation/thirdparty/truenas',
+                        'installation/thirdparty/qnap',
+                        'installation/thirdparty/aur',
+                    ],
+                },
                 {
                     type: 'category',
                     label: 'Configuration',
