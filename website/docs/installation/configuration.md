@@ -12,7 +12,7 @@ Komga relies heavily on [Spring Boot's configuration](https://docs.spring.io/spr
 The easiest way to configure is either via environment variables (a good fit for `docker` and `docker-compose`) or by using an `application.yml` file located in the configuration directory:
 
 - The Docker image will load any `application.yml` file located in the `/config` mounted folder.
-- The Jar will load any `application.yml` file located in the `komga.config-dir` directory (defaults to `~/.komga`, [more details](#komga-configdir-komga-config-dir-directory)).
+- The Jar will load any `application.yml` file located in the `komga.config-dir` directory (defaults to `~/.komga`, [more details](#komga_configdir--komgaconfig-dir-directory)).
 
 Each configuration key can have a different format depending if it's from the environment variable, or from the `application.yml` file. In the following section I will provide both format in the form `ENVIRONMENT_VARIABLE` / `application-property`.
 
