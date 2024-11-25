@@ -57,7 +57,19 @@ If the line does not exist, it must be created under the `[OneStoreServices]` gr
 You will need to replace this line with your external server address, in the following form:
 
 ```
-api_endpoint=https://<your_komga_address.com>/kobo/<api_key>
+api_endpoint=https://<your_komga_address>/kobo/<api_key>
+```
+
+For example:
+
+```
+api_endpoint=https://demo.komga.org/kobo/ABC123456123ABCD
+```
+
+Or for a local connection:
+
+```
+api_endpoint=http://192.168.1.54/kobo/ABC123456123ABCD
 ```
 
 ### Force external port
@@ -100,10 +112,10 @@ In order to get readable logs, you will need to enable Developer options:
 - In the _Logging Category_ section, enable the following: `sync`, `packetdump`
 - Restart the Kobo eReader
 
-Once that's set, you will be able to stream the Kobo's logs using netcat. Use the following command on a computer that is on the same network as the Kobo: 
+Once that's set, you will be able to stream the Kobo's logs using netcat. Use the following command on a computer that is on the same network as the Kobo. Replace `<kobo IP address>` with the actual IP of your Kobo.
 
 ```shell
-nc -v ${kobo IP address} 5001
+nc -v <kobo IP address> 5001
 ```
 
 ### Komga logs

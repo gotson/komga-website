@@ -6,6 +6,8 @@ Once Komga is started, you can access the web interface at: `http://<your-server
 If you are running Komga locally, _`<your-server>`_ will be `localhost`.
 
 The default _`<port>`_ is `25600`.
+
+`(/baseUrl)` is optional, use it only if you configured it.
 :::
 
 ## Create user account
