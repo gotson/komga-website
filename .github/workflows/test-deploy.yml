@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
-          cache: yarn
-      - name: yarn install
-        run: yarn install --frozen-lockfile
-      - name: yarn build
-        run: yarn workspace website build
+          cache: npm
+      - name: npm ci
+        run: npm ci
+      - name: npm build
+        run: npm -w website run build
