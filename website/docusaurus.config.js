@@ -48,6 +48,7 @@ const config = {
                     blogTitle: 'Announcements',
                     blogDescription: 'Latest Komga announcements',
                     showReadingTime: true,
+                    onUntruncatedBlogPosts: 'ignore',
                     feedOptions: {
                         type: 'all',
                         title: 'Announcements',
