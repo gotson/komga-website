@@ -61,30 +61,6 @@ The duration after which an inactive session will expire. You can specify the ti
 
 Defaults to 30 minutes.
 
-#### ~~KOMGA_LIBRARIES_SCAN_CRON / komga.libraries-scan-cron: `<cron>`~~
-
-This has been moved to [Library options: scan interval](/guides/libraries.md#scan-interval).
-
-#### ~~KOMGA_LIBRARIES_SCAN_STARTUP / komga.libraries-scan-startup: `<true/false>`~~
-
-This has been moved to [Library options: scan on startup](/guides/libraries.md#scan-on-startup).
-
-#### ~~KOMGA_LIBRARIES_SCAN_DIRECTORY_EXCLUSIONS / komga.libraries-scan-directory-exclusions: `<exclusions>`~~
-
-This has been moved to [Library options: directory exclusions](/guides/libraries.md#directory-exclusions).
-
-#### ~~KOMGA_REMEMBERME_KEY / komga.remember-me.key: `<key>`~~
-
-This has been moved to Server Settings.
-
-#### ~~KOMGA_REMEMBERME_VALIDITY / komga.remember-me.validity: `<duration>`~~
-
-This has been moved to Server Settings.
-
-#### ~~KOMGA_SESSIONTIMEOUT / komga.session-timeout: `<duration>`~~
-
-This has been replaced by `server.servlet.session.timeout`.
-
 #### KOMGA_DATABASE_FILE / komga.database.file: `<file path>`
 
 File path for the SQLite database.
@@ -100,14 +76,6 @@ Defaults to:
 A list of origins to allow for CORS.
 
 Defaults to empty list.
-
-#### ~~KOMGA_DELETE_EMPTY_COLLECTIONS / komga.delete-empty-collections: `<true/false>`~~
-
-This has been moved to Server Settings.
-
-#### ~~KOMGA_DELETE_EMPTY_READ_LISTS / komga.delete-empty-read-lists: `<true/false>`~~
-
-This has been moved to Server Settings.
 
 #### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>`
 
@@ -145,14 +113,6 @@ Defaults to:
 `~` is your home directory on Unix, and your User profile on Windows.
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
-
-#### ~~KOMGA_TASKCONSUMERS / komga.task-consumers: `<int>`~~
-
-This has been removed.
-
-#### ~~KOMGA_TASKCONSUMERSMAX / komga.task-consumers-max: `<int>`~~
-
-This has been removed.
 
 ## Sample Configuration File
 
