@@ -12,29 +12,7 @@ I recommend using [Caddy](https://caddyserver.com/) as a reverse proxy, as it su
 
 Here are some sample configuration on how to configure reverse proxy for Komga.
 
-### Caddy (v1)
-
-Without a base URL configured in Komga, using a subdomain:
-
-```
-komga.yourdomain.com {
-  proxy / http://your-komga-server:25600 {
-    transparent
-  }
-}
-```
-
-With a base URL configured in Komga:
-
-```
-yourdomain.com {
-  proxy /komga http://your-komga-server:25600 {
-    transparent
-  }
-}
-```
-
-### Caddy (v2)
+### Caddy
 
 Without a base URL configured in Komga, using a subdomain:
 
