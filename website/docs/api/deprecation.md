@@ -12,3 +12,15 @@ Deprecated since version: `1.3.0`
 Use `PATCH /api/v1/libraries/{libraryId}` instead, without any change needed. The `PUT` endpoint redirects to the `PATCH` endpoint internally.
 
 The endpoint now accepts a partial DTO, and will only update fields that are present.
+
+### GET /api/v1/series
+
+Deprecated since version: `1.15.0`
+
+Use `GET /api/v1/series/list` instead.
+
+### GET /api/v1/alphabetical-groups
+
+Deprecated since version: `1.15.0`
+
+Use `GET /api/v1/series/list/alphabetical-groups` instead.
