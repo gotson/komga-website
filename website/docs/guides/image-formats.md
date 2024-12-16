@@ -27,9 +27,9 @@ For WebP, the native library will be used if present. Else, the Java implementat
 | Platform     | JPEG XL (jxl)      | AVIF / HEIF        | WebP                        |
 |--------------|--------------------|--------------------|-----------------------------|
 | macOS app    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (native) |
-| Windows app  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (java)   |
+| Windows app  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (native) |
 | Docker amd64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (native) |
-| Docker arm64 | :x:                | :heavy_check_mark: | :heavy_check_mark: (native) |
+| Docker arm64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (native) |
 | Docker arm   | :x:                | :x:                | :heavy_check_mark: (java)   |
 
 When using the `jar`, you will need to provide the native libraries yourself, and run Java with the correct arguments. You can check for more details [here](https://github.com/gotson/NightMonkeys#requirements).
