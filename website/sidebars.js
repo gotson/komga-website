@@ -105,6 +105,7 @@ const sidebars = {
                         'guides/webreader',
                         'guides/mihon',
                         'guides/kobo',
+                        'guides/koreader',
                         'guides/paperback',
                         'guides/cdisplayex',
                         'guides/opds',

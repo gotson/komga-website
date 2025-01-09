@@ -1,0 +1,49 @@
+# Read with KOReader
+
+[KOReader](https://koreader.rocks) can access Komga using [OPDS v1](./opds.md#opds-v1).
+
+## Read progress sync
+
+Read progress syncs in the following way:
+- For pre-paginated books, the read progress will be accurate per page.
+- For regular EPUB books, rhe read progress will be tracker at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from KOReader to Komga or Komga to KOReader.
+
+## Configuration
+
+In order to use KOReader Sync with Komga, a Komga user must have the role `KOREADER_SYNC`.
+
+You also need to enable file hashing for KOReader, see [here](libraries.md#compute-hash-for-files-for-koreader) for more details.
+
+### Generate API key
+
+The KOReader Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _Account Settings_ page. Make sure to write down the generated key, as it won't be shown afterwards.
+
+If you have multiple KOReader devices, it is recommended to use a different API key for each.
+
+### Setup KOReader
+
+1. In the KOReader menu, go to _Progress sync_.
+    <img src="/assets/media/guides/koreader/koreader-progress-sync-menu.png" style={{maxHeight: '200px'}} alt="Progress sync menu in KOReader"/>
+
+2. Click on _Custom sync server_.
+    <img src="/assets/media/guides/koreader/koreader-custom-sync-server.png" style={{maxHeight: '70px'}} alt="Progress sync menu in KOReader"/>
+
+3. Enter your server address, following with `/koreader`. For example: `https://demo.komga.org/koreader`
+
+4. Click on _Register / Login_.
+   <img src="/assets/media/guides/koreader/koreader-sync-server-login.png" style={{maxHeight: '100px'}} alt="Progress sync menu in KOReader"/>
+
+5. In the _Register/login_ dialog, input the following:
+    <img src="/assets/media/guides/koreader/koreader-sync-server-login-dialog.png" style={{maxHeight: '180px'}} alt="Progress sync menu in KOReader"/>
+    - _username_: the Komga API key
+    - _password_: any dummy value, this field is not used by Komga
+
+6. Click on _Login_.
+
+## Troubleshooting
+
+### Komga logs
+
+Komga can log all incoming HTTP requests, including headers and body, by setting `logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter` to `DEBUG`.
+
+You can also access the recent HTTP exchanges under the `/actuator/httpexchanges` endpoint on your Komga server.

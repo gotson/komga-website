@@ -16,7 +16,11 @@ Mihon can track progress of read books, using the Komga tracker. See [here](miho
 
 ### CDisplayEx
 
-CDisplayEx syncs read status and reading progress, See [here](cdisplayex.md#reading-status).
+CDisplayEx syncs read status and reading progress. See [here](cdisplayex.md#reading-status) for more details.
+
+### KOReader
+
+KOReader can sync read status and reading progress. See [here](koreader.md#read-progress-sync) for more details.
 
 ## Unread and in progress indicators
 

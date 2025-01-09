@@ -92,6 +92,12 @@ Komga will compute a filehash for the first and last 3 pages in each book (`cbz`
 
 This can consume lots of resources on large libraries or slow hardware.
 
+##### Compute hash for files for KOReader
+
+Komga will compute a KOReader filehash for your files. This is required for the [KOReader Sync](koreader.md) functionality to work.
+
+This can consume lots of resources on large libraries or slow hardware.
+
 ##### Analyze page dimensions
 
 Komga will retrieve each page's dimensions (width and height). This is useful for:
