@@ -48,7 +48,6 @@ const sidebars = {
                         'installation/thirdparty/pikapods',
                         'installation/thirdparty/scoop',
                         'installation/thirdparty/powershell-script',
-                        'installation/thirdparty/yunohost',
                         'installation/thirdparty/freenas',
                         'installation/thirdparty/truenas',
                         'installation/thirdparty/qnap',
