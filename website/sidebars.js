@@ -104,6 +104,7 @@ const sidebars = {
                     items: [
                         'guides/webreader',
                         'guides/mihon',
+                        'guides/komelia',
                         'guides/kobo',
                         'guides/koreader',
                         'guides/paperback',
