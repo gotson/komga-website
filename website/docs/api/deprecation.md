@@ -17,10 +17,22 @@ The endpoint now accepts a partial DTO, and will only update fields that are pre
 
 Deprecated since version: `1.15.0`
 
-Use `GET /api/v1/series/list` instead.
+Use `POST /api/v1/series/list` instead.
 
 ### GET /api/v1/alphabetical-groups
 
 Deprecated since version: `1.15.0`
 
-Use `GET /api/v1/series/list/alphabetical-groups` instead.
+Use `POST /api/v1/series/list/alphabetical-groups` instead.
+
+### GET /api/v1/books
+
+Deprecated since version: `1.19.0`
+
+Use `POST /api/v1/books/list` instead.
+
+### GET /api/v1/series{seriesId}/books
+
+Deprecated since version: `1.19.0`
+
+Use `POST /api/v1/books/list` instead.
