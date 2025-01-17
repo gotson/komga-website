@@ -31,7 +31,7 @@ Deprecated since version: `1.19.0`
 
 Use `POST /api/v1/books/list` instead.
 
-### GET /api/v1/series{seriesId}/books
+### GET /api/v1/series/\{seriesId}/books
 
 Deprecated since version: `1.19.0`
 
