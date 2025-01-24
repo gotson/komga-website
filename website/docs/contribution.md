@@ -42,5 +42,5 @@ If you can't contribute code, but you still wish to help, then you can choose to
 
 <br/>
 <a href="https://www.jetbrains.com/?from=Komga" target="_blank" rel="noopener">
-    <img src="/assets/media/sponsors/sponsors-jetbrains.png" style={{maxHeight: '100px'}} />
+    <img src="/assets/media/sponsors/jetbrains.svg" style={{maxHeight: '100px'}} />
 </a>
