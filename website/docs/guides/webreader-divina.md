@@ -1,6 +1,6 @@
-# Read with the Webreader
+# Read with the Webreader: DIVINA
 
-Komga has an integrated Webreader packed with features.
+Komga has an integrated Webreader packed with features for DIVINA (Digital Visual Narrative) books.
 
 To start reading a book, you can click on the read button either on the book card, or on the book details screen.
 
@@ -11,7 +11,7 @@ To start reading a book, you can click on the read button either on the book car
 Here is an overview of the Webreader's interface.
 
 <a href="/assets/media/guides/webreader/reader.png">
-<img src="/assets/media/guides/webreader/reader.png" alt="Webreader overview"/>
+<img src="/assets/media/guides/webreader/reader.png" alt="Webreader DIVINA overview"/>
 </a>
 
 ## Settings
@@ -30,7 +30,7 @@ Four reading modes are available:
 - Vertical
 - Webtoon: displays all the pages in a continuous vertical strip
 
-The Webreader will automatically use the _Reading direction_ specified in the Book metadata.
+  The Webreader will automatically use the _Reading direction_ specified in the Book metadata.
 
 #### Animate page transitions
 
@@ -44,7 +44,7 @@ Touch gestures are available in the Page reader only (Left to right, Right to le
 
 #### Background color
 
-You can choose the background color of the reader between white and black.
+You can choose the background color of the reader between white, gray, and black.
 
 ### Reader specific options: Paged reader
 

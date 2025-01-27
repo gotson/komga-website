@@ -102,7 +102,8 @@ const sidebars = {
                         type: 'generated-index',
                     },
                     items: [
-                        'guides/webreader',
+                        'guides/webreader-divina',
+                        'guides/webreader-epub',
                         'guides/mihon',
                         'guides/komelia',
                         'guides/kobo',
