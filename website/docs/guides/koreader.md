@@ -6,7 +6,7 @@
 
 Read progress syncs in the following way:
 - For pre-paginated books, the read progress will be accurate per page.
-- For regular EPUB books, rhe read progress will be tracker at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from KOReader to Komga or Komga to KOReader.
+- For regular EPUB books, the read progress will be tracker at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from KOReader to Komga or Komga to KOReader.
 
 ## Configuration
 
