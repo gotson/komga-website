@@ -40,7 +40,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/gotson/komga-website/tree/master/',
+                    editUrl: 'https://github.com/gotson/komga-website/tree/master/website/',
                     showLastUpdateAuthor: false,
                     showLastUpdateTime: true,
                 },
