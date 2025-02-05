@@ -47,10 +47,16 @@ An example file structure would be:
 ```
 config/
   fonts/
-    LiberationSerif-Bold.ttf 
-    LiberationSerif-BoldItalic.ttf 
-    LiberationSerif-Italic.ttf 
-    LiberationSerif-Regular.ttf
+    Liberation Serif/
+      LiberationSerif-Bold.ttf 
+      LiberationSerif-BoldItalic.ttf 
+      LiberationSerif-Italic.ttf 
+      LiberationSerif-Regular.ttf
+    Liberation/
+      Liberation-Bold.ttf 
+      Liberation-BoldItalic.ttf 
+      Liberation-Italic.ttf 
+      Liberation-Regular.ttf
 ```
 
 #### Viewing theme
