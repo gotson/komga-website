@@ -6,6 +6,7 @@ import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 
 import styles from './index.module.css'
+import Translate from '@docusaurus/core/lib/client/exports/Translate'
 
 function HomepageHeader () {
     const { siteConfig } = useDocusaurusContext()
@@ -19,13 +20,15 @@ function HomepageHeader () {
                     <Link
                         className="button button--primary button--lg margin--sm"
                         to="/docs/introduction">
-                        Get Started
+                        <Translate description="Home page link to docs section">
+                            Get Started
+                        </Translate>
                     </Link>
                     <Link
                         className="button button--primary button--lg margin--sm"
                         to="/blog"
                     >
-                        Announcements
+                        <Translate description="Home page link to announcements section">Announcements</Translate>
                     </Link>
                 </div>
             </div>

@@ -94,6 +94,10 @@ const config = {
                         label: 'API',
                     },
                     { to: '/blog', label: 'Announcements', position: 'left' },
+                    // {
+                    //     type: 'localeDropdown',
+                    //     position: 'right',
+                    // },
                     {
                         href: 'https://discord.gg/TdRpkDu',
                         className: 'header-discord-link',
