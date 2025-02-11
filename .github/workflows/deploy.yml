@@ -9,14 +9,22 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
           cache: npm
-      - name: npm ci
+
+      - name: Install dependencies
         run: npm ci
-      - name: npm build
+
+      - name: Generate Open API
+        run: npm -w website run gen-api-docs
+
+      - name: Build website
         run: npm -w website run build
 
       # Popular action to deploy to GitHub Pages:

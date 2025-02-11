@@ -25,6 +25,9 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
+      - name: Mock OpenAPI
+        run: npm -w website run mock-api-docs
+
       - name: Build website fast
         run: npm -w website run build
 

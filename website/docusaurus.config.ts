@@ -1,12 +1,13 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import type { Config } from '@docusaurus/types'
+import type * as Preset from '@docusaurus/preset-classic'
+import type * as OpenApiPlugin from 'docusaurus-plugin-openapi-docs'
 
-const {themes} = require('prism-react-renderer');
-const lightCodeTheme = themes.github;
-const darkCodeTheme = themes.dracula;
+import { themes } from 'prism-react-renderer'
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const lightCodeTheme = themes.github
+const darkCodeTheme = themes.dracula
+
+const config: Config = {
     title: 'Komga',
     tagline: 'A media server for your comics, mangas, BDs, magazines and eBooks',
     favicon: 'img/favicon.ico',
@@ -36,13 +37,13 @@ const config = {
     presets: [
         [
             'classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
-            ({
+            {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: 'https://github.com/gotson/komga-website/tree/master/website/',
                     showLastUpdateAuthor: false,
                     showLastUpdateTime: true,
+                    docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi
                 },
                 blog: {
                     blogTitle: 'Announcements',
@@ -56,15 +57,39 @@ const config = {
                     },
                 },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: [
+                        './src/css/custom.css',
+                        './src/css/openapi.css',
+                    ],
                 },
-            }),
+            } satisfies Preset.Options,
         ],
     ],
 
+    plugins: [
+        [
+            'docusaurus-plugin-openapi-docs',
+            {
+                id: 'api', // plugin id
+                docsPluginId: 'classic', // configured for preset-classic
+                config: {
+                    komga: {
+                        specPath: 'https://raw.githubusercontent.com/gotson/komga/refs/heads/master/komga/docs/openapi.json',
+                        outputDir: 'docs/openapi',
+                        sidebarOptions: {
+                            groupPathsBy: 'tag',
+                            categoryLinkSource: 'tag',
+                        },
+                    } satisfies OpenApiPlugin.Options,
+                },
+            },
+        ],
+    ],
+
+    themes: ['docusaurus-theme-openapi-docs'], // export theme components
+
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        ({
+        {
             colorMode: {
                 respectPrefersColorScheme: true,
             },
@@ -160,8 +185,63 @@ const config = {
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
-                additionalLanguages: ['bash', 'diff', 'json'],
+                additionalLanguages: [
+                    'bash',
+                    'diff',
+                    'json',
+                    'ruby',
+                    'csharp',
+                    'php',
+                    'java',
+                    'powershell',
+                    'dart',
+                    'objectivec',
+                    'r',
+                ],
             },
+            languageTabs: [
+                {
+                    highlight: 'bash',
+                    language: 'curl',
+                    logoClass: 'curl',
+                },
+                {
+                    highlight: 'python',
+                    language: 'python',
+                    logoClass: 'python',
+                },
+                {
+                    highlight: 'javascript',
+                    language: 'nodejs',
+                    logoClass: 'nodejs',
+                },
+                {
+                    highlight: 'java',
+                    language: 'java',
+                    logoClass: 'java',
+                    variant: 'unirest',
+                },
+                {
+                    highlight: 'kotlin',
+                    language: 'kotlin',
+                    logoClass: 'kotlin',
+                },
+                {
+                    highlight: 'powershell',
+                    language: 'powershell',
+                    logoClass: 'powershell',
+                },
+                {
+                    highlight: 'swift',
+                    language: 'swift',
+                    logoClass: 'swift',
+                },
+                {
+                    highlight: 'rust',
+                    language: 'rust',
+                    logoClass: 'rust',
+                },
+            ],
             algolia: {
                 // The application ID provided by Algolia
                 appId: 'YU8KIUZCE7',
@@ -191,7 +271,7 @@ const config = {
 
                 //... other Algolia params
             },
-        }),
+        } satisfies Preset.ThemeConfig,
 }
 
 module.exports = config

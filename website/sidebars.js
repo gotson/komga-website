@@ -11,6 +11,8 @@
 
 // @ts-check
 
+import openApiSidebar from './docs/openapi/sidebar'
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
     docsSidebar: [
@@ -126,15 +128,22 @@ const sidebars = {
     ],
     api: [
         {
+            type: 'doc',
+            label: 'Introduction',
+            id: 'api/rest',
+        },
+        {
+            type: 'doc',
+            id: 'api/deprecation',
+        },
+        {
             type: 'category',
-            label: 'REST API',
+            label: 'API reference',
             link: {
-                type: 'doc',
-                id: 'api/rest',
+                type: "generated-index",
+                title: "API Reference",
             },
-            items: [
-                'api/deprecation',
-            ],
+            items: openApiSidebar,
         },
     ],
 }

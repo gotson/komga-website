@@ -1,8 +1,9 @@
 # REST API
 
-Komga offers a REST API, which you can browse using Swagger. It's available at `/swagger-ui.html`.
-
-The OpenAPI specification is also available [here](https://github.com/gotson/komga/blob/master/komga/docs/openapi.json).
+Komga offers a REST API:
+- browse [on this website](/docs/category/api-reference)
+- browse with Swagger UI on any running Komga server at `/swagger-ui.html`
+- check OpenAPI specification file [on Github](https://github.com/gotson/komga/blob/master/komga/docs/openapi.json).
 
 ## Authenticating
 

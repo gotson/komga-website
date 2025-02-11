@@ -9,12 +9,20 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
           cache: npm
-      - name: npm ci
+
+      - name: Install dependencies
         run: npm ci
-      - name: npm build
+
+      - name: Mock OpenAPI
+        run: npm -w website run mock-api-docs
+
+      - name: Build website
         run: npm -w website run build
