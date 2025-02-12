@@ -1,6 +1,7 @@
 # Komga Website
 
 [![Discord](https://img.shields.io/discord/678794935368941569?label=Discord)](https://discord.gg/TdRpkDu)
+[![Crowdin](https://badges.crowdin.net/komga-website/localized.svg)](https://crowdin.com/project/komga-website)
 
 ## Contributing
 
