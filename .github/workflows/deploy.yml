@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]
+  repository_dispatch:
+    types: [komga-release]
 
 jobs:
   deploy:
