@@ -23,6 +23,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Sync Crowdin
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: |
+          npm -w website run mock-api-docs
+          npm -w website run crowdin:sync
+          npm -w website run clean-api-docs
+
       - name: Generate Open API
         run: npm -w website run gen-api-docs
 
