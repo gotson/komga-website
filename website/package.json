@@ -15,7 +15,7 @@
     "typecheck": "tsc",
     "gen-api-docs": "docusaurus gen-api-docs all",
     "clean-api-docs": "docusaurus clean-api-docs all",
-    "mock-api-docs": "mkdir ./docs/openapi && cp ./emptySidebar.js ./docs/openapi/sidebar.js"
+    "mock-api-docs": "mkdir -p ./docs/openapi && cp mockSidebar.js ./docs/openapi/sidebar.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.6.3",
