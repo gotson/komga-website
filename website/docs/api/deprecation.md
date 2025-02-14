@@ -36,3 +36,9 @@ Use `POST /api/v1/books/list` instead.
 Deprecated since version: `1.19.0`
 
 Use `POST /api/v1/books/list` instead.
+
+### GET /api/v1/authors
+
+Deprecated since version: `1.20.0`
+
+Use `GET /api/v2/authors` instead.
