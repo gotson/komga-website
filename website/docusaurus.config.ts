@@ -76,6 +76,7 @@ const config: Config = {
                     komga: {
                         specPath: 'https://raw.githubusercontent.com/gotson/komga/refs/heads/master/komga/docs/openapi.json',
                         outputDir: 'docs/openapi',
+                        downloadUrl: 'https://github.com/gotson/komga/blob/master/komga/docs/openapi.json',
                         sidebarOptions: {
                             groupPathsBy: 'tag',
                             categoryLinkSource: 'tag',
