@@ -59,7 +59,7 @@ const config: Config = {
                 theme: {
                     customCss: [
                         './src/css/custom.css',
-                        './src/css/openapi.css',
+                        './src/css/openapi-highcontrast.css',
                     ],
                 },
             } satisfies Preset.Options,

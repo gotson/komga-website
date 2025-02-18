@@ -1,3 +1,8 @@
+.menu__list-item--deprecated > .menu__link,
+.menu__list-item--deprecated > .menu__link:hover {
+    text-decoration: line-through;
+}
+
 .api-method > .menu__link,
 .schema > .menu__link {
     align-items: center;
@@ -22,9 +27,9 @@
 
 .get > .menu__link::before {
     content: "get";
-    background-color: var(--ifm-color-info-contrast-background);
-    color: var(--ifm-color-info-contrast-foreground);
-    border-color: var(--ifm-color-info-dark);
+    background-color: var(--ifm-color-primary-contrast-background);
+    color: var(--ifm-color-primary-contrast-foreground);
+    border-color: var(--ifm-color-primary-dark);
 }
 
 .post > .menu__link::before {
@@ -43,16 +48,16 @@
 
 .put > .menu__link::before {
     content: "put";
-    background-color: var(--ifm-color-warning-contrast-background);
-    color: var(--ifm-color-warning-contrast-foreground);
-    border-color: var(--ifm-color-warning-dark);
+    background-color: var(--ifm-color-info-contrast-background);
+    color: var(--ifm-color-info-contrast-foreground);
+    border-color: var(--ifm-color-info-dark);
 }
 
 .patch > .menu__link::before {
     content: "patch";
-    background-color: var(--ifm-color-success-contrast-background);
-    color: var(--ifm-color-success-contrast-foreground);
-    border-color: var(--ifm-color-success-dark);
+    background-color: var(--ifm-color-warning-contrast-background);
+    color: var(--ifm-color-warning-contrast-foreground);
+    border-color: var(--ifm-color-warning-dark);
 }
 
 .head > .menu__link::before {
