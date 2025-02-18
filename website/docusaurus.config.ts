@@ -78,7 +78,7 @@ const config: Config = {
                         outputDir: 'docs/openapi',
                         downloadUrl: 'https://raw.githubusercontent.com/gotson/komga/refs/heads/master/komga/docs/openapi.json',
                         sidebarOptions: {
-                            groupPathsBy: 'tag',
+                            groupPathsBy: 'tagGroup',
                             categoryLinkSource: 'tag',
                         },
                     } satisfies OpenApiPlugin.Options,
@@ -96,7 +96,7 @@ const config: Config = {
             },
             docs: {
                 sidebar: {
-                    autoCollapseCategories: true,
+                    autoCollapseCategories: false,
                     hideable: true,
                 },
             },
