@@ -130,24 +130,7 @@ const sidebars = {
         'faq',
     ],
     api: [
-        {
-            type: 'doc',
-            label: 'Introduction',
-            id: 'api/rest',
-        },
-        {
-            type: 'doc',
-            id: 'api/deprecation',
-        },
-        {
-            type: 'category',
-            label: 'API reference',
-            link: {
-                type: "generated-index",
-                title: "API Reference",
-            },
-            items: filteredOpenApiSidebar,
-        },
+        filteredOpenApiSidebar,
     ],
 }
 

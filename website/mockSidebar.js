@@ -1,7 +1,6 @@
 const mockSidebar = [{
     type: 'doc',
-    label: 'Introduction',
-    id: 'api/rest',
+    id: 'mock',
 }]
 
 export default mockSidebar
