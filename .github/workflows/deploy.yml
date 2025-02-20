@@ -5,7 +5,7 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: [komga-release]
+    types: [komga-release, openapi]
 
 jobs:
   deploy:
