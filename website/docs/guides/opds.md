@@ -16,7 +16,7 @@ Here is a list of reader applications that have been tested:
 | OS            | App name                                                                                                                                                             |             Status              | Sync read progress | Streaming |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:------------------:|:---------:|
 | Android / iOS | Cantook by Aldiko ([Android](https://play.google.com/store/apps/details?id=com.aldiko.android), [iOS](https://apps.apple.com/us/app/cantook-by-aldiko/id1476410111)) | Covers are not showing properly |        Yes         |    No     |
-| Kindle | [KOReader](https://github.com/koreader/) | Not Loading |        No         |    No     |
+| All | [KOReader](https://github.com/koreader/) | Not Loading |        No         |    No     |
 
 
 ## OPDS v1
@@ -38,7 +38,7 @@ Here is a list of reader applications that have been tested:
 | iOS     | [KyBook 3](http://kybook-reader.com/)                                                                                |                                            :heavy_check_mark:                                            |        **Yes**         |                            No                             |
 | iOS     | [Panels](https://panels.app/)                                                                                        |                                            :heavy_check_mark:                                            | **Yes** <br/>(v3.0.0+) | **OPDS PSE 1.0** (v2.8.0+)<br/>**OPDS PSE 1.1** (v2.9.7+) |
 | iPadOS  | [Chunky Comic Reader](https://apps.apple.com/us/app/chunky-comic-reader/id663567628)                                 |                               :x: Does not work anymore with Komga 1.4.0+                                |           No           |                     **OPDS PSE 1.0**                      |
-| Kindle  | [KOReader](https://github.com/koreader/)                                                                             |                                            :heavy_check_mark:                                            |           Yes           |                           Yes                            |
+| All  | [KOReader](https://github.com/koreader/)                                                                             |                                            :heavy_check_mark:                                            |           Yes           |                           Yes                            |
 
 
 The OPDS v1 feed also supports:
