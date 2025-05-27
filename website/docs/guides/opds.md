@@ -16,7 +16,7 @@ Here is a list of reader applications that have been tested:
 | OS            | App name                                                                                                                                                             |             Status              | Sync read progress | Streaming |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------:|:------------------:|:---------:|
 | Android / iOS | Cantook by Aldiko ([Android](https://play.google.com/store/apps/details?id=com.aldiko.android), [iOS](https://apps.apple.com/us/app/cantook-by-aldiko/id1476410111)) | Covers are not showing properly |        Yes         |    No     |
-| Multiple      | [KOReader](https://koreader.rocks/) | Not Loading |        No         |    No     |
+| Multiple      | [KOReader](https://koreader.rocks/) |        :x: Not supported        |        No         |    No     |
 
 
 ## OPDS v1
