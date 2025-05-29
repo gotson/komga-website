@@ -15,9 +15,7 @@ The repository that hosts the documentation website you're currently reading: [g
 ## Translation
 ### Application
 
-<a id="weblate-status" href="https://hosted.weblate.org/engage/komga/">
-<img src="https://hosted.weblate.org/widgets/komga/-/svg-badge.svg" alt="Translation status" />
-</a>
+[![Translation status](https://hosted.weblate.org/widget/komga/svg-badge.svg)](https://hosted.weblate.org/engage/komga/)
 
 Want to help translate the app to your language? You can easily help by using **Weblate**.
 
@@ -29,9 +27,7 @@ Visit our translation project [here](https://hosted.weblate.org/engage/komga/).
 * [Notifications](https://docs.weblate.org/en/latest/user/profile.html#notifications)
 
 #### Project status
-<a id="weblate-status" href="https://hosted.weblate.org/engage/komga/">
-    <img src="https://hosted.weblate.org/widgets/komga/-/horizontal-auto.svg" alt="Translation status - application" />
-</a>
+[![Translation status](https://hosted.weblate.org/widget/komga/horizontal-auto.svg)](https://hosted.weblate.org/engage/komga/)
 
 ### Documentation
 
