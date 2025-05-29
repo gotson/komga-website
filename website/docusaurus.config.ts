@@ -120,10 +120,20 @@ const config: Config = {
                         label: 'API',
                     },
                     { to: '/blog', label: 'Announcements', position: 'left' },
-                    // {
-                    //     type: 'localeDropdown',
-                    //     position: 'right',
-                    // },
+                    {
+                        type: 'localeDropdown',
+                        position: 'right',
+                        dropdownItemsAfter: [
+                            {
+                                type: 'html',
+                                value: '<hr style="margin: 0.3rem 0;">',
+                            },
+                            {
+                                href: 'https://crowdin.com/project/komga-website',
+                                label: 'Help us translate',
+                            }
+                        ]
+                    },
                     {
                         href: 'https://discord.gg/TdRpkDu',
                         className: 'header-discord-link',
