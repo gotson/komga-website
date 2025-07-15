@@ -109,6 +109,8 @@ spring:
             authorization-grant-type: authorization_code
             # the placeholders in {} will be replaced automatically, you don't need to change this line
             redirect-uri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
+            # add the following if you need to enable PKCE (Proof Key for Code Exchange)
+            client-authentication-method: none
         provider:
           keycloak: # this must match the provider above
             user-name-attribute: sub
