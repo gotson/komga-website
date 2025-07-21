@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Social login
 
 Komga supports social login via **OAuth2** and **OpenID Connect**. In order for this to work, Komga needs to retrieve the user's email address via your provider, and will match it with the email of the Komga users.
@@ -122,3 +125,31 @@ spring:
             jwk-set-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/certs
             user-info-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/userinfo
 ```
+
+## Debugging
+
+If you encounter issues, you may need to enable `DEBUG` logs.
+
+<Tabs>
+    <TabItem value="yaml" label="Application.yml">
+    Add the following key in your `application.yml`:
+
+    ```yaml
+    logging.level.org.springframework.security: DEBUG
+    ```
+    </TabItem>
+    <TabItem value="jar" label="Command line">
+    Start the `jar` with the following option:
+    
+    ```shell
+    java -jar komga-x.y.z.jar --logging.level.org.springframework.security=DEBUG
+    ```
+    </TabItem>
+    <TabItem value="env" label="Docker">
+    Set the following environment variable:
+    
+    ```shell
+    LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_SECURITY=DEBUG
+    ```
+    </TabItem>
+</Tabs>
