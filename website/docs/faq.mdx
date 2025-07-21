@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Frequently Asked Questions
 
 ## I forgot my password
@@ -15,47 +18,29 @@ By default (if you haven't changed the configuration), log files are located:
 
 ## How to enable DEBUG or TRACE logs?
 
-### Via an `application.yml`
+<Tabs>
+    <TabItem value="yaml" label="Application.yml">
+        Add the following key in your `application.yml`:
 
-Add the following key in your `application.yml`:
+        ```yaml
+        logging.level.org.gotson.komga: DEBUG
+        ```
+    </TabItem>
+    <TabItem value="jar" label="Command line">
+        Start the `jar` with the following option:
 
-```yaml
-logging.level.org.gotson.komga: DEBUG
-```
+        ```shell
+        java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=DEBUG
+        ```
+    </TabItem>
+    <TabItem value="env" label="Docker">
+        Set the following environment variable:
 
-or
-
-```yaml
-logging.level.org.gotson.komga: TRACE
-```
-
-### Using the `jar` via the command line
-
-Start the `jar` with the following option:
-
-```shell script
-java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=DEBUG
-```
-
-or
-
-```shell script
-java -jar komga-x.y.z.jar --logging.level.org.gotson.komga=TRACE
-```
-
-### Using Docker
-
-Add the following environment variable:
-
-```shell script
-LOGGING_LEVEL_ORG_GOTSON_KOMGA=DEBUG
-```
-
-or
-
-```shell script
-LOGGING_LEVEL_ORG_GOTSON_KOMGA=TRACE
-```
+        ```shell
+        LOGGING_LEVEL_ORG_GOTSON_KOMGA=DEBUG
+        ```
+    </TabItem>
+</Tabs>
 
 ## Komga seems slow, how can I check what's going on?
 
