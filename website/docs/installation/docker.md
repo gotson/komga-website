@@ -40,7 +40,7 @@ Then start the container:
 docker start komga
 ```
 
-### docker-compose
+### docker compose
 
 ```
 ---
@@ -126,8 +126,8 @@ Below are the instructions for updating containers:
 
 ### Via Docker Compose
 
-- Update all images: `docker-compose pull`
-  - or update a single image: `docker-compose pull komga`
-- Let compose update all containers as necessary: `docker-compose up -d`
-  - or update a single container: `docker-compose up -d komga`
+- Update all images: `docker compose pull`
+  - or update a single image: `docker compose pull komga`
+- Let compose update all containers as necessary: `docker compose up -d`
+  - or update a single container: `docker compose up -d komga`
 - You can also remove the old dangling images: `docker image prune`

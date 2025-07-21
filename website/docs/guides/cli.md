@@ -21,7 +21,7 @@ Example:
 docker run ghcr.io/gotson/komga:latest --list-users
 ```
 
-### With docker-compose
+### With docker compose
 
 You can override the `command`:
 

@@ -9,7 +9,7 @@ The `application.yml` file does not exist by default, you need to create one if 
 
 Komga relies heavily on [Spring Boot's configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html), leveraging `profiles` and configuration `properties`.
 
-The easiest way to configure is either via environment variables (a good fit for `docker` and `docker-compose`) or by using an `application.yml` file located in the configuration directory:
+The easiest way to configure is either via environment variables (a good fit for `docker` and `docker compose`) or by using an `application.yml` file located in the configuration directory:
 
 - The Docker image will load any `application.yml` file located in the `/config` mounted folder.
 - The Jar will load any `application.yml` file located in the `komga.config-dir` directory (defaults to `~/.komga`, [more details](#komga_configdir--komgaconfig-dir-directory)).
