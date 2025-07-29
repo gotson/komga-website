@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/blog</id>
     <title>Announcements</title>
-    <updated>2023-12-15T00:00:00.000Z</updated>
+    <updated>2025-07-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/blog"/>
     <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Local databases and SQLite WAL]]></title>
+        <id>https://komga.org/blog/local-database</id>
+        <link href="https://komga.org/blog/local-database"/>
+        <updated>2025-07-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.]]></summary>
+        <content type="html"><![CDATA[<p>Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.</p>
+<p>In order to boost performances, Komga will enable the SQLite <a href="https://sqlite.org/wal.html" target="_blank" rel="noopener noreferrer">WAL</a> mode (Write-Ahead Logging) by default in the near future.</p>
+<p>Since WAL does not work over a network filesystem, release <a href="https://github.com/gotson/komga/releases/tag/1.23.0" target="_blank" rel="noopener noreferrer">1.23.0</a> has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.</p>
+<p>If Komga does not start anymore after the upgrade to 1.23.0, check the logs to see if your setup falls into that case.</p>]]></content>
+        <author>
+            <name>gotson</name>
+            <uri>https://github.com/gotson</uri>
+        </author>
+        <category label="performance" term="performance"/>
+        <category label="komga" term="komga"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[eBook drop 2]]></title>
         <id>https://komga.org/blog/ebook-drop2</id>

@@ -4,10 +4,23 @@
         <title>Announcements</title>
         <link>https://komga.org/blog</link>
         <description>Latest Komga announcements</description>
-        <lastBuildDate>Fri, 15 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Local databases and SQLite WAL]]></title>
+            <link>https://komga.org/blog/local-database</link>
+            <guid>https://komga.org/blog/local-database</guid>
+            <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.]]></description>
+            <content:encoded><![CDATA[<p>Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.</p>
+<p>In order to boost performances, Komga will enable the SQLite <a href="https://sqlite.org/wal.html" target="_blank" rel="noopener noreferrer">WAL</a> mode (Write-Ahead Logging) by default in the near future.</p>
+<p>Since WAL does not work over a network filesystem, release <a href="https://github.com/gotson/komga/releases/tag/1.23.0" target="_blank" rel="noopener noreferrer">1.23.0</a> has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.</p>
+<p>If Komga does not start anymore after the upgrade to 1.23.0, check the logs to see if your setup falls into that case.</p>]]></content:encoded>
+            <category>performance</category>
+            <category>komga</category>
+        </item>
         <item>
             <title><![CDATA[eBook drop 2]]></title>
             <link>https://komga.org/blog/ebook-drop2</link>

@@ -5,6 +5,22 @@
     "description": "Latest Komga announcements",
     "items": [
         {
+            "id": "https://komga.org/blog/local-database",
+            "content_html": "<p>Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.</p>\n<p>In order to boost performances, Komga will enable the SQLite <a href=\"https://sqlite.org/wal.html\" target=\"_blank\" rel=\"noopener noreferrer\">WAL</a> mode (Write-Ahead Logging) by default in the near future.</p>\n<p>Since WAL does not work over a network filesystem, release <a href=\"https://github.com/gotson/komga/releases/tag/1.23.0\" target=\"_blank\" rel=\"noopener noreferrer\">1.23.0</a> has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.</p>\n<p>If Komga does not start anymore after the upgrade to 1.23.0, check the logs to see if your setup falls into that case.</p>",
+            "url": "https://komga.org/blog/local-database",
+            "title": "Local databases and SQLite WAL",
+            "summary": "Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.",
+            "date_modified": "2025-07-29T00:00:00.000Z",
+            "author": {
+                "name": "gotson",
+                "url": "https://github.com/gotson"
+            },
+            "tags": [
+                "performance",
+                "komga"
+            ]
+        },
+        {
             "id": "https://komga.org/blog/ebook-drop2",
             "content_html": "<p>Version <a href=\"https://github.com/gotson/komga/releases/tag/1.9.0\" target=\"_blank\" rel=\"noopener noreferrer\">1.9.0</a> contains the second feature drop for Ebooks support.</p>\n<p>It brings nice additions to the initial release, most notably the read progress will be kept when reading and restored, same as with other books.</p>\n<p>The analysis process of EPUB files was also revamped, and some EPUB files that were not analyzed before should be working fine now.</p>\n<p>While the first release forced all the EPUB files through the Epub Reader, this release brings back compatibility with the Divina Reader for pre-paginated EPUB files containing only images. This also restores support for the Pages API, and thus the compatibility with Tachiyomi, or any OPDS-PSE client.</p>\n<p>Head over to the <a href=\"https://github.com/gotson/komga/releases/tag/1.9.0\" target=\"_blank\" rel=\"noopener noreferrer\">Release Notes</a> for more details on all the new features and fixes.</p>",
             "url": "https://komga.org/blog/ebook-drop2",
