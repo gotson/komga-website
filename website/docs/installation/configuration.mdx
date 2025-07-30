@@ -166,7 +166,7 @@ Komga uses 2 SQLite databases:
 ### Local filesystem check
 
 :::warning
-SQLite should not be used on network filesystems like CIFS or NFS. Always use a local filesystem for the databases.
+SQLite [should not be used on network filesystems](https://sqlite.org/useovernet.html) like CIFS or NFS. Always use a local filesystem for the databases.
 :::
 
 Komga will perform a check on startup to ensure that the databases are on a local filesystem, and will stop if it is not the case.
