@@ -75,13 +75,17 @@ Container images are configured using parameters passed at runtime (such as thos
 These parameters are separated by a colon and indicate `external:internal` respectively.
 For example, `-p 8080:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8080` outside the container.
 
+:::warning
+Always use a local filesystem for the `/config` folder.  Do not use any network share like CIFS or NFS.
+:::
+
 |                         Parameter                         | Function                                                                                                                                         |
 |:---------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|                  `-p 25600:25600`                         | The port for the Komga APIs and web interface                                                                                                    |
-|                  `--user 1000:1000`                       | User:Group identifier - see below for explanation                                                                                                |
+|                     `-p 25600:25600`                      | The port for the Komga APIs and web interface                                                                                                    |
+|                    `--user 1000:1000`                     | User:Group identifier - see below for explanation                                                                                                |
 | `--mount type=bind,source=/path/to/config,target=/config` | Database and Komga configurations                                                                                                                |
 |   `--mount type=bind,source=/path/to/data,target=/data`   | Location of your data directory on disk. Choose a folder that contains both your books and your preferred import location for hardlinks to work. |
-|                    `-e ENV_VAR=value`                     | Any [configuration](/installation/configuration.md) environment variable                                                                         |
+|                    `-e ENV_VAR=value`                     | Any [configuration](/installation/configuration.mdx) environment variable                                                                        |
 
 ## User / Group Identifiers
 

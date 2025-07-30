@@ -1,6 +1,9 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Configuration options
 
-:::tip
+:::info
 Komga has sensible default values for all configuration keys. You only need to configure it if you want to change the default behaviour.
 
 The `application.yml` file does not exist by default, you need to create one if you want to customize the configuration.
@@ -14,13 +17,22 @@ The easiest way to configure is either via environment variables (a good fit for
 - The Docker image will load any `application.yml` file located in the `/config` mounted folder.
 - The Jar will load any `application.yml` file located in the `komga.config-dir` directory (defaults to `~/.komga`, [more details](#komga_configdir--komgaconfig-dir-directory)).
 
-Each configuration key can have a different format depending if it's from the environment variable, or from the `application.yml` file. In the following section I will provide both format in the form `ENVIRONMENT_VARIABLE` / `application-property`.
+Each configuration key can have a different format depending if it's from the environment variable, or from the `application.yml` file. In the following section both format will be provided in the form `ENVIRONMENT_VARIABLE` / `application-property`.
 
 You can also specify configuration via the command line, when launching the `jar`. Use the `application-property` form, and prefix with `--`. For example:
 
 ```shell
 java -jar komga.jar --server.servlet.context-path="/komga" --server.port=8443
 ```
+
+:::tip
+To convert a property name to an environment variable name you can follow these rules:
+- Replace dots `.` with underscores `_`
+- Remove any dashes `-`
+- Convert to uppercase
+
+For example, the configuration property `server.servlet.context-path` would be an environment variable named `SERVER_SERVLET_CONTEXTPATH`.
+:::
 
 ## Optional configuration
 
@@ -47,7 +59,7 @@ Can also be configured from the [Server Settings](/guides/server-settings.md#ser
 
 Defaults to `25600`.
 
-#### SERVER_SERVLET_CONTEXT_PATH / server.servlet.context-path: `<baseUrl>`
+#### SERVER_SERVLET_CONTEXTPATH / server.servlet.context-path: `<baseUrl>`
 
 Base URL, useful if you need to reverse proxy with a subfolder.
 
@@ -63,7 +75,7 @@ Defaults to 30 minutes.
 
 #### KOMGA_DATABASE_FILE / komga.database.file: `<file path>`
 
-File path for the SQLite database.
+File path for the main SQLite database.
 
 If you want to change the directory, it is advised to change `komga.config-dir` instead.
 
@@ -71,13 +83,23 @@ Defaults to:
 - `/config/database.sqlite` for _Docker_.
 - `\${komga.config-dir}/database.sqlite` otherwise.
 
-#### KOMGA_CORS_ALLOWED_ORIGINS / komga.cors.allowed-origins: `<origins>`
+#### KOMGA_TASKSDB_FILE / komga.tasks-db.file: `<file path>`
+
+File path for the tasks SQLite database.
+
+If you want to change the directory, it is advised to change `komga.config-dir` instead.
+
+Defaults to:
+- `/config/tasks.sqlite` for _Docker_.
+- `\${komga.config-dir}/tasks.sqlite` otherwise.
+
+#### KOMGA_CORS_ALLOWEDORIGINS / komga.cors.allowed-origins: `<origins>`
 
 A list of origins to allow for CORS.
 
 Defaults to empty list.
 
-#### KOMGA_OAUTH2_ACCOUNT_CREATION / komga.oauth2-account-creation: `<true/false>`
+#### KOMGA_OAUTH2ACCOUNTCREATION / komga.oauth2-account-creation: `<true/false>`
 
 A boolean indicating whether Komga should create new users when a login via OAuth2/OIDC succeeds, but there is no existing user with that email.
 
@@ -89,7 +111,7 @@ It is recommended to enable this only with OAuth2 providers you control
 
 Defaults to `false`.
 
-#### KOMGA_OIDC_EMAIL_VERIFICATION / komga.oidc-email-verification: `<true/false>`
+#### KOMGA_OIDCEMAILVERIFICATION / komga.oidc-email-verification: `<true/false>`
 
 A boolean indicating whether Komga should check whether the `email_verified` claim is present and true in the OpenID Connect request.
 
@@ -114,9 +136,9 @@ Defaults to:
 
 _When overriding this configuration, you need to use `${user.home}` instead of `~` (this is a specific Spring Boot variable)._
 
-## Sample Configuration File
+## Sample configuration file
 
-Here is a sample `application.yml` file in case you need to customize it. Keep only the lines you need.
+Here is a sample `application.yml` file in case you need to customize it. **Only keep the lines you need.**
 
 ```yaml
 # Only keep lines that are relevant to you!
@@ -128,8 +150,6 @@ komga:
   cors.allowed-origins:
     - http://localhost:8081
     - http://localhost:8082
-  delete-empty-collections: true
-  delete-empty-read-lists: true
 server:
   port: 25600
   servlet:
@@ -137,17 +157,45 @@ server:
     context-path: /komga
 ```
 
-## Database performance
+## Databases configuration
+
+Komga uses 2 SQLite databases:
+- a main database to store all the data
+- a tasks database to store background tasks
+
+### Local filesystem check
 
 :::warning
-Use at your own risk!
-
+SQLite should not be used on network filesystems like CIFS or NFS. Always use a local filesystem for the databases.
 :::
 
-Some specific configuration keys are available to tweak the database performance.
+Komga will perform a check on startup to ensure that the databases are on a local filesystem, and will stop if it is not the case.
+
+**If you know what you are doing**, the local filesystem check can be disabled using:
+
+<Tabs>
+    <TabItem value="yaml" label="application.yml" default>
+        ```yml
+        komga
+          database.check-local-filesystem: false
+          tasks-db.check-local-filesystem: false
+        ```
+    </TabItem>
+    <TabItem value="env" label="Environment variable">
+        ```shell
+        KOMGA_DATABASE_CHECKLOCALFILESYSTEM=FALSE
+        KOMGA_TASKSDB_CHECKLOCALFILESYSTEM=FALSE
+        ```
+    </TabItem>
+</Tabs>
+
+### Fine tuning
+
+Configuration keys are available for each of the database to allow fine tuning:
 
 ```yaml
 komga:
+  # the main database
   database:
     # sets the retry timeout when SQLITE_BUSY error happens
     busy-timeout: 30s
@@ -172,6 +220,11 @@ komga:
     # - value is the pragma value
     pragmas:
       # here are some example pragmas
-      page_size: 1024
-      synchronous: OFF
+      page_size: 4096
+      synchronous: NORMAL
+
+  # the tasks database
+  tasks-db:
+    # can use the same configuration keys as mentioned for the main database
+    busy-timeout: 30s
 ```
