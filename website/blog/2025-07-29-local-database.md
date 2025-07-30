@@ -11,4 +11,4 @@ In order to boost performances, Komga will enable the SQLite [WAL](https://sqlit
 
 Since WAL does not work over a network filesystem, release [1.23.0](https://github.com/gotson/komga/releases/tag/1.23.0) has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.
 
-If Komga does not start anymore after the upgrade to 1.23.0, check the logs to see if your setup falls into that case.
+If Komga does not start anymore after the upgrade to 1.23.0, check the logs or the [documentation](/docs/installation/configuration#local-filesystem-check).
