@@ -17,7 +17,7 @@ Items currently in the trash will be displayed with an "Unavailable" indicator.
 
 With the trash bin, you can move or rename files and folders without losing your metadata, read progress, or read lists and collections.
 
-To track your files when they are renamed or restored, Komga generates a file hash for each file. If Komga doesn't have a file hash for a file, it won't be able to restore data after a file move or rename. Hashing files requires some computing power, so you may want to disable this entirely on low-end devices (see [Configuration](/installation/configuration.md)).
+To track your files when they are renamed or restored, Komga generates a file hash for each file. If Komga doesn't have a file hash for a file, it won't be able to restore data after a file move or rename. Hashing files requires some computing power, so you may want to disable this entirely on low-end devices (see [Configuration](/installation/configuration.mdx)).
 
 ## Automatically Empty Trash
 

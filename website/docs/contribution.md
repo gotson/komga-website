@@ -17,9 +17,7 @@ The repository that hosts the documentation website you're currently reading: [g
 
 [![Translation status](https://hosted.weblate.org/widget/komga/svg-badge.svg)](https://hosted.weblate.org/engage/komga/)
 
-Want to help translate the app to your language? You can easily help by using **Weblate**.
-
-Visit our translation project [here](https://hosted.weblate.org/engage/komga/).
+Want to help translate the app to your language? You can easily help by using [Weblate](https://hosted.weblate.org/engage/komga/).
 
 #### Helpful links
 * [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
@@ -35,9 +33,7 @@ Visit our translation project [here](https://hosted.weblate.org/engage/komga/).
     <img src="https://badges.crowdin.net/komga-website/localized.svg" alt="Translation status - documentation"/>
 </a>
 
-Want to help translate the documentation to your language ? You can easily help by using **Crowdin**.
-
-Visit our translation project [here](https://crowdin.com/project/komga-website).
+Want to help translate the documentation to your language ? You can easily help by using [Crowdin](https://crowdin.com/project/komga-website).
 
 #### Helpful links
 * [Translators guide](https://support.crowdin.com/for-translators/)

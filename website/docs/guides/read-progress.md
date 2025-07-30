@@ -12,15 +12,15 @@ The webreader can track the progress as you read:
 
 ### Mihon
 
-Mihon can track progress of read books, using the Komga tracker. See [here](mihon.md#track-read-progress) for more details.
+Mihon can track progress of read books, using the [Komga tracker](mihon.md#track-read-progress).
 
 ### CDisplayEx
 
-CDisplayEx syncs read status and reading progress. See [here](cdisplayex.md#reading-status) for more details.
+CDisplayEx [syncs read status and reading progress](cdisplayex.md#reading-status).
 
 ### KOReader
 
-KOReader can sync read status and reading progress. See [here](koreader.md#read-progress-sync) for more details.
+KOReader can [sync read status and reading progress](koreader.md#read-progress-sync).
 
 ## Unread and in progress indicators
 

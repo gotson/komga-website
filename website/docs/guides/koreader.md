@@ -12,7 +12,7 @@ Read progress syncs in the following way:
 
 In order to use KOReader Sync with Komga, a Komga user must have the role `KOREADER_SYNC`.
 
-You also need to enable file hashing for KOReader, see [here](libraries.md#compute-hash-for-files-for-koreader) for more details.
+You also need to enable [file hashing for KOReader](libraries.md#compute-hash-for-files-for-koreader).
 
 ### Generate API key
 

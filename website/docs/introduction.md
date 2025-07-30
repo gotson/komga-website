@@ -28,7 +28,7 @@ RAR 5 is supported on some platforms only, as it relies on native libraries for 
 | Docker arm64 | :heavy_check_mark: |
 | Docker arm   | :x:                |
 
-When using the `jar`, you will need to provide the native library yourself, and run Java with the correct arguments. You can check for more details [here](https://github.com/gotson/NightCompress/#requirements).
+When using the `jar`, you will need to provide the native library yourself, and run Java with the [correct arguments](https://github.com/gotson/NightCompress/#requirements).
 
 ### Komga server compatibility
 
