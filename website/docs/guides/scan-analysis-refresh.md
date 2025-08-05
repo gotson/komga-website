@@ -139,6 +139,7 @@ This will import the following fields from the Epub metadata in Komga:
 - `dc:date` element as the _Release date_
 - `dc:identifier` element as the _ISBN_, if it is a valid ISBN
 - `dc:creator` element as _Authors_. The role will be imported either from the `opf:role` property, or from a `meta` element containing `role` property and a `marc:relators` scheme. A value with multiple names separated by a `,` will be split in different authors.
+- the meta property `belongs-to-collection` refined as `group-position` will be used as the book _Number_ and _Number Sort_
 
 #### Series metadata
 
