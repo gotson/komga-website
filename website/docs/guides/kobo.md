@@ -80,6 +80,14 @@ If you experience some issues downloading covers or files from the Kobo, you wil
 
 A case where this would be required is if you access your Komga server directly (without a reverse proxy), with Komga running in Docker, and with a Docker mapped port that is different from the internal Komga port.
 
+### Hiding Kobo Store
+
+If you want to keep all your Komga sync capabilities while removing Kobo Store highlights, suggestions, and other content from the user interface, you can do so by enabling Parental Control mode under _Settings_ > _Accounts_ > _Parental Controls_.
+
+Enabling the option "Block store, web browser and external sources" will achieve this, giving you a clean main interface with only your Komga-synced books. The sync button will continue to work as intended.
+
+Please note that this will also disable Google Docs and Dropbox integration, and a Rakuten account will still be required to operate the device. This setting's sole purpose is to provide a clutter-free main interface.
+
 ## Migrating from Calibre-Web
 
 If you have used Calibre-Web with Kobo Sync before, you can migrate to Komga by changing the `Kobo eReader.conf` and point to your Komga server instead.
