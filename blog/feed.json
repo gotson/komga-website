@@ -5,6 +5,21 @@
     "description": "Latest Komga announcements",
     "items": [
         {
+            "id": "https://komga.org/blog/happy-6th-birthday",
+            "content_html": "<p>Komga is 6 years old !</p>\n<p>Back then Komga didn't even have a user interface, and at first it could only be used as a Tachiyomi (now Mihon) source.</p>\n<p>The first version of the UI was only added in October 2019. At that time I didn't know much about web development, but building on Vue 2 / Vuetify 2 helped me to build a good-looking UI that has worked quite well so far. It has become however quite difficult to maintain and evolve:</p>\n<ul>\n<li>There are practically no tests, meaning bugs can be introduced easily.</li>\n<li>There is a lot of duplicated code, mostly due to Vue 2 limitations.</li>\n<li>The whole development stack is tedious to work with, again due to what the javascript ecosystem was like in 2019.</li>\n</ul>\n<p>While Vue 3 came out around the end of 2020, it brought so many breaking changes that it's practically impossible to migrate a project from Vue 2 to Vue 3. Vuetify itself only came up with its version 3 end of 2022, and even at that time most of the components were not ready yet.</p>\n<p>This year I've started to work on a complete rewrite of the UI, using a more recent development stack, but also more experience under my belt.</p>\n<p>As of now the foundations are sound and solid, and I've started rewriting the pages one by one. I am also using the rewrite as an opportunity to include feature requests that were difficult to add in the current version of the UI.</p>\n<p>There is still quite a lot to do, so as usual I cannot provide any tentative release date, but I really hope this can be done in 2025. Stay tuned!</p>",
+            "url": "https://komga.org/blog/happy-6th-birthday",
+            "title": "Komga turns 6!",
+            "summary": "Komga is 6 years old !",
+            "date_modified": "2025-08-08T00:00:00.000Z",
+            "author": {
+                "name": "gotson",
+                "url": "https://github.com/gotson"
+            },
+            "tags": [
+                "komga"
+            ]
+        },
+        {
             "id": "https://komga.org/blog/local-database",
             "content_html": "<p>Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.</p>\n<p>In order to boost performances, Komga will enable the SQLite <a href=\"https://sqlite.org/wal.html\" target=\"_blank\" rel=\"noopener noreferrer\">WAL</a> mode (Write-Ahead Logging) by default in the near future.</p>\n<p>Since WAL does not work over a network filesystem, release <a href=\"https://github.com/gotson/komga/releases/tag/1.23.0\" target=\"_blank\" rel=\"noopener noreferrer\">1.23.0</a> has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.</p>\n<p>If Komga does not start anymore after the upgrade to 1.23.0, check the logs or the <a href=\"https://komga.org/docs/installation/configuration#local-filesystem-check\">documentation</a>.</p>",
             "url": "https://komga.org/blog/local-database",
