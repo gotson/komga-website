@@ -51,3 +51,12 @@ If you can't contribute code, but you still wish to help, then you can choose to
 <a href="https://www.jetbrains.com/?from=Komga" target="_blank" rel="noopener">
     <img src="/assets/media/sponsors/jetbrains.svg" style={{maxHeight: '100px'}} />
 </a>
+
+Thanks to [JetBrains](https://www.jetbrains.com/?from=Komga) for providing the development environment that helps us develop Komga.
+
+<br/>
+<a href="https://www.chromatic.com" target="_blank" rel="noopener">
+    <img src="/assets/media/sponsors/chromatic.png" style={{maxHeight: '100px'}} />
+</a>
+
+Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
