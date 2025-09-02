@@ -10,6 +10,10 @@ The webreader can track the progress as you read:
 - when you open a book that is in progress, the webreader will resume reading where you left it.
 - when you finish reading a book, the webreader will mark it as read.
 
+### Komic
+
+Read progress sync is available in Komic as a [Komic+ feature](https://komic.app/premium).
+
 ### Mihon
 
 Mihon can track progress of read books, using the [Komga tracker](mihon.md#track-read-progress).

@@ -109,6 +109,7 @@ const sidebars = {
                     items: [
                         'guides/webreader-divina',
                         'guides/webreader-epub',
+                        'guides/komic',
                         'guides/mihon',
                         'guides/komelia',
                         'guides/kobo',
