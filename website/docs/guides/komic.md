@@ -25,3 +25,15 @@ Once Komic is configured, you can start reading your books:
 3. Customize your reading experience with the app's settings.
 
 You can learn more about Komic's features by visiting the [Komic website](https://pruizlezcano.github.io/komic/).
+
+## Track read progress
+
+Komic can track your reading progress and sync it with your Komga server.
+
+This is a **Komic+** feature. You can learn more about **Komic+** features on the [Komic website](https://pruizlezcano.github.io/komic/#komic-plus).
+
+To enable read progress tracking:
+
+1. Open the Komic app and go to the _Settings_ tab.
+2. Select _Reader_.
+3. Enable the _Sync read progress_ option.
