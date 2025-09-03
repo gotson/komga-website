@@ -1,6 +1,6 @@
 # Read with Komic
 
-[Komic](https://apps.apple.com/app/komic-comic-manga-reader/id6744676973/) is an elegant, feature-rich iOS app designed to give you the best reading experience with your Komga server.
+[Komic](https://pruizlezcano.github.io/komic/) is an elegant, feature-rich iOS app designed to give you the best reading experience with your Komga server.
 
 ## Adding your Komga server to Komic
 
