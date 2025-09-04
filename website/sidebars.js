@@ -117,6 +117,7 @@ const sidebars = {
                         'guides/cdisplayex',
                         'guides/opds',
                         'guides/panels',
+                        'guides/komic',
                         'guides/chunky',
                     ],
                 },

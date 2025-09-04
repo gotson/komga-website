@@ -22,6 +22,10 @@ CDisplayEx [syncs read status and reading progress](cdisplayex.md#reading-status
 
 KOReader can [sync read status and reading progress](koreader.md#read-progress-sync).
 
+### Komic
+
+Komic can [track your reading progress and sync it with your Komga server](komic.md#track-read-progress).
+
 ## Unread and in progress indicators
 
 The book card will display read progress indicators:
