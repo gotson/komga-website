@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Read with Kobo
 
 The Kobo integration is based on the native Kobo Sync capability, where your Kobo eReader will sync to a Komga server instead of the official Kobo servers.
@@ -97,6 +100,33 @@ The API key is as sensitive as your username and password. Since the API key is 
 Be careful when sharing Komga logs or Kobo logs, and redact any sensitive information.
 
 ## Troubleshooting
+
+### Sync fails with `Invalid character found in the request target`
+
+The Kobo does not respect the HTTP standards when sending requests. If your Kobo is configured to connect to Komga directly, the sync will fail, and the Komga logs will contain a message like:
+
+```log
+java.lang.IllegalArgumentException: Invalid character found in the request target [/kobo/abcdefdf8e0f24842a514c37d133e2ff3/v1/assets?DiffRequests=[%7BKey:EPD-KoboPlus-ReadOnly-NeverSubscribed,ETag:%7D] ]. The valid characters are defined in RFC 7230 and RFC 3986
+```
+
+You can configure Komga to allow for those invalid characters:
+
+<Tabs>
+    <TabItem value="yaml" label="Application.yml">
+        Add the following key in your `application.yml`:
+
+        ```yaml
+        server.tomcat.relaxed-query-chars: "[,]"
+        ```
+    </TabItem>
+    <TabItem value="env" label="Docker">
+        Set the following environment variable:
+
+        ```shell
+        SERVER_TOMCAT_RELAXEDQUERYCHARS=[,]
+        ```
+    </TabItem>
+</Tabs>
 
 ### Force Kobo Sync
 
