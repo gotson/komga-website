@@ -126,7 +126,9 @@ spring:
             user-info-uri: http://localhost:8085/auth/realms/komgatest/protocol/openid-connect/userinfo
 ```
 
-## Debugging
+## Troubleshooting
+
+### Komga logs
 
 If you encounter issues, you may need to enable `DEBUG` logs.
 
@@ -153,3 +155,15 @@ If you encounter issues, you may need to enable `DEBUG` logs.
     ```
     </TabItem>
 </Tabs>
+
+### Common issues
+
+#### Incompatible JWT signing algorithm
+
+```log title="komga.log"
+Authentication failed with provider OidcAuthorizationCodeAuthenticationProvider since [invalid_id_token] An error occurred while attempting to decode the Jwt: Signed JWT rejected: Another algorithm expected, or no matching key(s) found
+```
+
+Komga expects `RS256` algorithm to verify the signature of the JWT.
+
+You can check the configured algorithm in the `.well-known` endpoint of your provider, under the `id_token_signing_alg_values_supported` section, and ensure it is set to `RS256`.
