@@ -28,4 +28,4 @@ This page lists community applications or tools that can be used alongside Komga
 
 ## MangaBox
 
-> [MangaBox](https://github.com/zpaolo11x/mangabox) is a simple Electron client for Komga.
+> [MangaBox](https://zpaolo11x.github.io/mangabox/) is a streamlined multi-platform client for Komga.
