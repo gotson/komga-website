@@ -26,6 +26,10 @@ KOReader can [sync read status and reading progress](koreader.md#read-progress-s
 
 Komic can [track your reading progress and sync it with your Komga server](komic.md#track-read-progress).
 
+### MangaBox
+
+MangaBox can [sync read status and reading progress, sync back reading status of offline books](mangabox.md#track-read-progress).
+
 ## Unread and in progress indicators
 
 The book card will display read progress indicators:
