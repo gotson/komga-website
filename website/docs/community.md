@@ -25,7 +25,3 @@ This page lists community applications or tools that can be used alongside Komga
 ## CLU (Comic Library Utilities)
 
 > [CLU](https://phillips-organization-6.gitbook.io/clu-comic-library-utilities) is an all-in-one application to manage your comic, manga and magazine libraries.
-
-## MangaBox
-
-> [MangaBox](https://zpaolo11x.github.io/mangabox/) is a streamlined multi-platform client for Komga.
