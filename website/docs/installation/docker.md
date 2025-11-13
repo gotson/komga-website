@@ -56,15 +56,12 @@ services:
       - type: bind
         source: /path/to/data
         target: /data
-      - type: bind
-        source: /etc/timezone #alternatively you can use a TZ environment variable, like TZ=Europe/London
-        target: /etc/timezone
-        read_only: true
     ports:
       - 25600:25600
     user: "1000:1000"
     # remove the whole environment section if you don't need it
     environment:
+      - TZ=Europe/London
       - <ENV_VAR>=<extra configuration>
     restart: unless-stopped
 ```
@@ -85,6 +82,7 @@ Always use a local filesystem for the `/config` folder.  Do not use any network 
 |                    `--user 1000:1000`                     | User:Group identifier - see below for explanation                                                                                                |
 | `--mount type=bind,source=/path/to/config,target=/config` | Database and Komga configurations                                                                                                                |
 |   `--mount type=bind,source=/path/to/data,target=/data`   | Location of your data directory on disk. Choose a folder that contains both your books and your preferred import location for hardlinks to work. |
+|                   `-e TZ=Europe/London`                   | Specify a timezone to use, see the [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)                                     |
 |                    `-e ENV_VAR=value`                     | Any [configuration](/installation/configuration.mdx) environment variable                                                                        |
 
 ## User / Group Identifiers
