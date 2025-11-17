@@ -60,3 +60,19 @@ If you have multiple KOReader devices, it is recommended to use a different API 
 Komga can log all incoming HTTP requests, including headers and body, by setting `logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter` to `DEBUG`.
 
 You can also access the recent HTTP exchanges under the `/actuator/httpexchanges` endpoint on your Komga server.
+
+## Noteworthy Community Plugins
+
+### Kobo Sync
+
+If you use KOReader on a Kobo device, you can set up syncing as described in [Read with Kobo](kobo.mdx) and open those books directly in KOReader.
+
+For this, consider using the [kobo.koplugin](https://ogkevin.github.io/kobo.koplugin/scenarios/komga-calibre.html).
+
+### ComicReader
+
+To enhance your comic reading experience, try the [ComicReader](https://korcomic.github.io/docs/comicreader.koplugin/intro/) plugin.
+
+### ComicMeta
+
+To extract ComicInfo metadata from your comics, use the [ComicMeta](https://korcomic.github.io/docs/comicmeta.koplugin/intro/) plugin.
