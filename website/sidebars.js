@@ -113,6 +113,7 @@ const sidebars = {
                         'guides/komelia',
                         'guides/kobo',
                         'guides/koreader',
+                        'guides/kmreader',
                         'guides/paperback',
                         'guides/cdisplayex',
                         'guides/opds',
