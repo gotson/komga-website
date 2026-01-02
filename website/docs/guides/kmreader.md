@@ -26,30 +26,26 @@ When you first open KMReader, you'll be greeted by the onboarding screen. Tap th
    - **API Key** — Paste an API key from your Komga user settings
 3. Tap **Connect** to verify the connection
 
-
-
 :::tip
-You can add multiple servers and switch between them from the sidebar menu.
+You can add multiple servers and switch between them from settings.
 :::
 
 :::warning
 For connections outside your local network, ensure your Komga server is accessible over **HTTPS**. Apple restricts unencrypted traffic for non-browser apps.
 :::
 
-
 ## Offline Reading
 
 KMReader supports downloading books for offline reading. You can set an **offline policy** per series from the series detail page:
 
-| Policy | Description |
-|--------|-------------|
-| **Manual** | Download or remove books manually |
-| **Unread Only** | Auto-download all unread books |
+| Policy                    | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| **Manual**                | Download or remove books manually                                   |
+| **Unread Only**           | Auto-download all unread books                                      |
 | **Unread Only + Cleanup** | Auto-download unread books and remove them after you finish reading |
-| **All** | Keep the entire series downloaded |
+| **All**                   | Keep the entire series downloaded                                   |
 
 Progress syncs back to your server when you're online. On iOS, downloads show a **Live Activity** so you can track progress.
-
 
 ## Track Read Progress
 
@@ -60,16 +56,15 @@ Reading progress syncs **automatically in real-time** as you read — no manual 
 
 ## Platform Support
 
-| Platform | Minimum Version | Notes |
-|----------|-----------------|-------|
-| iOS | 17.0+ | Full feature support |
-| iPadOS | 17.0+ | Optimized for larger displays |
-| macOS | 14.0+ | Native Mac experience |
-| tvOS | 17.0+ | DIVINA reader only |
+| Platform | Minimum Version | Notes                         |
+| -------- | --------------- | ----------------------------- |
+| iOS      | 17.0+           | Full feature support          |
+| iPadOS   | 17.0+           | Optimized for larger displays |
+| macOS    | 14.0+           | Native Mac experience         |
+| tvOS     | 17.0+           | DIVINA reader only            |
 
 ## Useful Links
 
 - [KMReader Website](https://kmreader.everpcpc.com/) — Features, screenshots, and privacy policy
 - [GitHub Repository](https://github.com/everpcpc/KMReader) — Source code, issues, and releases
 - [App Store](https://apps.apple.com/app/id6755198424) — Download KMReader
-- [Discord](https://discord.gg/komga-678794935368941569) — Join the Komga community for support
