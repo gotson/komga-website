@@ -2,9 +2,13 @@
 
 [KMReader](https://kmreader.everpcpc.com/) is a native iOS, macOS, and tvOS client for Komga, featuring powerful comic (DIVINA) and EPUB readers with multi-server and offline support, as well as admin tools and realtime dashboard refresh via SSE like the WebUI.
 
+<div class="text--center">
+
 <img src="/assets/media/guides/kmreader/icon.svg" style={{maxHeight: '128px'}}/>
 
 [![Download on the App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1640044800)](https://apps.apple.com/app/id6755198424)
+
+</div>
 
 ## Features
 
