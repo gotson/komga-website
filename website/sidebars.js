@@ -119,6 +119,7 @@ const sidebars = {
                         'guides/panels',
                         'guides/komic',
                         'guides/mangabox',
+                        'guides/kmreader',
                         'guides/chunky',
                     ],
                 },
