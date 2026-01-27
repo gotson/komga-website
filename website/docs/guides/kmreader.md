@@ -1,6 +1,6 @@
 # Read with KMReader
 
-[KMReader](https://kmreader.everpcpc.com/) is a native iOS, macOS, and tvOS client for Komga, featuring powerful comic (DIVINA) and EPUB readers with multi-server and offline support, as well as admin tools and realtime dashboard refresh via SSE like the WebUI.
+[KMReader](https://kmreader.everpcpc.com/) is a native iOS, macOS, and tvOS client for Komga, featuring powerful DIVINA and EPUB readers, a multi-server vault, cloud-drive-like offline access, adaptive dashboards, and admin tools with realtime metrics via SSE.
 
 <div class="text--center">
 
@@ -13,18 +13,19 @@
 ## Features
 
 - **Multi-Server Vault** — Save unlimited Komga servers with password or API key authentication
-- **Offline Reading** — Background downloads with Live Activity on iOS. Set offline policies (manual, latest, all) per series. Progress syncs when connection restores
-- **Flexible Browsing** — Search, filters, grid/list layouts with customizable dashboard sections per library
-- **DIVINA Reader** — LTR/RTL/vertical/Webtoon reading modes with spreads, zoom, tap zones, and page export
-- **EPUB Reader** — Custom fonts and themes, pagination, TOC navigation, and incognito mode
-- **Admin Tools** — Metadata editing, library scans, task management, and live metrics via SSE
+- **Cloud-Drive Offline** — Background downloads with Live Activity on iOS. Offline policies (manual, latest, all) per series, with read lists and collections available offline
+- **Advanced Browsing** — Search, deep metadata filters with all/any logic, grid/list layouts, and customizable dashboard sections with drag-and-drop reordering
+- **DIVINA Reader** — LTR/RTL/vertical/Webtoon reading modes with spreads, zoom, customizable tap zones, and native page curl transitions
+- **Native EPUB Reader** — Custom fonts (.ttf/.otf), theme presets, multi-column layouts, nested TOC navigation, and chapter gestures
+- **Privacy Controls** — Optional blur overlay, on-device credentials, and incognito mode that keeps progress off the server
+- **Admin Tools** — Metadata editing, library scans, task management, live metrics via SSE, and a filterable log viewer
 - **Smart Caching** — Three-tier caches (pages, books, thumbnails) with adjustable limits and auto-cleanup
 
 ## Adding your Komga server
 
 When you first open KMReader, you'll be greeted by the onboarding screen. Tap the **+** button to add your server:
 
-1. Enter your Komga **server URL** (e.g., `https://komga.example.com`)
+1. Enter your Komga **server URL** (e.g., `https://komga.example.com` or `http://komga.local`)
 2. Choose your authentication method:
    - **Username & Password** — Enter your Komga credentials
    - **API Key** — Paste an API key from your Komga user settings
@@ -35,21 +36,20 @@ You can add multiple servers and switch between them from settings.
 :::
 
 :::warning
-For connections outside your local network, ensure your Komga server is accessible over **HTTPS**. Apple restricts unencrypted traffic for non-browser apps.
+KMReader can connect to **HTTP** servers when needed (ATS exceptions are supported), but **HTTPS** is strongly recommended for any connection outside your local network.
 :::
 
 ## Offline Reading
 
 KMReader supports downloading books for offline reading. You can set an **offline policy** per series from the series detail page:
 
-| Policy                    | Description                                                         |
-| ------------------------- | ------------------------------------------------------------------- |
-| **Manual**                | Download or remove books manually                                   |
-| **Unread Only**           | Auto-download all unread books                                      |
-| **Unread Only + Cleanup** | Auto-download unread books and remove them after you finish reading |
-| **All**                   | Keep the entire series downloaded                                   |
+| Policy     | Description                                   |
+| ---------- | --------------------------------------------- |
+| **Manual** | Download or remove books manually             |
+| **Latest** | Keep the latest books downloaded automatically |
+| **All**    | Keep the entire series downloaded             |
 
-Progress syncs back to your server when you're online. On iOS, downloads show a **Live Activity** so you can track progress.
+Read lists and collections stay available offline. Progress syncs back to your server when you're online. On iOS, downloads show a **Live Activity** so you can track progress.
 
 ## Track Read Progress
 
@@ -57,6 +57,7 @@ Reading progress syncs **automatically in real-time** as you read — no manual 
 
 - Instant sync to your Komga server while reading
 - Offline progress stored locally and synced when connection restores
+- Optional incognito mode keeps progress off the server when needed
 
 ## Platform Support
 
