@@ -22,3 +22,10 @@ Windows and Linux version can only check for new version and direct you to downl
 download and run installer.
 
 Automatic update checks can be disabled in settings.
+
+## Using in local network
+
+<img src="assets/media/guides/komelia/login.png" style={{maxHeight: '600px'}} alt="Komelia login screen"/>
+
+Enter your host's internal IP address, then follow with your open port; seperate with a colon. For example: `http://192.168.219.107:25600/`
+Enter your Komga server's username and password.
