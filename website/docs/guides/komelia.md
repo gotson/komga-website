@@ -27,5 +27,10 @@ Automatic update checks can be disabled in settings.
 
 <img src="assets/media/guides/komelia/login.png" style={{maxHeight: '600px'}} alt="Komelia login screen"/>
 
-Enter your host's internal IP address, then follow with your open port; seperate with a colon. For example: `http://192.168.219.107:25600/`
+Enter localhost (or your host's internal IP address if on a different device on the same network, like a Android device), then follow with your open port; seperate with a colon.
+
+For example: `http://localhost:25600` (`http://192.168.219.107:25600/`).
+
 Enter your Komga server's username and password.
+
+For access outside your local network, see [Expose your server](https://komga.org/docs/installation/https).
