@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Announcements</title>
+        <link>https://komga.org/hr/blog</link>
+        <description>Latest Komga announcements</description>
+        <lastBuildDate>Fri, 08 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>hr</language>
+        <item>
+            <title><![CDATA[Komga turns 6!]]></title>
+            <link>https://komga.org/hr/blog/happy-6th-birthday</link>
+            <guid>https://komga.org/hr/blog/happy-6th-birthday</guid>
+            <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Komga is 6 years old !]]></description>
+            <content:encoded><![CDATA[<p>Komga is 6 years old !</p>
+<p>Back then Komga didn't even have a user interface, and at first it could only be used as a Tachiyomi (now Mihon) source.</p>
+<p>The first version of the UI was only added in October 2019. At that time I didn't know much about web development, but building on Vue 2 / Vuetify 2 helped me to build a good-looking UI that has worked quite well so far. It has become however quite difficult to maintain and evolve:</p>
+<ul>
+<li>There are practically no tests, meaning bugs can be introduced easily.</li>
+<li>There is a lot of duplicated code, mostly due to Vue 2 limitations.</li>
+<li>The whole development stack is tedious to work with, again due to what the javascript ecosystem was like in 2019.</li>
+</ul>
+<p>While Vue 3 came out around the end of 2020, it brought so many breaking changes that it's practically impossible to migrate a project from Vue 2 to Vue 3. Vuetify itself only came up with its version 3 end of 2022, and even at that time most of the components were not ready yet.</p>
+<p>This year I've started to work on a complete rewrite of the UI, using a more recent development stack, but also more experience under my belt.</p>
+<p>As of now the foundations are sound and solid, and I've started rewriting the pages one by one. I am also using the rewrite as an opportunity to include feature requests that were difficult to add in the current version of the UI.</p>
+<p>There is still quite a lot to do, so as usual I cannot provide any tentative release date, but I really hope this can be done in 2025. Stay tuned!</p>]]></content:encoded>
+            <category>komga</category>
+        </item>
+        <item>
+            <title><![CDATA[Local databases and SQLite WAL]]></title>
+            <link>https://komga.org/hr/blog/local-database</link>
+            <guid>https://komga.org/hr/blog/local-database</guid>
+            <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.]]></description>
+            <content:encoded><![CDATA[<p>Komga has been using SQLite to store its data for around 5 years (v0.48.0 - July 2020), and while it works very well most of the time, some users have experienced bottlenecks on some systems.</p>
+<p>In order to boost performances, Komga will enable the SQLite <a href="https://sqlite.org/wal.html" target="_blank" rel="noopener noreferrer">WAL</a> mode (Write-Ahead Logging) by default in the near future.</p>
+<p>Since WAL does not work over a network filesystem, release <a href="https://github.com/gotson/komga/releases/tag/1.23.0" target="_blank" rel="noopener noreferrer">1.23.0</a> has introduced a startup check to ensure the databases are located on a local filesystem. Even without WAL, this is a good practice for SQLite performance.</p>
+<p>If Komga does not start anymore after the upgrade to 1.23.0, check the logs or the <a href="https://komga.org/hr/docs/installation/configuration#local-filesystem-check">documentation</a>.</p>]]></content:encoded>
+            <category>performance</category>
+            <category>komga</category>
+        </item>
+        <item>
+            <title><![CDATA[eBook drop 2]]></title>
+            <link>https://komga.org/hr/blog/ebook-drop2</link>
+            <guid>https://komga.org/hr/blog/ebook-drop2</guid>
+            <pubDate>Fri, 15 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Version 1.9.0 contains the second feature drop for Ebooks support.]]></description>
+            <content:encoded><![CDATA[<p>Version <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">1.9.0</a> contains the second feature drop for Ebooks support.</p>
+<p>It brings nice additions to the initial release, most notably the read progress will be kept when reading and restored, same as with other books.</p>
+<p>The analysis process of EPUB files was also revamped, and some EPUB files that were not analyzed before should be working fine now.</p>
+<p>While the first release forced all the EPUB files through the Epub Reader, this release brings back compatibility with the Divina Reader for pre-paginated EPUB files containing only images. This also restores support for the Pages API, and thus the compatibility with Tachiyomi, or any OPDS-PSE client.</p>
+<p>Head over to the <a href="https://github.com/gotson/komga/releases/tag/1.9.0" target="_blank" rel="noopener noreferrer">Release Notes</a> for more details on all the new features and fixes.</p>]]></content:encoded>
+            <category>upgrade</category>
+            <category>komga</category>
+        </item>
+        <item>
+            <title><![CDATA[eBook support]]></title>
+            <link>https://komga.org/hr/blog/ebook-support</link>
+            <guid>https://komga.org/hr/blog/ebook-support</guid>
+            <pubDate>Wed, 29 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Version 1.8.0 is bringing a long awaited feature: proper eBook support!]]></description>
+            <content:encoded><![CDATA[<p>Version <a href="https://github.com/gotson/komga/releases/tag/1.8.0" target="_blank" rel="noopener noreferrer">1.8.0</a> is bringing a long awaited feature: <strong>proper eBook support!</strong></p>
+<p>Github issue <a href="https://github.com/gotson/komga/issues/221" target="_blank" rel="noopener noreferrer">#221</a> has been opened for more than 3 years, and has finally been tackled.</p>
+<h2 class="anchor anchorWithStickyNavbar_JmGV" id="what-you-need-to-know">What you need to know<a href="https://komga.org/hr/blog/ebook-support#what-you-need-to-know" class="hash-link" aria-label="Direktna poveznica na What you need to know" title="Direktna poveznica na What you need to know">​</a></h2>
+<ul>
+<li>eBooks behave like any other book in Komga, in regards to series or metadata. You can even mix comic books and ebooks in the same series.</li>
+<li>only EPUB format is supported. Other formats will not be supported in the future.</li>
+<li>existing EPUB files will be re-analyzed. If you had image-only EPUB, those may not be compatible anymore with third-party clients.</li>
+<li>the web EPUB reader is a very first version, and <strong>does not support saving progress</strong>. Read progress saving and restore will come in a future release.</li>
+<li>any book in Komga can be read with <a href="https://readium.org/webpub-manifest/" target="_blank" rel="noopener noreferrer">WebPub</a> compatible clients.</li>
+<li><strong>There will be issues</strong>. EPUB is a complex format, and many EPUB files are not properly built. Raise issues <a href="https://github.com/gotson/komga/issues/new/choose" target="_blank" rel="noopener noreferrer">on Github</a> for support.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_JmGV" id="other-recent-changes-you-may-have-missed">Other recent changes you may have missed<a href="https://komga.org/hr/blog/ebook-support#other-recent-changes-you-may-have-missed" class="hash-link" aria-label="Direktna poveznica na Other recent changes you may have missed" title="Direktna poveznica na Other recent changes you may have missed">​</a></h2>
+<p>In case you haven't kept up with the release notes since version 1.0.0, here are the most significant changes:</p>
+<ul>
+<li>Komga is now available as a <a href="https://komga.org/hr/docs/installation/desktop">desktop app</a>, and is available in the <a href="https://komga.org/hr/docs/installation/ms-store">Microsoft Store</a></li>
+<li>Multiple settings are now configurable from the <a href="https://komga.org/hr/docs/guides/server-settings">Server Settings</a> screen. You may need to cleanup your configuration file and remove deprecated entries.</li>
+<li>Thumbnails size can now be configured in Server Settings.</li>
+<li>Background task management has been revamped, and now supports proper parallel executions (configurable in Server Settings).</li>
+<li>Komga now has support for <a href="https://komga.org/hr/docs/guides/oneshots">One-Shots</a>.</li>
+<li>a <a href="https://komga.org/hr/docs/guides/cli">Command Line Interface</a> was added to update forgotten password for the admin account.</li>
+</ul>]]></content:encoded>
+            <category>upgrade</category>
+            <category>komga</category>
+        </item>
+        <item>
+            <title><![CDATA[Prepare for v1.0.0]]></title>
+            <link>https://komga.org/hr/blog/prepare-v1</link>
+            <guid>https://komga.org/hr/blog/prepare-v1</guid>
+            <pubDate>Tue, 21 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The future v1.0.0 will bring some breaking changes, this guide will help you to prepare for the next major version.]]></description>
+            <content:encoded><![CDATA[<p>The future v1.0.0 will bring some breaking changes, this guide will help you to prepare for the next major version.</p>
+<h2 class="anchor anchorWithStickyNavbar_JmGV" id="before-upgrading">Before upgrading<a href="https://komga.org/hr/blog/prepare-v1#before-upgrading" class="hash-link" aria-label="Direktna poveznica na Before upgrading" title="Direktna poveznica na Before upgrading">​</a></h2>
+<ul>
+<li>If you run Docker, it is advisable to use the <code>0.x</code> tag instead of <code>latest</code>. You will be able to decide when you want to upgrade, especially if you are updating containers automatically.</li>
+<li>Backup your <code>database.sqlite</code>. You can find it in the configuration directory, by default:<!-- -->
+<ul>
+<li>on Windows: <code>%USERPROFILE%/.komga/database.sqlite</code></li>
+<li>on Unix: <code>~/.komga/database.sqlite</code></li>
+<li>on Docker: in the directory you mounted as <code>/config</code></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_JmGV" id="breaking-changes">Breaking changes<a href="https://komga.org/hr/blog/prepare-v1#breaking-changes" class="hash-link" aria-label="Direktna poveznica na Breaking changes" title="Direktna poveznica na Breaking changes">​</a></h2>
+<ul>
+<li>The minimum Java version required will be Java 17:<!-- -->
+<ul>
+<li>If you run Komga using the <code>jar</code>, you will need to make sure your Java version is sufficient by running <code>java -version</code>.</li>
+<li>If you run Komga using Docker, you don't need to do anything.</li>
+</ul>
+</li>
+<li>The hashing algorithm for files and pages will change. Previous hashes for files and pages will be deleted. On startup, if hashing is enabled, Komga will re-hash files and pages using the new algorithm.</li>
+<li>The default port will be changed from <code>8080</code> to <code>25600</code>:<!-- -->
+<ul>
+<li>If you use Docker, you will need to update your container or compose configuration to expose the new port.</li>
+<li>You may need to adjust your reverse proxy settings.</li>
+<li>You can still change the port <a href="https://komga.org/hr/docs/installation/configuration#server_port--serverport-port">through configuration</a>.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>breaking change</category>
+            <category>upgrade</category>
+            <category>komga</category>
+        </item>
+    </channel>
+</rss>
