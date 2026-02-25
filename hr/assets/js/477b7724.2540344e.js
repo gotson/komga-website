@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["2128"],{97937(e){e.exports=JSON.parse('{"metadata":{"permalink":"/hr/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Najnovije Komga najave","blogTitle":"Najave"}}')}}]);

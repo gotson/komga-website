@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkwebsite=globalThis.webpackChunkwebsite||[]).push([[2032],{77883:t=>{t.exports=JSON.parse('{"authors":[{"name":"gotson","title":"Developer of Komga","url":"https://github.com/gotson","imageURL":"https://github.com/gotson.png","key":"gotson","page":null,"count":5}]}')}}]);
