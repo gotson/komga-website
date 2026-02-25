@@ -45,7 +45,7 @@ If you can't contribute code, but you still wish to help, then you can choose to
 - [Ko-Fi](https://ko-fi.com/gotson)
 - [Github Sponsors](https://github.com/sponsors/gotson)
 
-## Sponsors
+## Powered by
 
 <br/>
 <a href="https://www.jetbrains.com/?from=Komga" target="_blank" rel="noopener">
