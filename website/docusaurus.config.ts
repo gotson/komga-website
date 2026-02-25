@@ -283,6 +283,13 @@ const config: Config = {
                 //... other Algolia params
             },
         } satisfies Preset.ThemeConfig,
+
+    future: {
+        experimental_faster: true,
+        v4: {
+            removeLegacyPostBuildHeadAttribute: true,
+        }
+    },
 }
 
 module.exports = config
