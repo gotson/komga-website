@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["8780"],{7041(e){e.exports=JSON.parse('{"metadata":{"permalink":"/fr/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Derni\xe8res annonces de Komga","blogTitle":"Annonces"}}')}}]);
