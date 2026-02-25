@@ -26,7 +26,7 @@ Once Komic is configured, you can start reading your books:
 
 You can learn more about Komic's features by visiting the [Komic website](https://pruizlezcano.github.io/komic/).
 
-## Track read progress
+## Track read progress {#track-read-progress}
 
 Komic can track your reading progress and sync it with your Komga server.
 

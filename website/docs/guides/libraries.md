@@ -26,7 +26,7 @@ You can also specify extra options.
 
 See [Emptying library trash](/guides/trash.md#automatically-empty-trash).
 
-#### Force directory modified time
+#### Force directory modified time {#force-directory-modified-time}
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
@@ -47,7 +47,7 @@ Choose to scan all of your libraries on a time-based interval. Choose the interv
 
 The scan interval is based on when Komga started, or when you changed that setting for the library. For instance, if you have it set to “every 6 hours” and you start your server at 12:35, then a scan will be started around 18:35.
 
-#### One-Shots directory
+#### One-Shots directory {#one-shots-directory}
 
 See [One-Shots](/guides/oneshots.md).
 
@@ -80,7 +80,7 @@ To match only directories starting with the provided string, prefix the pattern 
 
 #### Analysis
 
-##### Compute hash for files
+##### Compute hash for files {#compute-hash-for-files}
 
 Komga will compute a filehash for your files. This is required for the "restore from trash bin" functionality to work, and to detect duplicate files.
 
@@ -98,7 +98,7 @@ Komga will compute a KOReader filehash for your files. This is required for the 
 
 This can consume lots of resources on large libraries or slow hardware.
 
-##### Analyze page dimensions
+##### Analyze page dimensions {#analyze-page-dimensions}
 
 Komga will retrieve each page's dimensions (width and height). This is useful for:
 - properly displaying landscape pages in the web reader, when using double pages

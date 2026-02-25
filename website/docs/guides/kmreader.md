@@ -51,7 +51,7 @@ KMReader supports downloading books for offline reading. You can set an **offlin
 
 Read lists and collections stay available offline. Progress syncs back to your server when you're online. On iOS, downloads show a **Live Activity** so you can track progress.
 
-## Track Read Progress
+## Track Read Progress {#track-read-progress}
 
 Reading progress syncs **automatically in real-time** as you read — no manual save needed. Features include:
 

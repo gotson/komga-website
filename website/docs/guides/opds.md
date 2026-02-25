@@ -2,7 +2,7 @@
 
 Komga should work with any OPDS reader, whether they use OPDS v1 or v2.
 
-## OPDS v2
+## OPDS v2 {#opds-v2}
 
 You will need to configure the following URL in your OPDS reader: 
 
@@ -19,7 +19,7 @@ Here is a list of reader applications that have been tested:
 | Multiple      | [KOReader](https://koreader.rocks/)                                                                                                                                  |        :x: Not supported        |         No         |    No     |
 
 
-## OPDS v1
+## OPDS v1 {#opds-v1}
 
 You will need to configure the following URL in your OPDS reader:
 

@@ -2,7 +2,7 @@
 
 [KOReader](https://koreader.rocks) can access Komga using [OPDS v1](./opds.md#opds-v1).
 
-## Read progress sync
+## Read progress sync {#read-progress-sync}
 
 Read progress syncs in the following way:
 - For pre-paginated books, the read progress will be accurate per page.

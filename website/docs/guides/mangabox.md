@@ -15,7 +15,7 @@
 - Quick filter libraries by language, read status, and direction
 - Global search for series and volumes
 
-## Track read progress
+## Track read progress {#track-read-progress}
 
 MangaBox can sync your reading progress with the server. When you read a book offline, read progress is synced back once the server is reachable again.
 

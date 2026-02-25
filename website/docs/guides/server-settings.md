@@ -28,13 +28,13 @@ The duration (in days) of the remember-me cookie that will be saved in the brows
 
 The RememberMe feature works with a secret key. If you want to invalidate all the remember-me cookies that have been issued, you can regenerate the key.
 
-#### Server Port
+#### Server Port {#server-port}
 
 Port to listen to for the API and web interface.
 
 This takes precedence over the `server.port` configuration key.
 
-#### Base URL
+#### Base URL {#base-url}
 
 Base URL, useful if you need to reverse proxy with a subfolder.
 

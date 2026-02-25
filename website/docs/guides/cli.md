@@ -43,7 +43,7 @@ Example:
 
 `2023-08-02T13:41:45.215+08:00  INFO 1979 --- [           main] o.g.k.i.apprunner.ListUsersRunner        : Here is a list of all users: [admin@example.org, jacky@example.org]`
 
-### Reset password for a user
+### Reset password for a user {#reset}
 
 Command: `--reset=user@domain.com --newpassword=YourNewPassword`
 

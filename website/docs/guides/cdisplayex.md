@@ -48,7 +48,7 @@ Once the synchronization is complete, the location has been added to the applica
 Go to the series from the home page or by using the navigation bar. If you want to read a book offline you need to download it, 
 long press on the book and use the download button.
 
-## Reading status
+## Reading status {#reading-status}
 
 Reading status and read progress are synced at different times when you use the app.
 

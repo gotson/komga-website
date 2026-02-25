@@ -19,7 +19,7 @@ With the trash bin, you can move or rename files and folders without losing your
 
 To track your files when they are renamed or restored, Komga generates a file hash for each file. If Komga doesn't have a file hash for a file, it won't be able to restore data after a file move or rename. Hashing files requires some computing power, so you may want to disable this entirely on low-end devices (see [Configuration](/installation/configuration.mdx)).
 
-## Automatically Empty Trash
+## Automatically Empty Trash {#automatically-empty-trash}
 
 By default, items found removed from a Library are placed in the trash until the trash is emptied. You can choose to have your Server automatically empty the trash after every scan occurs if you wish. To do so:
 

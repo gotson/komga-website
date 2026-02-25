@@ -71,7 +71,7 @@ It will show you all books with a status of:
 <img src="/assets/media/guides/scan-analysis-refresh/media-analysis.png" style={{maxHeight: '400px'}} alt="Media Analysis"/>
 </a>
 
-## Refresh metadata
+## Refresh metadata {#refresh-metadata}
 
 Refreshing Metadata for a library, series, or individual book causes the metadata for the item to be refreshed, even if it already has metadata. You can think of refreshing as “update metadata for the requested item even if it already has some”.
 

@@ -25,7 +25,7 @@ You can browse series, use the filter menu, and search for series.
 
 <img src="/assets/media/guides/tachiyomi/tachiyomi-search.png" style={{maxHeight: '500px'}} alt="Tachiyomi extension search"/>
 
-## Track read progress
+## Track read progress {#track-read-progress}
 
 Mihon can keep your read progress in sync with your Komga server. Check the official Mihon website for [instructions](https://mihon.app/docs/guides/tracking#enhanced-services).
 
