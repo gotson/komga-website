@@ -44,3 +44,47 @@ Here are some sample configuration on how to configure reverse proxy for Komga.
     </TabItem>
 </Tabs>
 ````
+
+### Nginx
+
+````mdx-code-block
+<Tabs>
+    <TabItem value="subdomain" label="Subdomain">
+    ```
+    map $http_upgrade $connection_upgrade {
+      default upgrade;
+      '' close;
+    }
+
+    server {
+      listen 80;
+      server_name komga.yourdomain.com;
+      return 301 https://$host$request_uri;
+    }
+
+    server {
+      listen 443 ssl http2;
+      server_name komga.yourdomain.com;
+
+      ssl_certificate /path/to/fullchain.pem;
+      ssl_certificate_key /path/to/privkey.pem;
+
+      client_max_body_size 20000m;
+
+      location / {
+        proxy_pass http://your-komga-server:25600;
+        proxy_http_version 1.1;
+        proxy_redirect off;
+        proxy_buffering off;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+      }
+    }
+    ```
+    </TabItem>
+</Tabs>
+````
