@@ -1,55 +1,63 @@
 import React from 'react'
 import clsx from 'clsx'
+import Heading from '@theme/Heading';
 import styles from './styles.module.css'
+import Translate, {translate} from '@docusaurus/Translate';
 
-type FeatureItem = {
-    title: string;
-    // Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-    description: JSX.Element;
-};
-
-const FeatureList: FeatureItem[] = [
+const FeatureList = [
     {
-        title: 'Organize',
+        title: translate({
+            message: 'Organize',
+            id: 'homepage.features.organize.title',
+        }),
+        Svg: '',
         description: (
-            <>
+            <Translate id="homepage.features.organize.text">
                 Organize your CBZ, CBR, PDF and EPUB files in different libraries, collections or reading lists.
-            </>
+            </Translate>
         ),
     },
     {
-        title: 'Read',
+        title: translate({
+            message: 'Read',
+            id: 'homepage.features.read.title',
+        }),
+        Svg: '',
         description: (
-            <>
+            <Translate id="homepage.features.read.text">
                 Use the integrated Webreader, the Mihon extension, any OPDS reader, or other integrations.
-            </>
+            </Translate>
         ),
     },
     {
-        title: 'Manage',
+        title: translate({
+            message: 'Manage',
+            id: 'homepage.features.manage.title',
+        }),
+        Svg: '',
         description: (
-            <>
+            <Translate id="homepage.features.manage.text">
                 Edit metadata for your series and books.
-            </>
+            </Translate>
         ),
     },
 ]
 
-function Feature ({ title, Svg, description }: FeatureItem) {
+function Feature ({ title, Svg, description }) {
     return (
         <div className={clsx('col col--4')}>
             {/*<div className="text--center">*/}
             {/*    <Svg className={styles.featureSvg} role="img"/>*/}
             {/*</div>*/}
             <div className="text--center padding-horiz--md">
-                <h3>{title}</h3>
+                <Heading as="h3">{title}</Heading>
                 <p>{description}</p>
             </div>
         </div>
     )
 }
 
-export default function HomepageFeatures (): JSX.Element {
+export default function HomepageFeatures() {
     return (
         <section className={styles.features}>
             <div className="container">
@@ -60,5 +68,5 @@ export default function HomepageFeatures (): JSX.Element {
                 </div>
             </div>
         </section>
-    )
+    );
 }

@@ -6,7 +6,7 @@ import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 
 import styles from './index.module.css'
-import Translate from '@docusaurus/core/lib/client/exports/Translate'
+import Translate, {translate} from '@docusaurus/Translate'
 
 function HomepageHeader () {
     const { siteConfig } = useDocusaurusContext()
@@ -20,7 +20,9 @@ function HomepageHeader () {
                     <Link
                         className="button button--primary button--lg margin--sm"
                         to="/docs/introduction">
-                        <Translate description="Home page link to docs section">
+                        <Translate
+                            id="homepage.getStarted.linkLabel"
+                            description="Home page link to docs section">
                             Get Started
                         </Translate>
                     </Link>
@@ -28,7 +30,9 @@ function HomepageHeader () {
                         className="button button--primary button--lg margin--sm"
                         to="/blog"
                     >
-                        <Translate description="Home page link to announcements section">Announcements</Translate>
+                        <Translate
+                            id="homepage.announcements.linkLabel"
+                            description="Home page link to announcements section">Announcements</Translate>
                     </Link>
                 </div>
             </div>
@@ -36,12 +40,9 @@ function HomepageHeader () {
     )
 }
 
-export default function Home (): JSX.Element {
-    const { siteConfig } = useDocusaurusContext()
+export default function Home () {
     return (
-        <Layout
-            title="Free and open source comics/mangas media server"
-            description="Free and open source comics/mangas media server">
+        <Layout>
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
