@@ -146,6 +146,8 @@ Here is a sample `application.yml` file in case you need to customize it. **Only
 # Make sure indentation is correct (2 spaces at every indentation level), yaml is very sensitive!
 komga:
   database:
+    # If you're using Docker/Podman, set this to "<KOMGA_CONFIGDIR>/database.sqlite" (default to use: "/config/database.sqlite"; replace "<KOMGA_CONFIGDIR>" with the actual KOMGA_CONFIGDIR value if it's been overridden.)
+    # Otherwise, it will make Komga create your database in an temporary location and you will lose (!) your database when your container gets recreated.
     file: ${user.home}/.komga/database.sqlite
   cors.allowed-origins:
     - http://localhost:8081
