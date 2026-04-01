@@ -49,6 +49,7 @@ const sidebars = {
                         type: 'generated-index',
                     },
                     items: [
+                        'installation/thirdparty/helm',
                         'installation/thirdparty/podman',
                         'installation/thirdparty/pikapods',
                         'installation/thirdparty/scoop',
