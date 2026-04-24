@@ -8,7 +8,7 @@ If you have disabled the [page dimensions analysis](libraries.md#analyze-page-di
 it is necessary to open books with CDisplayEx.
 :::
 
-## Add a new location
+## Add a new location {#add-new-location}
 
 On the home page, use the big **+** button at the bottom right to add a new location. Then choose the Komga option from the list that appears.
 A dialog box appears asking you to enter some information.
@@ -32,7 +32,7 @@ Add a **description** and leave the other options checked.
 Now press the **ADD** button, the synchronization will start, depending on the size of your library and the performance of your server, 
 it may take a few minutes or a few seconds. You will be notified when this operation is complete.
 
-## Nested folders
+## Nested folders {#nested-folders}
 
 Without waiting for the synchronization to complete, you can browse folders by tapping on the location that was just 
 added to the home page. In this view, the server must be reachable. You will be able to navigate in a virtual folder structure.
@@ -42,7 +42,7 @@ To see a thumbnail on the folder and to display statistical information,
 you must activate the thumbnail option: [Show a thumbnail on folders](https://www.cdisplayex.com/mobile/settings/#show-a-thumbnail-on-folders)
 :::
 
-## Library
+## Library {#library}
 
 Once the synchronization is complete, the location has been added to the application library, it is accessible offline. 
 Go to the series from the home page or by using the navigation bar. If you want to read a book offline you need to download it, 

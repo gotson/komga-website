@@ -6,7 +6,7 @@ Each library has a root folder, and no library can share any part of their path.
 
 For example if you have a library with a root path of `/books/mangas`, you can't create a library with a root path of `/books`, because the two root paths would overlap. You can however create a library with a root path of `/books/comics`.
 
-## Creating libraries
+## Creating libraries {#creating}
 
 From the web interface:
 - click on the _+_ icon next to _Libraries_ in the sidebar <img src="/assets/media/guides/libraries/library-add.png" style={{verticalAlign: 'middle', maxHeight: '32px'}} />
@@ -18,11 +18,11 @@ From the web interface:
 
 You can also specify extra options.
 
-### Scanner
+### Scanner {#scanner}
 
 <img src="/assets/media/guides/libraries/library-add-scanner.png" style={{maxHeight: '400px'}} alt="Add Library Dialog Scanner"/>
 
-#### Empty trash automatically after every scan
+#### Empty trash automatically after every scan {#auto-empty-trash}
 
 See [Emptying library trash](/guides/trash.md#automatically-empty-trash).
 
@@ -30,11 +30,11 @@ See [Emptying library trash](/guides/trash.md#automatically-empty-trash).
 
 This will force the last modified time of a directory as the maximum from its own last modified time and the last modified time from all the books inside the directory. This should be used only if your filesystem does not update the last modified time of a directory when files inside it are modified (Google Drive for instance).
 
-#### Scan on startup
+#### Scan on startup {#scan-on-startup}
 
 If enabled, the library will be scanned when Komga starts.
 
-#### Scan interval
+#### Scan interval {#scan-interval}
 
 Choose to scan all of your libraries on a time-based interval. Choose the interval to use from the dropdown. Available frequencies:
 
@@ -51,7 +51,7 @@ The scan interval is based on when Komga started, or when you changed that setti
 
 See [One-Shots](/guides/oneshots.md).
 
-#### Scan for these file types
+#### Scan for these file types {#file-types}
 
 This will configure the scanner to only look for files with specific file extensions. Available types:
 
@@ -59,7 +59,7 @@ This will configure the scanner to only look for files with specific file extens
 - PDF: `pdf`
 - Epub: `epub`
 
-#### Directory exclusions
+#### Directory exclusions {#directory-exclusions}
 
 You can specify any pattern to exclude directory subtrees from the scan.
 
@@ -74,11 +74,11 @@ Patterns are checked against **any part of the directory path**:
 To match only directories starting with the provided string, prefix the pattern with `/`, like `/#recycle`
 :::
 
-### Options
+### Options {#options}
 
 <img src="/assets/media/guides/libraries/library-add-options.png" style={{maxHeight: '500px'}} alt="Add Library Dialog Options"/>
 
-#### Analysis
+#### Analysis {#analysis}
 
 ##### Compute hash for files {#compute-hash-for-files}
 
@@ -86,13 +86,13 @@ Komga will compute a filehash for your files. This is required for the "restore 
 
 This can consume lots of resources on large libraries or slow hardware.
 
-##### Compute hash for pages
+##### Compute hash for pages {#compute-hash-for-pages}
 
 Komga will compute a filehash for the first and last 3 pages in each book (`cbz` only). Those are used to detect duplicate pages.
 
 This can consume lots of resources on large libraries or slow hardware.
 
-##### Compute hash for files for KOReader
+##### Compute hash for files for KOReader {#compute-hash-for-files-for-koreader}
 
 Komga will compute a KOReader filehash for your files. This is required for the [KOReader Sync](koreader.md) functionality to work.
 
@@ -106,27 +106,27 @@ Komga will retrieve each page's dimensions (width and height). This is useful fo
 
 This can consume lots of resources on large libraries or slow hardware.
 
-#### File management
+#### File management {#file-management}
 
-##### Automatically repair incorrect file extensions
+##### Automatically repair incorrect file extensions {#repair-extensions}
 
 Files with an incorrect extension will be automatically renamed in the background. For example a `zip` file with a `.cbr` extension will be renamed to `.cbz`.
 
-##### Automatically convert to CBZ
+##### Automatically convert to CBZ {#convert-to-cbz}
 
 Books in `rar`/`cbr` format will be converted to `cbz` automatically in the background. The `zip` files are created with the `DEFLATE` method without compression.
 
-#### Series cover
+#### Series cover {#series-cover}
 
 Choose which book cover is used for the series.
 
-### Metadata
+### Metadata {#metadata}
 
 <img src="/assets/media/guides/libraries/library-add-metadata.png" style={{maxHeight: '600px'}} alt="Add Library Dialog Metadata"/>
 
 Check the [Refresh Metadata](/guides/scan-analysis-refresh.md#refresh-metadata) section to know more about what they do.
 
-## Edit a library
+## Edit a library {#edit}
 
 To edit a library, look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style={{verticalAlign: 'middle', maxHeight: '32px'}} /> and click on _Edit_.
 
@@ -138,7 +138,7 @@ If you change the path __for a parent directory of the current path__, you will 
 If you change the path __for a child directory of the current path__, you will lose part of your content.
 :::
 
-## Delete a library
+## Delete a library {#delete}
 
 To delete a library, look for the action menu icon <img src="/assets/media/guides/action-menu-icon.png" style={{verticalAlign: 'middle', maxHeight: '32px'}} /> and click on _Delete_.
 

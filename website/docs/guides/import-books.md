@@ -2,7 +2,7 @@
 
 Komga lets you import files that are outside your existing libraries directly into existing series folder (from the _Import > Books_ screen).
 
-## Scan for books
+## Scan for books {#scan}
 
 Start by choosing a folder to scan for eligible books, and click _Scan_.
 
@@ -10,13 +10,13 @@ Start by choosing a folder to scan for eligible books, and click _Scan_.
 
 Komga will display a list of all files eligible for import.
 
-## Select destination series
+## Select destination series {#select-series}
 
 You will need to pick a destination series for each. You can choose individually, or for all the selected files at once using the _Select Series_ button.
 
 <img src="/assets/media/guides/import-books/book-import-pick-series.png" style={{maxHeight: ' 400px'}} alt="Select series"/>
 
-## Check book details
+## Check book details {#check-details}
 
 For each book, you can:
 - display the book details: format, number of pages, and detailed page list
@@ -29,7 +29,7 @@ If you choose a number for a book, and a book already exists with that number, K
 
 <img src="/assets/media/guides/import-books/book-import-buttons.png" style={{maxHeight: ' 400px'}} alt="Book actions"/>
 
-## Finalize the import
+## Finalize the import {#finalize}
 
 Komga will import only the selected files (checkbox on the left).
 

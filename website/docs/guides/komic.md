@@ -2,7 +2,7 @@
 
 [Komic](https://pruizlezcano.github.io/komic/) is an elegant, feature-rich iOS app designed to give you the best reading experience with your Komga server.
 
-## Adding your Komga server to Komic
+## Adding your Komga server to Komic {#add-server}
 
 The first time you open Komic, you will be prompted to add a server. Enter your _server address_, _username_, and _password_.
 
@@ -16,7 +16,7 @@ Apple doesn't let you access unencrypted traffic for non-browser apps outside yo
 
 You can modify your server settings at any time by going to the _Settings_ tab and selecting _Komga Server_.
 
-## Usage
+## Usage {#usage}
 
 Once Komic is configured, you can start reading your books:
 

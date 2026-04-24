@@ -8,21 +8,21 @@ Read progress syncs in the following way:
 - For pre-paginated books, the read progress will be accurate per page.
 - For regular EPUB books, the read progress will be tracker at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from KOReader to Komga or Komga to KOReader.
 
-## Configuration
+## Configuration {#configuration}
 
 In order to use KOReader Sync with Komga, a Komga user must have the role `KOREADER_SYNC`.
 
 You also need to enable [file hashing for KOReader](libraries.md#compute-hash-for-files-for-koreader).
 
-### Generate API key
+### Generate API key {#api-key}
 
 The KOReader Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _Account Settings_ page. Make sure to write down the generated key, as it won't be shown afterwards.
 
 If you have multiple KOReader devices, it is recommended to use a different API key for each.
 
-### Setup KOReader
+### Setup KOReader {#setup}
 
-#### Custom Sync Server
+#### Custom Sync Server {#sync-server}
 
 1. In the KOReader menu, go to _Progress sync_.
     <img src="/assets/media/guides/koreader/koreader-progress-sync-menu.png" style={{maxHeight: '200px'}} alt="KOReader configuration menu"/>
@@ -42,7 +42,7 @@ If you have multiple KOReader devices, it is recommended to use a different API 
 
 6. Click on _Login_.
 
-#### Document Matching Method
+#### Document Matching Method {#matching-method}
 
 1. In the KOReader menu, go to _Progress sync_.
    <img src="/assets/media/guides/koreader/koreader-progress-sync-menu.png" style={{maxHeight: '200px'}} alt="KOReader configuration menu"/>
@@ -53,24 +53,24 @@ If you have multiple KOReader devices, it is recommended to use a different API 
 3. Select _Binary_.
    <img src="/assets/media/guides/koreader/koreader-matching-method.png" style={{maxHeight: '100px'}} alt="KOReader document matching method options"/>
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Komga logs
+### Komga logs {#komga-logs}
 
 Komga can log all incoming HTTP requests, including headers and body, by setting `logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter` to `DEBUG`.
 
 You can also access the recent HTTP exchanges under the `/actuator/httpexchanges` endpoint on your Komga server.
 
-## Noteworthy Community Plugins
+## Noteworthy Community Plugins {#community-plugins}
 
-### Kobo Sync
+### Kobo Sync {#kobo-sync}
 
 If you use KOReader on a Kobo device, you can set up [Kobo Sync](kobo.mdx) and open books directly in KOReader by using the [kobo.koplugin](https://ogkevin.github.io/kobo.koplugin/scenarios/komga-calibre.html).
 
-### ComicReader
+### ComicReader {#comicreader}
 
 [ComicReader](https://korcomic.github.io/docs/comicreader.koplugin/intro/): a plugin to enhance the reading experience for Comics.
 
-### ComicMeta
+### ComicMeta {#comicmeta}
 
 [ComicMeta](https://korcomic.github.io/docs/comicmeta.koplugin/intro/): a plugin that extracts ComicInfo metadata from your comics.

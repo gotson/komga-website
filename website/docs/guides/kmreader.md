@@ -10,7 +10,7 @@
 
 </div>
 
-## Features
+## Features {#features}
 
 - **Multi-Server Vault** — Save unlimited Komga servers with password or API key authentication
 - **Cloud-Drive Offline** — Background downloads with Live Activity on iOS. Offline policies (manual, latest, all) per series, with read lists and collections available offline
@@ -21,7 +21,7 @@
 - **Admin Tools** — Metadata editing, library scans, task management, live metrics via SSE, and a filterable log viewer
 - **Smart Caching** — Three-tier caches (pages, books, thumbnails) with adjustable limits and auto-cleanup
 
-## Adding your Komga server
+## Adding your Komga server {#add-server}
 
 When you first open KMReader, you'll be greeted by the onboarding screen. Tap the **+** button to add your server:
 
@@ -39,7 +39,7 @@ You can add multiple servers and switch between them from settings.
 KMReader can connect to **HTTP** servers when needed (ATS exceptions are supported), but **HTTPS** is strongly recommended for any connection outside your local network.
 :::
 
-## Offline Reading
+## Offline Reading {#offline-reading}
 
 KMReader supports downloading books for offline reading. You can set an **offline policy** per series from the series detail page:
 
@@ -59,7 +59,7 @@ Reading progress syncs **automatically in real-time** as you read — no manual 
 - Offline progress stored locally and synced when connection restores
 - Optional incognito mode keeps progress off the server when needed
 
-## Platform Support
+## Platform Support {#platform-support}
 
 | Platform | Minimum Version | Notes                         |
 | -------- | --------------- | ----------------------------- |
@@ -68,7 +68,7 @@ Reading progress syncs **automatically in real-time** as you read — no manual 
 | macOS    | 14.0+           | Native Mac experience         |
 | tvOS     | 17.0+           | DIVINA reader only            |
 
-## Useful Links
+## Useful Links {#links}
 
 - [KMReader Website](https://kmreader.everpcpc.com/) — Features, screenshots, and privacy policy
 - [GitHub Repository](https://github.com/everpcpc/KMReader) — Source code, issues, and releases

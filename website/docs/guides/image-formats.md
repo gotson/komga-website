@@ -1,6 +1,6 @@
 # Image Types
 
-## Decoding images
+## Decoding images {#decoding}
 
 Komga doesn't always need to decode images within your books. Image decoding is necessary in the following cases:
 - thumbnail generation
@@ -10,7 +10,7 @@ Komga doesn't always need to decode images within your books. Image decoding is 
 
 If the client requesting a page can decode the format, Komga passes the raw image data without decoding.
 
-## Common types
+## Common types {#common-types}
 
 The following types are supported on every platform:
 - JPEG
@@ -18,7 +18,7 @@ The following types are supported on every platform:
 - GIF
 - WebP
 
-## Advanced types
+## Advanced types {#advanced-types}
 
 More advanced types are supported on some platforms only, as they rely on native libraries for decoding.
 

@@ -3,13 +3,13 @@
 [Komelia](https://github.com/Snd-R/Komelia) is free and open source cross-platform Komga client. Supported platforms
 include Android, Windows and Linux
 
-## Installation
+## Installation {#installation}
 
 - Latest prebuilt installers for all platforms are available at https://github.com/Snd-R/Komelia/releases
 - Android F-Droid package https://f-droid.org/packages/io.github.snd_r.komelia/
 - Linux AUR package https://aur.archlinux.org/packages/komelia
 
-## App updates
+## App updates {#updates}
 
 :::note
 F-Droid package doesn't have self-update capability. Updates are handled by F-Droid app

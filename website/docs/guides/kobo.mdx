@@ -5,7 +5,7 @@ import TabItem from '@theme/TabItem';
 
 The Kobo integration is based on the native Kobo Sync capability, where your Kobo eReader will sync to a Komga server instead of the official Kobo servers.
 
-## Features supported and limitations
+## Features supported and limitations {#features-limitations}
 
 This is what is currently supported:
 - Only **EPUB** books from all libraries, along with their metadata and cover image, will be synced.
@@ -20,19 +20,19 @@ Read progress syncs in the following way:
 - For regular EPUB books, Kobo can only keep track of read progress at the beginning of a chapter, not within a chapter. Mid-chapter read progress will be lost when switching from Kobo to Komga or Komga to Kobo. This is a Kobo limitation.
 - For Kobo EPUB (KEPUB) books, Kobo uses its own mechanism to track progress. Komga does its best to map the Kobo specific read progress to Komga, but it may be off by a few pages.
 
-## Configuration
+## Configuration {#configuration}
 
 In order to use Kobo Sync with Komga, a Komga user must have the roles `KOBO_SYNC` and `FILE_DOWNLOAD`.
 
 Proxying of unknown requests to the official Kobo servers can be enabled in _Server Settings_. This is enabled globally for all users on the server.
 
-### Generate API key
+### Generate API key {#api-key}
 
 The Kobo Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _Account Settings_ page. Make sure to write down the generated key, as it won't be shown afterwards.
 
 If you have multiple Kobo devices, it is recommended to use a different API key for each.
 
-### Kepubify
+### Kepubify {#kepubify}
 
 Komga uses [Kepubify](https://pgaskin.net/kepubify/) to automatically convert EPUB books to KEPUB when the Kobo requests a file.
 
@@ -45,7 +45,7 @@ Kepubify is bundled on the following distributions:
 
 When using the `jar`, you will need to configure the path to `kepubify` or `kepubify.exe` from the _Server Settings_.
 
-### Setup Kobo
+### Setup Kobo {#setup}
 
 Connect your Kobo eReader to your computer and open the `.kobo/Kobo/Kobo eReader.conf` file (you may need to display hidden files on Mac/Linux).
 
@@ -75,7 +75,7 @@ Or for a local connection (adjust the port as needed):
 api_endpoint=http://192.168.1.54:25600/kobo/ABC123456123ABCD
 ```
 
-### Force external port
+### Force external port {#external-port}
 
 The Kobo eReader does not send valid HTTP `Host` header, which could break the covers and file download in certain circumstances.  Komga will try its best to automatically fix the incorrect Kobo headers, but in some specific cases it's not possible.
 
@@ -83,7 +83,7 @@ If you experience some issues downloading covers or files from the Kobo, you wil
 
 A case where this would be required is if you access your Komga server directly (without a reverse proxy), with Komga running in Docker, and with a Docker mapped port that is different from the internal Komga port.
 
-## Migrating from Calibre-Web
+## Migrating from Calibre-Web {#migrating}
 
 If you have used Calibre-Web with Kobo Sync before, you can migrate to Komga by changing the `Kobo eReader.conf` and point to your Komga server instead.
 
@@ -91,7 +91,7 @@ Books added by Calibre-Web should remain on your Kobo device.
 
 If you have Kobo proxying enabled, Komga is able to extract your Kobo authentication tokens from the Calibre-Web token (stored on the Kobo) transparently.
 
-## Privacy and Security
+## Privacy and Security {#privacy}
 
 The Kobo eReader sends out sensitive information during the Sync protocol. It is highly recommended to only use Kobo Sync over HTTPS.
 
@@ -99,9 +99,9 @@ The API key is as sensitive as your username and password. Since the API key is 
 
 Be careful when sharing Komga logs or Kobo logs, and redact any sensitive information.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Sync fails with `Invalid character found in the request target`
+### Sync fails with `Invalid character found in the request target` {#invalid-character}
 
 The Kobo does not respect the HTTP standards when sending requests. If your Kobo is configured to connect to Komga directly, the sync will fail, and the Komga logs will contain a message like:
 
@@ -130,11 +130,11 @@ You can configure Komga to allow for those invalid characters:
 </Tabs>
 ````
 
-### Force Kobo Sync
+### Force Kobo Sync {#force-sync}
 
 If the Kobo eReader becomes out of sync with Komga somehow, you can force a full sync from the _Account Settings_ page. Locate the API key, and click the _Force Kobo sync_ icon.
 
-### Access Kobo eReader logs
+### Access Kobo eReader logs {#kobo-logs}
 
 Logs on the Kobo device are encrypted and cannot be read when connecting the device to a computer.
 
@@ -150,7 +150,7 @@ Once that's set, you will be able to stream the Kobo's logs using netcat. Use th
 nc -v <kobo IP address> 5001
 ```
 
-### Komga logs
+### Komga logs {#komga-logs}
 
 Komga can log all incoming HTTP requests, including headers and body, by setting `logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter` to `DEBUG`.
 
