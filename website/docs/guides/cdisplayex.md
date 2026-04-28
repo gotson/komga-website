@@ -42,15 +42,13 @@ To see a thumbnail on the folder and to display statistical information,
 you must activate the thumbnail option: [Show a thumbnail on folders](https://www.cdisplayex.com/mobile/settings/#show-a-thumbnail-on-folders)
 :::
 
-<a name="library"></a>
-## Library
+## Library {#library}
 
 Once the synchronization is complete, the location has been added to the application library, it is accessible offline. 
 Go to the series from the home page or by using the navigation bar. If you want to read a book offline you need to download it, 
 long press on the book and use the download button.
 
-<a name="reading-status"></a>
-## Reading status
+## Reading status {#reading-status}
 
 Reading status and read progress are synced at different times when you use the app.
 
