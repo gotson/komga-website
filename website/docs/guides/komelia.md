@@ -15,7 +15,8 @@ include Android, Windows and Linux
 F-Droid package doesn't have self-update capability. Updates are handled by F-Droid app
 :::
 
-Android app can check and update itself to latest version. \
+Android app can check and update itself to latest version.
+
 Permission to install apps is required, otherwise you'll need to download and install new apk from GitHub release page.
 
 Windows and Linux version can only check for new version and direct you to download page. You'll need to manually
