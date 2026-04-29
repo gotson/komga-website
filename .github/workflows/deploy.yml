@@ -28,6 +28,9 @@ jobs:
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: |
+          npm -w website run mock-api-docs
+          npm -w website run write-translations
+          npm -w website run clean-api-docs
           npm -w website run crowdin:sync
 
       - name: Generate Open API
