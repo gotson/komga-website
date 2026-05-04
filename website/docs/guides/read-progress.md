@@ -2,38 +2,6 @@
 
 Komga can track which books you have read, and books that you are currently reading. Reading progress is tracked for each user separately.
 
-## Supported readers
-
-### Webreader
-
-The webreader can track the progress as you read:
-- when you open a book that is in progress, the webreader will resume reading where you left it.
-- when you finish reading a book, the webreader will mark it as read.
-
-### Mihon
-
-Mihon can track progress of read books, using the [Komga tracker](mihon.md#track-read-progress).
-
-### CDisplayEx
-
-CDisplayEx [syncs read status and reading progress](cdisplayex.md#reading-status).
-
-### KOReader
-
-KOReader can [sync read status and reading progress](koreader.md#read-progress-sync).
-
-### Komic
-
-Komic can [track your reading progress and sync it with your Komga server](komic.md#track-read-progress).
-
-### MangaBox
-
-MangaBox can [sync read status and reading progress, sync back reading status of offline books](mangabox.md#track-read-progress).
-
-### KMReader
-
-KMReader [syncs reading progress automatically in real-time](kmreader.md#track-read-progress) as you read, and syncs back progress when reconnecting after offline reading.
-
 ## Unread and in progress indicators
 
 The book card will display read progress indicators:
