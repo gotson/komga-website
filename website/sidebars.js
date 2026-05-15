@@ -58,6 +58,7 @@ const sidebars = {
                         'installation/thirdparty/truenas',
                         'installation/thirdparty/qnap',
                         'installation/thirdparty/aur',
+                        'installation/thirdparty/hostim',
                     ],
                 },
                 {
