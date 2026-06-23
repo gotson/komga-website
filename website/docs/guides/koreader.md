@@ -74,3 +74,7 @@ If you use KOReader on a Kobo device, you can set up [Kobo Sync](kobo.mdx) and o
 ### ComicMeta {#comicmeta}
 
 [ComicMeta](https://korcomic.github.io/docs/comicmeta.koplugin/intro/): a plugin that extracts ComicInfo metadata from your comics.
+
+### Komga Bulk Downloader {#komgadownloader}
+
+[Komga Bulk Downloader](https://akamuraasai.github.io/koreader-komga/): a plugin that allows you to download chapters in bulk, making it easier to have your chapters offline.
