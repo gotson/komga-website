@@ -77,4 +77,4 @@ If you use KOReader on a Kobo device, you can set up [Kobo Sync](kobo.mdx) and o
 
 ### Komga Bulk Downloader {#komgadownloader}
 
-[Komga Bulk Downloader](https://akamuraasai.github.io/koreader-komga/): a plugin that allows you to download chapters in bulk, making it easier to have your chapters offline.
+[Komga Bulk Downloader](https://akamuraasai.github.io/koreader-komga/): a plugin that allows you to download books in bulk, making it easier to have your books offline.
