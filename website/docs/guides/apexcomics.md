@@ -1,8 +1,3 @@
----
-title: Read with Apex Comics
-sidebar_position: 80
----
-
 # Read with Apex Comics
 
 [Apex Comics](https://apex-comics.uppr.be) is an Android comic and manga reader that connects
