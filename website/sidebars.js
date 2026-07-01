@@ -109,6 +109,7 @@ const sidebars = {
                         type: 'generated-index',
                     },
                     items: [
+                        'guides/apexcomics',
                         'guides/webreader-divina',
                         'guides/webreader-epub',
                         'guides/mihon',
