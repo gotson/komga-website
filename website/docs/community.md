@@ -29,3 +29,7 @@ This page lists community applications or tools that can be used alongside Komga
 ## Homey
 
 > [Homey](https://homey.app/en-us/app/net.ladenius.komga/Komga/) is a smart home platform, and has an [app to automate Komga](https://github.com/jurjen74/homey-komga).
+
+## cbzit
+
+> [cbzit](https://github.com/mate2/cbzit) is a command-line tool that turns folders of manga/comic page images into cleanly-named `.cbz` archives — smart structure detection, a dry-run report before it writes anything, and a `merge` command to consolidate chapter archives into per-volume ones. Your original files are never touched.
