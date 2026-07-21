@@ -16,7 +16,7 @@ You also need to enable [file hashing for KOReader](libraries.md#compute-hash-fo
 
 ### Generate API key {#api-key}
 
-The KOReader Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _Account Settings_ page. Make sure to write down the generated key, as it won't be shown afterwards.
+The KOReader Sync Komga API uses a dedicated set of endpoints which require an API key to be accessed. Users can generate API keys from the _My Account_ page. Make sure to write down the generated key, as it won't be shown afterwards.
 
 If you have multiple KOReader devices, it is recommended to use a different API key for each.
 
