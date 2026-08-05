@@ -44,12 +44,6 @@ home screen, so everything you read is in one place.
 
 Passwords are stored in the device keychain rather than in plain text.
 
-:::tip
-Komga also speaks **OPDS 2.0** at `/opds/v2/catalog`, and OPDSy supports it. Either works. The v1.2
-catalogue puts **Keep Reading**, **On Deck**, series, collections and read lists on the first
-screen, so it is the easier one to start with.
-:::
-
 ## Browse your library {#browse}
 
 Komga's OPDS feeds map directly onto OPDSy's browser:
