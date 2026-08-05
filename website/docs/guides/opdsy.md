@@ -44,20 +44,10 @@ home screen, so everything you read is in one place.
 
 Passwords are stored in the device keychain rather than in plain text.
 
-:::caution
-Use the full catalogue path ending in `/opds/v1.2/catalog`. A bare `/opds/v1.2/` returns a **404**
-on every Komga version, which is the most common cause of a failed connection.
-:::
-
 :::tip
-Komga also speaks **OPDS 2.0** at `/opds/v2/catalog`, and OPDSy supports it. The v1.2 catalogue is
-still the recommended choice, for one concrete reason: **only the v1.2 feed advertises page
-streaming**. Komga's v1.2 book entries carry an OPDS-PSE link with a `pse:count`, whereas v2
-publications expose only a whole-file acquisition link and a Readium manifest. OPDSy can still
-stream from a v2 catalogue, but it has to derive the page URLs itself rather than being told them.
-
-The v1.2 catalogue also lands you on a richer set of entry points: **Keep Reading**, **On Deck**,
-all series, latest series, latest books, libraries, collections, read lists and publishers.
+Komga also speaks **OPDS 2.0** at `/opds/v2/catalog`, and OPDSy supports it. Either works. The v1.2
+catalogue puts **Keep Reading**, **On Deck**, series, collections and read lists on the first
+screen, so it is the easier one to start with.
 :::
 
 ## Browse your library {#browse}
@@ -77,15 +67,12 @@ Komga's OPDS feeds map directly onto OPDSy's browser:
 ## Page streaming {#page-streaming}
 
 Komga advertises the [OPDS Page Streaming Extension](https://anansi-project.github.io/docs/opds-pse/intro),
-and OPDSy uses it by default. Comics are read **page-by-page**, so no full archive download is
-needed to start reading, and the next few pages are prefetched as you go.
+and OPDSy uses it by default (**OPDS-PSE 1.0**). Comics are read **page-by-page**, so no full
+archive download is needed to start reading, and the next few pages are prefetched as you go.
 
-Because Komga renders each page server-side, the container format never reaches the device. **CBR**
-and **CB7** comics stream from Komga perfectly, even though OPDSy cannot open those archives from
-local storage.
-
-Komga also advertises PSE for **PDFs**, so PDFs from Komga are streamed as images in the comic
-reader rather than downloaded and rendered locally.
+Because pages arrive as images, the archive format doesn't matter: **CBR** and **CB7** comics stream
+from Komga perfectly, even though OPDSy cannot open those archives from local storage. **PDFs**
+stream the same way, in the comic reader.
 
 The comic reader supports paged or continuous vertical scroll (webtoon), left-to-right and
 right-to-left (manga) direction, fit-to-screen or fit-to-width, dual-page spreads in landscape, and
@@ -114,9 +101,8 @@ streaming does not.
 
 ## Read progress {#read-progress}
 
-OPDSy tracks your reading position **on the device**. Progress is not written back to Komga, because
-the OPDS specification has no field for reading progress. Komga's progress API
-(`/api/v1/books/{id}/read-progress`) sits outside OPDS.
+OPDSy currently tracks your reading position **on the device**, and does not yet write it back to
+Komga. Syncing progress with Komga is on the roadmap.
 
 **Continue Reading** on the OPDSy home screen therefore reflects what you have read in OPDSy, and is
 independent of Komga's own **Keep Reading** and **On Deck** feeds.
@@ -205,9 +191,9 @@ server; credentials are sealed with a passphrase only you hold.
 | Platform       | Android                                                           |
 | Protocol       | OPDS 1.2 (Atom) and OPDS 2.0 (JSON)                               |
 | Authentication | HTTP Basic, same credentials as the Komga web UI                  |
-| Page streaming | **OPDS-PSE**, including PDFs                                      |
+| Page streaming | **OPDS-PSE 1.0**, including PDFs                                  |
 | Offline        | Optional per-book, per-series or per-folder download              |
-| Progress sync  | Local only; not written back to Komga                             |
+| Progress sync  | Local to the device; not yet written back to Komga                |
 | Highlights     | Five colours with notes, plus bookmarks, synced across devices    |
 | Text-to-speech | Offline or online voices, with speed and pitch control            |
 | Privacy        | No accounts, ads or analytics; credentials in the device keychain |
