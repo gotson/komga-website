@@ -125,6 +125,7 @@ const sidebars = {
                         'guides/koharia',
                         'guides/yomu',
                         'guides/apexcomics',
+                        'guides/opdsy',
                         'guides/chunky',
                     ],
                 },
