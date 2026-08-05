@@ -183,7 +183,7 @@ server; credentials are sealed with a passphrase only you hold.
 | Topic          | Details                                                           |
 | -------------- | ----------------------------------------------------------------- |
 | Platform       | Android                                                           |
-| Protocol       | OPDS 1.2 (Atom) and OPDS 2.0 (JSON)                               |
+| Protocol       | OPDS 1.2 (Atom); OPDS 2.0 (JSON) for browsing                     |
 | Authentication | HTTP Basic, same credentials as the Komga web UI                  |
 | Page streaming | **OPDS-PSE 1.0**, including PDFs                                  |
 | Offline        | Optional per-book, per-series or per-folder download              |
