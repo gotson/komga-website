@@ -1,6 +1,6 @@
 # Read with KOReader
 
-[KOReader](https://koreader.rocks) can access Komga using [OPDS v1](./opds.md#opds-v1).
+[KOReader](https://koreader.rocks) can access Komga using [OPDS](./opds.md).
 
 ## Read progress sync {#read-progress-sync}
 
