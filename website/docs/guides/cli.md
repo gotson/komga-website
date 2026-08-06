@@ -32,6 +32,15 @@ services:
     command: --newpassword=toto --reset=admin@example.org
 ```
 
+### With the macOS application
+
+Using the Terminal:
+
+```shell
+cd /Applications/Komga.app/Contents/MacOS
+./Komga --list-users
+```
+
 ## Available commands
 ### List users
 
