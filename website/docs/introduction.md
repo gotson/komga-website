@@ -14,21 +14,9 @@ How it works:
 ### Komga supports these media file types
 
 Komga supports the following file types:
-- Comic book archives: _CBZ_ and _CBR_ (except solid archives, for RAR5 see below)
+- Comic book archives: _CBZ_ and _CBR_
 - eBooks in _EPUB_ format
 - _PDF_ files
-
-RAR 5 is supported on some platforms only, as it relies on native libraries for decoding.
-
-| Platform     | RAR 5              |
-|--------------|--------------------|
-| macOS app    | :heavy_check_mark: |
-| Windows app  | :heavy_check_mark: |
-| Docker amd64 | :heavy_check_mark: |
-| Docker arm64 | :heavy_check_mark: |
-| Docker arm   | :x:                |
-
-When using the `jar`, you will need to provide the native library yourself, and run Java with the [correct arguments](https://github.com/gotson/NightCompress/#requirements).
 
 ### Komga server compatibility
 
