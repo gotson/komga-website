@@ -23,6 +23,7 @@ Want to help translate the app to your language? You can easily help by using [W
 * [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
 * [Secondary-languages](https://docs.weblate.org/en/latest/user/profile.html#secondary-languages)
 * [Notifications](https://docs.weblate.org/en/latest/user/profile.html#notifications)
+* [ICU Syntax](https://formatjs.github.io/docs/core-concepts/icu-syntax) (especially [plurals](https://formatjs.github.io/docs/core-concepts/icu-syntax#plural-format)) used in the [nextui](https://hosted.weblate.org/projects/komga/nextui/)
 
 #### Project status
 [![Translation status](https://hosted.weblate.org/widget/komga/horizontal-auto.svg)](https://hosted.weblate.org/engage/komga/)
