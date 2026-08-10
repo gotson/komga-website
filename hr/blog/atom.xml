@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/hr/blog</id>
     <title>Announcements</title>
-    <updated>2025-08-08T00:00:00.000Z</updated>
+    <updated>2026-08-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/hr/blog"/>
     <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/hr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[NextUI: a year in the making]]></title>
+        <id>https://komga.org/hr/blog/nextui-beta</id>
+        <link href="https://komga.org/hr/blog/nextui-beta"/>
+        <updated>2026-08-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today I finally released the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.]]></summary>
+        <content type="html"><![CDATA[<p>Today I finally <a href="https://github.com/gotson/komga/releases/tag/1.26.0" target="_blank" rel="noopener noreferrer" class="">released</a> the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.</p>
+<p>NextUI is in public beta, running in parallel alongside the existing WebUI:</p>
+<ul>
+<li class="">Not all features are available yet. You can check <a href="https://github.com/gotson/komga/issues/2267" target="_blank" rel="noopener noreferrer" class="">this issue</a> for a list of what is available and what is yet to be implemented.</li>
+<li class="">If you have any feedback/questions, or if you observe any issues, with the NextUI, please <a href="https://github.com/gotson/komga/discussions/new?category=nextui-beta-test" target="_blank" rel="noopener noreferrer" class="">open a discussion</a> in the dedicated category.</li>
+</ul>]]></content>
+        <author>
+            <name>gotson</name>
+            <uri>https://github.com/gotson</uri>
+        </author>
+        <category label="komga" term="komga"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Komga turns 6!]]></title>
         <id>https://komga.org/hr/blog/happy-6th-birthday</id>

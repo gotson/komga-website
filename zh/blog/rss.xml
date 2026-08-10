@@ -4,10 +4,24 @@
         <title>Announcements</title>
         <link>https://komga.org/zh/blog</link>
         <description>Latest Komga announcements</description>
-        <lastBuildDate>Fri, 08 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
+        <item>
+            <title><![CDATA[NextUI: a year in the making]]></title>
+            <link>https://komga.org/zh/blog/nextui-beta</link>
+            <guid>https://komga.org/zh/blog/nextui-beta</guid>
+            <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today I finally released the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.]]></description>
+            <content:encoded><![CDATA[<p>Today I finally <a href="https://github.com/gotson/komga/releases/tag/1.26.0" target="_blank" rel="noopener noreferrer" class="">released</a> the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.</p>
+<p>NextUI is in public beta, running in parallel alongside the existing WebUI:</p>
+<ul>
+<li class="">Not all features are available yet. You can check <a href="https://github.com/gotson/komga/issues/2267" target="_blank" rel="noopener noreferrer" class="">this issue</a> for a list of what is available and what is yet to be implemented.</li>
+<li class="">If you have any feedback/questions, or if you observe any issues, with the NextUI, please <a href="https://github.com/gotson/komga/discussions/new?category=nextui-beta-test" target="_blank" rel="noopener noreferrer" class="">open a discussion</a> in the dedicated category.</li>
+</ul>]]></content:encoded>
+            <category>komga</category>
+        </item>
         <item>
             <title><![CDATA[Komga turns 6!]]></title>
             <link>https://komga.org/zh/blog/happy-6th-birthday</link>

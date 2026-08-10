@@ -5,6 +5,21 @@
     "description": "Latest Komga announcements",
     "items": [
         {
+            "id": "https://komga.org/blog/nextui-beta",
+            "content_html": "<p>Today I finally <a href=\"https://github.com/gotson/komga/releases/tag/1.26.0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">released</a> the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.</p>\n<p>NextUI is in public beta, running in parallel alongside the existing WebUI:</p>\n<ul>\n<li class=\"\">Not all features are available yet. You can check <a href=\"https://github.com/gotson/komga/issues/2267\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">this issue</a> for a list of what is available and what is yet to be implemented.</li>\n<li class=\"\">If you have any feedback/questions, or if you observe any issues, with the NextUI, please <a href=\"https://github.com/gotson/komga/discussions/new?category=nextui-beta-test\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">open a discussion</a> in the dedicated category.</li>\n</ul>",
+            "url": "https://komga.org/blog/nextui-beta",
+            "title": "NextUI: a year in the making",
+            "summary": "Today I finally released the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.",
+            "date_modified": "2026-08-10T00:00:00.000Z",
+            "author": {
+                "name": "gotson",
+                "url": "https://github.com/gotson"
+            },
+            "tags": [
+                "komga"
+            ]
+        },
+        {
             "id": "https://komga.org/blog/happy-6th-birthday",
             "content_html": "<p>Komga is 6 years old !</p>\n<p>Back then Komga didn't even have a user interface, and at first it could only be used as a Tachiyomi (now Mihon) source.</p>\n<p>The first version of the UI was only added in October 2019. At that time I didn't know much about web development, but building on Vue 2 / Vuetify 2 helped me to build a good-looking UI that has worked quite well so far. It has become however quite difficult to maintain and evolve:</p>\n<ul>\n<li class=\"\">There are practically no tests, meaning bugs can be introduced easily.</li>\n<li class=\"\">There is a lot of duplicated code, mostly due to Vue 2 limitations.</li>\n<li class=\"\">The whole development stack is tedious to work with, again due to what the javascript ecosystem was like in 2019.</li>\n</ul>\n<p>While Vue 3 came out around the end of 2020, it brought so many breaking changes that it's practically impossible to migrate a project from Vue 2 to Vue 3. Vuetify itself only came up with its version 3 end of 2022, and even at that time most of the components were not ready yet.</p>\n<p>This year I've started to work on a complete rewrite of the UI, using a more recent development stack, but also more experience under my belt.</p>\n<p>As of now the foundations are sound and solid, and I've started rewriting the pages one by one. I am also using the rewrite as an opportunity to include feature requests that were difficult to add in the current version of the UI.</p>\n<p>There is still quite a lot to do, so as usual I cannot provide any tentative release date, but I really hope this can be done in 2025. Stay tuned!</p>",
             "url": "https://komga.org/blog/happy-6th-birthday",
