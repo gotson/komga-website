@@ -59,6 +59,7 @@ const sidebars = {
                         'installation/thirdparty/qnap',
                         'installation/thirdparty/aur',
                         'installation/thirdparty/hostim',
+                        'installation/thirdparty/zimaos',
                     ],
                 },
                 {
