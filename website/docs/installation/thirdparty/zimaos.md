@@ -1,5 +1,8 @@
 # Run on ZimaOS
 
+:::warning
+This method is not officially supported. Support is provided by the ZimaOS team — see [Need Help](#need-help) below.
+:::
 
 This guide covers installing and using Komga on [ZimaOS](https://www.zimaspace.com/zimaos?utm_source=komga&utm_medium=docs&utm_campaign=zimaos_integration). Komga is natively supported in the ZimaOS App Catalog and can be installed in just a few minutes.
 
@@ -66,24 +69,6 @@ In the ZimaOS configuration form for Komga, navigate to the **Volumes** (or path
    Komga will automatically scan and import all comics, magazines, or e-books stored in that folder.
 
    ![Komga library overview after automatic scan](/assets/media/installation/zimaos/library-overview.png)
-
-## Access Komga via Mobile
-
-Access Komga via the Zima Client mobile app — a direct P2P connection to your home server, with no cloud relay and no VPN setup required. Works from home or on the go.
-
-![Komga in the Zima Client app list](/assets/media/installation/zimaos/mobile-apps.png)
-
-![Komga library in the Zima Client app](/assets/media/installation/zimaos/mobile-library.png)
-
-![Book preview in the Zima Client app](/assets/media/installation/zimaos/mobile-preview.png)
-
-## Reference Links
-
-For further details, consult the official Komga documentation:
-
-- Library advanced settings – [guides/libraries](/guides/libraries.md)
-- Server settings & management – [guides/server-settings](/guides/server-settings.md)
-- Reverse proxy & HTTPS setup – [installation/https](/installation/https.mdx)
 
 ## Need Help?
 
