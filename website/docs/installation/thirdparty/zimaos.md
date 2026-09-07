@@ -48,28 +48,6 @@ In the ZimaOS configuration form for Komga, navigate to the **Volumes** (or path
 
 ![ZimaOS Komga configuration showing volume bind mounts](/assets/media/installation/zimaos/volumes-configuration.png)
 
-## Add a Library in Komga
-
-1. On first visit, create an admin account.
-
-   ![Komga account creation screen](/assets/media/installation/zimaos/create-account.png)
-
-2. After logging in, click the **+** button next to *Libraries* in the sidebar.
-
-   ![Komga Add Library dialog, General tab](/assets/media/installation/zimaos/add-library.png)
-
-3. Set the file scan interval.
-
-   ![Komga Add Library dialog, Scanner tab](/assets/media/installation/zimaos/library-scan-intervals.png)
-
-   Keep all other tabs at their default settings and proceed.
-
-4. Click **Add** to finish.
-
-   Komga will automatically scan and import all comics, magazines, or e-books stored in that folder.
-
-   ![Komga library overview after automatic scan](/assets/media/installation/zimaos/library-overview.png)
-
-## Need Help?
+## Need Help? {#need-help}
 
 If you run into any issues while installing or using Komga on ZimaOS, join the [ZimaSpace Discord community](https://discord.gg/f9nzbmpMtU). Our team and community members will be happy to help.
