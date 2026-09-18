@@ -4,7 +4,7 @@
 Skilled at code? Know how to improve something or you generally want to support the creation of the app?
 
 ### Application
-The main application: [gotson/komga](https://github.com/gotson/komga) <span class="playgroundPreview">![GitHub issues](https://img.shields.io/github/issues/gotson/komga?style=social)</span>
+The main application: [gotson/komga](https://github.com/gotson/komga) <span class="argos-hide">![GitHub issues](https://img.shields.io/github/issues/gotson/komga?style=social)</span>
 
 ### Mihon Extension
 The official Komga extension for Mihon: [keiyoushi/extensions-source](https://github.com/keiyoushi/extensions-source/tree/main/src/all/komga)
@@ -15,7 +15,9 @@ The repository that hosts the documentation website you're currently reading: [g
 ## Translation
 ### Application
 
+<div class="argos-hide">
 [![Translation status](https://hosted.weblate.org/widget/komga/svg-badge.svg)](https://hosted.weblate.org/engage/komga/)
+</div>
 
 Want to help translate the app to your language? You can easily help by using [Weblate](https://hosted.weblate.org/engage/komga/).
 
@@ -26,11 +28,12 @@ Want to help translate the app to your language? You can easily help by using [W
 * [ICU Syntax](https://formatjs.github.io/docs/core-concepts/icu-syntax) (especially [plurals](https://formatjs.github.io/docs/core-concepts/icu-syntax#plural-format)) used in the [nextui](https://hosted.weblate.org/projects/komga/nextui/)
 
 #### Project status
+<div class="argos-hide">
 [![Translation status](https://hosted.weblate.org/widget/komga/horizontal-auto.svg)](https://hosted.weblate.org/engage/komga/)
-
+</div>
 ### Documentation
 
-<a title="Crowdin" target="_blank" href="https://crowdin.com/project/komga-website">
+<a title="Crowdin" target="_blank" href="https://crowdin.com/project/komga-website" class="argos-hide">
     <img src="https://badges.crowdin.net/komga-website/localized.svg" alt="Translation status - documentation"/>
 </a>
 

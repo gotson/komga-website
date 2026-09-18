@@ -36,7 +36,7 @@ Mermaid diagrams are rendered client-side and produce layout shifts
     display: none;
 }
 
-/* Weblate status is dynamic */
-#weblate-status {
+/* Class to hide specific content */
+.argos-hide {
     display: none;
 }
