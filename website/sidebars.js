@@ -127,6 +127,7 @@ const sidebars = {
                         'guides/yomu',
                         'guides/apexcomics',
                         'guides/chunky',
+                        'guides/kasane',
                     ],
                 },
                 'guides/theme',
