@@ -51,6 +51,7 @@ const sidebars = {
                     items: [
                         'installation/thirdparty/helm',
                         'installation/thirdparty/podman',
+                        'installation/thirdparty/easypanel',
                         'installation/thirdparty/pikapods',
                         'installation/thirdparty/scoop',
                         'installation/thirdparty/powershell-script',
