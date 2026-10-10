@@ -128,6 +128,7 @@ const sidebars = {
                         'guides/apexcomics',
                         'guides/chunky',
                         'guides/kasane',
+                        'guides/manyue',
                     ],
                 },
                 'guides/theme',
