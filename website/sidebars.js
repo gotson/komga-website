@@ -130,6 +130,7 @@ const sidebars = {
                         'guides/chunky',
                         'guides/kasane',
                         'guides/manyue',
+                        'guides/easemic',
                     ],
                 },
                 'guides/theme',
