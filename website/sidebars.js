@@ -131,6 +131,7 @@ const sidebars = {
                         'guides/kasane',
                         'guides/manyue',
                         'guides/tritonpanels',
+                        'guides/comicverse',
                     ],
                 },
                 'guides/theme',
