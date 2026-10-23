@@ -31,9 +31,10 @@ your server. The connection then appears under **Catalogs** on the Libraries scr
 :::warning
 If no scheme is entered, `https://` is assumed. Plain HTTP is accepted only for home-network addresses
 (`192.168.x.x`, `10.x.x.x`, `172.16–31.x.x`), after a confirmation prompt. The following are **not**
-accepted: plain HTTP to a public address, HTTPS to a name that resolves to a home-network address,
-Tailscale addresses (`100.x.x.x`) and `*.ts.net` names, and self-signed certificates. To read away from
-home, use a VPN into your home network, or a reverse proxy with a certificate from a public authority.
+accepted: plain HTTP to a public address, plain HTTP to a Tailscale address (`100.x.x.x`), and
+self-signed certificates. From TritonPanels 2.0.1, Tailscale works over HTTPS on a `*.ts.net` MagicDNS
+name served with Tailscale Serve. To read away from home, use Tailscale Serve, a VPN into your home
+network, or a reverse proxy with a certificate from a public authority.
 :::
 
 ## Browse and read {#browse}
