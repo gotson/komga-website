@@ -5,6 +5,23 @@
     "description": "Latest Komga announcements",
     "items": [
         {
+            "id": "https://komga.org/es/blog/prepare-v2",
+            "content_html": "<p>The future v2.0.0, which should be released in Q1 2027, will bring some breaking changes. This guide will help you to prepare for the next major version.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_tleR\" id=\"before-upgrading\">Before upgrading<a href=\"https://komga.org/es/blog/prepare-v2#before-upgrading\" class=\"hash-link\" aria-label=\"Link directo a Before upgrading\" title=\"Link directo a Before upgrading\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">If you run Docker, it is advisable to use the <code>1.x</code> tag instead of <code>latest</code>. You will be able to decide when you want to upgrade, especially if you are updating containers automatically.</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_tleR\" id=\"breaking-changes\">Breaking changes<a href=\"https://komga.org/es/blog/prepare-v2#breaking-changes\" class=\"hash-link\" aria-label=\"Link directo a Breaking changes\" title=\"Link directo a Breaking changes\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">The minimum Java version required will be Java 25:<!-- -->\n<ul>\n<li class=\"\">If you run Komga using the <code>jar</code>, you will need to make sure your Java version is sufficient by running <code>java -version</code>.</li>\n<li class=\"\">If you run Komga using Docker or the desktop app, you don't need to do anything.</li>\n</ul>\n</li>\n<li class=\"\">The Docker image for ARM32 (<code>linux/arm/v7</code>) will be dropped. ARM32 support globally is declining, and Java support for ARM32 has been dropped since Java 22.</li>\n<li class=\"\">Deprecated APIs will be removed. This could have an impact on 3rd party Komga clients, and this advance notice should help to raise awareness to 3rd party developers.</li>\n<li class=\"\">HTTP sessions will be exclusively stored in database. This was introduced in 1.29.0 and is being rolled out to all distribution channels. This should not have any impact to users.</li>\n</ul>\n<p>A <a href=\"https://github.com/gotson/komga/issues/2534\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Github issue</a> has been created to track the progress and list all the breaking changes.</p>",
+            "url": "https://komga.org/es/blog/prepare-v2",
+            "title": "Major version 2.0.0 will come in 2027",
+            "summary": "The future v2.0.0, which should be released in Q1 2027, will bring some breaking changes. This guide will help you to prepare for the next major version.",
+            "date_modified": "2026-10-30T00:00:00.000Z",
+            "author": {
+                "name": "gotson",
+                "url": "https://github.com/gotson"
+            },
+            "tags": [
+                "breaking change",
+                "upgrade",
+                "komga"
+            ]
+        },
+        {
             "id": "https://komga.org/es/blog/nextui-beta",
             "content_html": "<p>Today I finally <a href=\"https://github.com/gotson/komga/releases/tag/1.26.0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">released</a> the new version of the WebUI, called NextUI. It's been almost exactly 1 year since I announced the rewrite of the UI. Back then I thought I could get a first version out by year's end, but life took over, and both my spare time and my motivation had their ups and downs.</p>\n<p>NextUI is in public beta, running in parallel alongside the existing WebUI:</p>\n<ul>\n<li class=\"\">Not all features are available yet. You can check <a href=\"https://github.com/gotson/komga/issues/2267\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">this issue</a> for a list of what is available and what is yet to be implemented.</li>\n<li class=\"\">If you have any feedback/questions, or if you observe any issues, with the NextUI, please <a href=\"https://github.com/gotson/komga/discussions/new?category=nextui-beta-test\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">open a discussion</a> in the dedicated category.</li>\n</ul>",
             "url": "https://komga.org/es/blog/nextui-beta",

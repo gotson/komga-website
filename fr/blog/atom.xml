@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://komga.org/fr/blog</id>
     <title>Announcements</title>
-    <updated>2026-08-10T00:00:00.000Z</updated>
+    <updated>2026-10-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://komga.org/fr/blog"/>
     <subtitle>Latest Komga announcements</subtitle>
     <icon>https://komga.org/fr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Major version 2.0.0 will come in 2027]]></title>
+        <id>https://komga.org/fr/blog/prepare-v2</id>
+        <link href="https://komga.org/fr/blog/prepare-v2"/>
+        <updated>2026-10-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The future v2.0.0, which should be released in Q1 2027, will bring some breaking changes. This guide will help you to prepare for the next major version.]]></summary>
+        <content type="html"><![CDATA[<p>The future v2.0.0, which should be released in Q1 2027, will bring some breaking changes. This guide will help you to prepare for the next major version.</p>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="before-upgrading">Before upgrading<a href="https://komga.org/fr/blog/prepare-v2#before-upgrading" class="hash-link" aria-label="Lien direct vers Before upgrading" title="Lien direct vers Before upgrading" translate="no">​</a></h2>
+<ul>
+<li class="">If you run Docker, it is advisable to use the <code>1.x</code> tag instead of <code>latest</code>. You will be able to decide when you want to upgrade, especially if you are updating containers automatically.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="breaking-changes">Breaking changes<a href="https://komga.org/fr/blog/prepare-v2#breaking-changes" class="hash-link" aria-label="Lien direct vers Breaking changes" title="Lien direct vers Breaking changes" translate="no">​</a></h2>
+<ul>
+<li class="">The minimum Java version required will be Java 25:<!-- -->
+<ul>
+<li class="">If you run Komga using the <code>jar</code>, you will need to make sure your Java version is sufficient by running <code>java -version</code>.</li>
+<li class="">If you run Komga using Docker or the desktop app, you don't need to do anything.</li>
+</ul>
+</li>
+<li class="">The Docker image for ARM32 (<code>linux/arm/v7</code>) will be dropped. ARM32 support globally is declining, and Java support for ARM32 has been dropped since Java 22.</li>
+<li class="">Deprecated APIs will be removed. This could have an impact on 3rd party Komga clients, and this advance notice should help to raise awareness to 3rd party developers.</li>
+<li class="">HTTP sessions will be exclusively stored in database. This was introduced in 1.29.0 and is being rolled out to all distribution channels. This should not have any impact to users.</li>
+</ul>
+<p>A <a href="https://github.com/gotson/komga/issues/2534" target="_blank" rel="noopener noreferrer" class="">Github issue</a> has been created to track the progress and list all the breaking changes.</p>]]></content>
+        <author>
+            <name>gotson</name>
+            <uri>https://github.com/gotson</uri>
+        </author>
+        <category label="breaking change" term="breaking change"/>
+        <category label="upgrade" term="upgrade"/>
+        <category label="komga" term="komga"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NextUI: a year in the making]]></title>
         <id>https://komga.org/fr/blog/nextui-beta</id>
