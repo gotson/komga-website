@@ -29,3 +29,7 @@ This page lists community applications or tools that can be used alongside Komga
 ## Homey
 
 > [Homey](https://homey.app/en-us/app/net.ladenius.komga/Komga/) is a smart home platform, and has an [app to automate Komga](https://github.com/jurjen74/homey-komga).
+
+## Seenr
+
+> [Seenr](https://seenr.app/en/integrations/komga) is a free tracker for series, movies, books, games and podcasts. Link your Komga server with an API key and every book, manga or comic you finish in Komga (its reader, an OPDS app, Kobo or KOReader) is checked off in your Seenr library, dated.
