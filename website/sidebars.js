@@ -132,6 +132,7 @@ const sidebars = {
                         'guides/manyue',
                         'guides/tritonpanels',
                         'guides/comicverse',
+                        'guides/easemic',
                     ],
                 },
                 'guides/theme',
