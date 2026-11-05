@@ -1,12 +1,12 @@
 # Read with Kava
 
-[Kava](https://apps.apple.com/us/app/kava-comic-reader/id6817441940) is a third-party comic and book reader for iPhone and iPad. It connects directly to Komga and uses your library metadata to build a home screen with cover rows, recommendations, and Continue Reading.
+[Kava](https://apps.apple.com/app/id6817441940) is a third-party comic and book reader for iPhone and iPad. It connects directly to Komga and uses your library metadata to build a home screen with cover rows, recommendations, and Continue Reading.
 
 ## Install and connect {#install}
 
 You need iOS or iPadOS 18 or later and a Komga 1.23.5 or later server that your device can reach.
 
-1. Download Kava from the [App Store](https://apps.apple.com/us/app/kava-comic-reader/id6817441940).
+1. Download Kava from the [App Store](https://apps.apple.com/app/id6817441940).
 2. In **Settings**, tap **Connections**.
 3. Tap **Add connection** and select **Komga**.
 4. Enter the server URL, such as `https://komga.example.com`. Include the port and any reverse proxy base path if your server uses them.
