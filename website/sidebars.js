@@ -133,6 +133,7 @@ const sidebars = {
                         'guides/tritonpanels',
                         'guides/comicverse',
                         'guides/easemic',
+                        'guides/kava',
                     ],
                 },
                 'guides/theme',
