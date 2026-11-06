@@ -14,7 +14,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
