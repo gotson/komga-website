@@ -24,7 +24,7 @@ If you have multiple KOReader devices, it is recommended to use a different API 
 
 #### Custom Sync Server {#sync-server}
 
-1. In the KOReader menu, go to _Progress sync_.
+1. Open any book, in the KOReader menu, go to _Progress sync_.
     <img src="/assets/media/guides/koreader/koreader-progress-sync-menu.png" style={{maxHeight: '200px'}} alt="KOReader configuration menu"/>
 
 2. Click on _Custom sync server_.
