@@ -47,6 +47,7 @@ Here is a list of reader applications that have been tested:
 | iOS      | [TritonPanels](https://tritonpanels.tritonapps.com/komga-app)                                                        |                                            :heavy_check_mark:                                            |        **Yes**         |                            No                             |
 | iPadOS   | [Chunky Comic Reader](https://apps.apple.com/us/app/chunky-comic-reader/id663567628)                                 |                               :x: Does not work anymore with Komga 1.4.0+                                |           No           |                     **OPDS PSE 1.0**                      |
 | Multiple | [KOReader](https://koreader.rocks/)                                                                                  |                                            :heavy_check_mark:                                            |          Yes           |                            Yes                            |
+| Multiple | [LiveComics](/docs/guides/livecomics)                                                                                |                   :heavy_check_mark: Server must be reachable at a public https address                   |        **Yes**         |                            No                             |
 
 
 The OPDS v1 feed also supports:
