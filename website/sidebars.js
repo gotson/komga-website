@@ -135,6 +135,7 @@ const sidebars = {
                         'guides/easemic',
                         'guides/kava',
                         'guides/gutter',
+                        'guides/sutra',
                     ],
                 },
                 'guides/theme',
