@@ -61,6 +61,7 @@ const sidebars = {
                         'installation/thirdparty/hostim',
                         'installation/thirdparty/pethost',
                         'installation/thirdparty/zimaos',
+                        'installation/thirdparty/simafri',
                     ],
                 },
                 {
