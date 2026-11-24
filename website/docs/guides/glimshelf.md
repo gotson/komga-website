@@ -1,6 +1,6 @@
 # Read with Glimshelf
 
-[Glimshelf](https://glimshelf.com) is an independent comic and manga reader for iPhone and iPad that connects directly to your Komga server. It requires iOS or iPadOS 18 or later and Komga 1.20 or later. Glimshelf also runs on iPhone Duo in compatibility mode.
+[Glimshelf](https://glimshelf.com) is an independent comic and manga reader for iPhone and iPad that connects directly to your Komga server. It requires iOS or iPadOS 18 or later and Komga 1.20 or later. Glimshelf supports iPhone Duo starting with version 1.0.1, with an optional two-page spread for comics (not EPUB) when the phone is open and held wide.
 
 ## Adding your Komga server {#add-server}
 
