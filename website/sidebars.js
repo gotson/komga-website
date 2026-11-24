@@ -123,6 +123,7 @@ const sidebars = {
                         'guides/opds',
                         'guides/panels',
                         'guides/komic',
+                        'guides/glimshelf',
                         'guides/mangabox',
                         'guides/kmreader',
                         'guides/koharia',
